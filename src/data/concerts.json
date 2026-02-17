@@ -1,0 +1,190 @@
+{
+  "edition": "XXXI",
+  "year": 2025,
+  "tagline": "Festival Internacional de Música Clàssica",
+  "memorial": "Memorial Eduard Casajoana",
+  "venue": "Mon Sant Benet, Sant Fruitós de Bages",
+  "rainVenue": "La Fàbrica, Mon Sant Benet",
+  "concerts": [
+    {
+      "id": "gala-opera-sarsuela",
+      "date": "2025-07-03",
+      "dayOfWeek": "Dijous",
+      "day": 3,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "Gala d'Òpera i Sarsuela",
+      "subtitle": "Grans àries i romancies sota les estrelles",
+      "artists": [
+        {
+          "name": "Laura Brasó",
+          "role": "soprano",
+          "bio": ""
+        },
+        {
+          "name": "Carles Pachón",
+          "role": "baríton",
+          "bio": ""
+        },
+        {
+          "name": "Francisco Cruz",
+          "role": "tenor (artista emergent)",
+          "bio": ""
+        },
+        {
+          "name": "Anna Crexells",
+          "role": "piano",
+          "bio": ""
+        }
+      ],
+      "repertoire": [
+        "R. Wagner - O du mein holder Abendstern (Tannhäuser)",
+        "P.I. Txaikovski - Kuda, kuda (Eugene Onegin)",
+        "G. Bizet - Me voici seule dans la nuit (Les pêcheurs de perles)",
+        "G. Verdi - E lui desso l'infante (Don Carlo)",
+        "W.A. Mozart - Crudel, perchè finora (Le nozze di Figaro)",
+        "G. Verdi - Ah! la paterna mano (Macbeth)",
+        "G. Puccini - Sì, mi chiamano Mimì (La Bohème)",
+        "G. Rossini - Largo al factotum (Il barbiere di Siviglia)",
+        "Selecció de Sarsuela (Moreno Torroba, Fernández Caballero, Soutullo y Vert, Arrieta)"
+      ],
+      "description": "Una vetllada lírica excepcional que combina la grandiositat de l'òpera amb la passió de la sarsuela. Quatre intèrprets de primer nivell ens oferiran un recorregut per les àries i duets més emblemàtics del repertori, des de la profunditat de Wagner i Verdi fins a l'alegria i el costumisme de la sarsuela espanyola, tot en el marc incomparable de Mon Sant Benet.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/concerts/gala-opera.jpg",
+      "price": "Consultar"
+    },
+    {
+      "id": "conxita-badia",
+      "date": "2025-07-10",
+      "dayOfWeek": "Dijous",
+      "day": 10,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "Conxita Badia: esclat de l’artista, exili i retorn",
+      "subtitle": "Homenatge a una de les grans veus del segle XX",
+      "artists": [
+        {
+          "name": "Maria Hinojosa",
+          "role": "soprano",
+          "bio": ""
+        },
+        {
+          "name": "Francisco Poyato",
+          "role": "piano",
+          "bio": ""
+        },
+        {
+          "name": "Sílvia Bel",
+          "role": "actriu",
+          "bio": ""
+        },
+        {
+          "name": "Oriol Pérez i Treviño",
+          "role": "textos",
+          "bio": ""
+        }
+      ],
+      "repertoire": [
+        "E. Granados - Canciones amatorias (selecció)",
+        "Robert Gerhard - Sis cançons populars franceses (selecció)",
+        "Manuel de Falla - Siete canciones populares españolas",
+        "Pau Casals - Cançons dedicades a Conxita Badia",
+        "Frederic Mompou - El combat del somni (selecció)",
+        "C. Guastavino - La rosa y el sauce",
+        "Eduard Toldrà - Cicle de cançons"
+      ],
+      "description": "Un espectacle multidisciplinar que uneix música i paraula per rendir homenatge a Conxita Badia, figura cabdal de la música catalana i europea. A través de la veu de Maria Hinojosa i la narració de Sílvia Bel, reviurem la trajectòria vital i artística d'aquesta musa de compositors com Granados, Falla o Gerhard, des del seu esclat a Barcelona fins al dur exili i el seu retorn.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/concerts/conxita-badia.jpg",
+      "price": "Consultar"
+    },
+    {
+      "id": "schubertiada",
+      "date": "2025-07-17",
+      "dayOfWeek": "Dijous",
+      "day": 17,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "Una Schubertíada",
+      "subtitle": "L'esperit del romanticisme vienès a Sant Benet",
+      "artists": [
+        {
+          "name": "Cor de Cambra del Palau de la Música",
+          "role": "cor",
+          "bio": ""
+        },
+        {
+          "name": "Jordi Armengol",
+          "role": "piano",
+          "bio": ""
+        },
+        {
+          "name": "Bernat Cot",
+          "role": "actor i dramatúrgia",
+          "bio": ""
+        },
+        {
+          "name": "Anna Romaní",
+          "role": "direcció escènica",
+          "bio": ""
+        },
+        {
+          "name": "Xavier Puig",
+          "role": "director",
+          "bio": ""
+        }
+      ],
+      "repertoire": [
+        "F. Schubert - Des Tages Weihe, Ständchen, Trinklied, Im Gegenwärtigen Vergangenes",
+        "L. van Beethoven - Das Göttliche",
+        "G. Rossini - Salve Regina",
+        "J. Haydn - Die Beredsamkeit",
+        "F. Schubert - Heidenröslein, Grab und Mond, Gott im Ungewitter"
+      ],
+      "description": "Recreació d'una autèntica 'Schubertíada', les trobades musicals i literàries que organitzava Franz Schubert amb els seus amics a la Viena del segle XIX. El Cor de Cambra del Palau de la Música, sota la direcció de Xavier Puig, ens convida a una festa musical íntima i joiosa, on la música coral s'entrellaça amb el teatre i la poesia per celebrar l'amistat i l'art.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/concerts/schubertiada.jpg",
+      "price": "Consultar"
+    },
+    {
+      "id": "bandes-sonores",
+      "date": "2025-07-24",
+      "dayOfWeek": "Dijous",
+      "day": 24,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "«And the winner is…» Bandes sonores",
+      "subtitle": "Les melodies més inoblidables del cinema",
+      "artists": [
+        {
+          "name": "Orquestra «Solistes de Catalunya»",
+          "role": "orquestra",
+          "bio": ""
+        },
+        {
+          "name": "Carles Lama i Sofia Cabruja",
+          "role": "piano a 4 mans",
+          "bio": ""
+        },
+        {
+          "name": "Marc Moncusí",
+          "role": "direcció",
+          "bio": ""
+        }
+      ],
+      "repertoire": [
+        "J. Williams - E.T., La llista de Schindler, Pirates del Carib",
+        "H. Zimmer - El Rei Lleó, Gladiator, Pearl Harbour",
+        "E. Morricone - Cinema Paradiso, La Missió",
+        "R. Djawadi - Joc de Trons",
+        "N. Piovani - La vida és bella",
+        "J. Barry - Memòries d'Àfrica",
+        "ABBA - Mamma Mia (medley)"
+      ],
+      "description": "Un gran concert simfònic per tancar el festival amb la música que ha marcat les nostres vides a través de la gran pantalla. L'Orquestra Solistes de Catalunya, juntament amb el reconegut duet de pianistes Carles Lama i Sofia Cabruja, interpretaran una selecció espectacular de les bandes sonores més premiades i estimades de la història del cinema.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/concerts/bandes-sonores.jpg",
+      "price": "Consultar"
+    }
+  ]
+}

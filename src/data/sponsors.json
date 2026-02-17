@@ -1,0 +1,64 @@
+{
+  "tiers": [
+    {
+      "name": "Institucional",
+      "sponsors": [
+        {
+          "name": "Ajuntament de Sant Fruitós de Bages",
+          "logo": "/images/sponsors/ajuntament-sant-fruitos.png",
+          "url": "https://www.santfruitosdebages.cat"
+        },
+        {
+          "name": "Generalitat de Catalunya",
+          "logo": "/images/sponsors/generalitat.png",
+          "url": "https://www.gencat.cat"
+        },
+        {
+          "name": "Diputació de Barcelona",
+          "logo": "/images/sponsors/diputacio-barcelona.png",
+          "url": "https://www.diba.cat"
+        }
+      ]
+    },
+    {
+      "name": "Patrocinadors",
+      "sponsors": [
+        {
+          "name": "Mon Sant Benet",
+          "logo": "/images/sponsors/mon-sant-benet.png",
+          "url": "https://www.monstbenet.com"
+        },
+        {
+          "name": "Fundació Catalunya La Pedrera",
+          "logo": "/images/sponsors/fundacio-catalunya-la-pedrera.png",
+          "url": "https://www.fundaciocatalunya-lapedrera.com"
+        }
+      ]
+    },
+    {
+      "name": "Col·laboradors",
+      "sponsors": [
+        {
+          "name": "Regió7",
+          "logo": "/images/sponsors/regio7.png",
+          "url": "https://www.regio7.cat"
+        },
+        {
+          "name": "CodeTickets",
+          "logo": "/images/sponsors/codetickets.png",
+          "url": "https://www.codetickets.com"
+        }
+      ]
+    },
+    {
+      "name": "Allotjament oficial",
+      "sponsors": [
+        {
+          "name": "Hotel Mon Sant Benet",
+          "logo": "/images/sponsors/hotel-mon-sant-benet.png",
+          "url": "https://www.monstbenet.com/hotel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Mon Sant Benet",
+  "fullAddress": "Camí de Sant Benet, s/n, 08272 Sant Fruitós de Bages, Barcelona",
+  "coordinates": {
+    "lat": 41.7483,
+    "lng": 1.8614
+  },
+  "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.5!2d1.8591!3d41.7483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4f9c5c5c5c5c5%3A0x1234567890!2sMon+Sant+Benet!5e0!3m2!1sca!2ses!4v1700000000000",
+  "description": "El monestir de Sant Benet de Bages és un conjunt monumental d'origen medieval situat al municipi de Sant Fruitós de Bages. Fundat l'any 960, el monestir ha estat restaurat per la Fundació Catalunya La Pedrera i convertit en un espai cultural de primer ordre.",
+  "rainPlan": "En cas de pluja, els concerts es traslladaran a La Fàbrica de Mon Sant Benet, un espai cobert amb capacitat equivalent que garanteix la mateixa qualitat acústica.",
+  "transport": {
+    "car": [
+      {
+        "title": "Des de Barcelona (C-16)",
+        "content": "Accés per l'autopista C-16 (Túnels de Vallvidrera). Preneu la sortida 54 (St. Fruitós de Bages – Navarcles). Seguiu la N-141 en direcció a Navarcles i, al cap de 450 metres, trobareu l'indicador de Món Sant Benet a la dreta."
+      },
+      {
+        "title": "Des de Girona / França (AP-7)",
+        "content": "Per l'autopista AP-7 direcció Tarragona/Lleida, agafeu la sortida 25 (Martorell) per enllaçar amb l'A-2 direcció Manresa. Connecteu amb la C-55 o C-16 fins a la sortida 54."
+      },
+      {
+        "title": "Des de Lleida / Saragossa (A-2)",
+        "content": "Per l'autovia A-2, agafeu la sortida 518 cap a la C-25 (Eix Transversal) direcció Girona/Vic. Continueu fins a la sortida 141B per accedir directament a Món Sant Benet."
+      },
+      {
+        "title": "Des de Manresa / Vic (N-141C)",
+        "content": "Per la carretera N-141C. Des de Manresa direcció Vic o des de Vic direcció Manresa, sortint a Sant Fruitós de Bages."
+      }
+    ],
+    "publicTransport": [
+      {
+        "title": "Tren (RENFE i FGC)",
+        "content": "Línia R4 de RENFE (Rodalies) fins a l'estació de Manresa. O bé, línies R5 o R50 de FGC (Llobregat-Anoia) fins a l'estació de Manresa Alta."
+      },
+      {
+        "title": "Autobús",
+        "content": "Des de Manresa, servei d'autobús fins a Sant Fruitós de Bages amb les línies 751, 712, 715 o 722. Consulteu horaris actualitzats per confirmar connexions."
+      },
+      {
+        "title": "Taxi",
+        "content": "Servei de taxi disponible des de les estacions de tren de Manresa. El trajecte és d'aproximadament 10-15 minuts fins al monestir."
+      }
+    ],
+    "parking": "Aparcament gratuït i vigilat amb capacitat per a tots els assistents a l'entrada del recinte."
+  },
+  "hotel": {
+    "name": "Hotel Mon Sant Benet",
+    "description": "L'hotel 4 estrelles de Mon Sant Benet ofereix allotjament de qualitat al costat del monestir. Ideal per completar l'experiència del festival.",
+    "url": "https://www.monstbenet.com/hotel",
+    "phone": "+34 938 759 878"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "editions": [
+    {
+      "year": 2024,
+      "edition": "XXX",
+      "highlights": "Edició especial del 30è aniversari",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2023,
+      "edition": "XXIX",
+      "highlights": "Retorn a la normalitat post-pandèmia amb programació completa",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2022,
+      "edition": "XXVIII",
+      "highlights": "Recuperació del format habitual amb aforament complet",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2021,
+      "edition": "XXVII",
+      "highlights": "Edició adaptada amb mesures sanitàries",
+      "concerts": 3,
+      "pdf": null
+    },
+    {
+      "year": 2020,
+      "edition": "XXVI",
+      "highlights": "Edició reduïda per la pandèmia COVID-19",
+      "concerts": 2,
+      "pdf": null
+    },
+    {
+      "year": 2019,
+      "edition": "XXV",
+      "highlights": "Edició especial del 25è aniversari amb concerts extraordinaris",
+      "concerts": 5,
+      "pdf": null
+    },
+    {
+      "year": 2018,
+      "edition": "XXIV",
+      "highlights": "Consolidació del festival com a referent comarcal",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2017,
+      "edition": "XXIII",
+      "highlights": "Incorporació de nous formats de concert",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2016,
+      "edition": "XXII",
+      "highlights": "Ampliació de la programació amb música de cambra",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2015,
+      "edition": "XXI",
+      "highlights": "Celebració dels 20 anys del festival",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2014,
+      "edition": "XX",
+      "highlights": "Edició especial del 20è aniversari",
+      "concerts": 5,
+      "pdf": null
+    },
+    {
+      "year": 2013,
+      "edition": "XIX",
+      "highlights": "Programació internacional destacada",
+      "concerts": 4,
+      "pdf": null
+    },
+    {
+      "year": 2012,
+      "edition": "XVIII",
+      "highlights": "Concerts al claustre de Mon Sant Benet",
+      "concerts": 4,
+      "pdf": "/programs/programa-2012.pdf"
+    },
+    {
+      "year": 2011,
+      "edition": "XVII",
+      "highlights": "Trasllat definitiu a Mon Sant Benet",
+      "concerts": 4,
+      "pdf": "/programs/programa-2011.pdf"
+    },
+    {
+      "year": 2010,
+      "edition": "XVI",
+      "highlights": "Primers concerts a Mon Sant Benet",
+      "concerts": 4,
+      "pdf": "/programs/programa-2010.pdf"
+    },
+    {
+      "year": 2009,
+      "edition": "XV",
+      "highlights": "Quinzena edició del festival",
+      "concerts": 4,
+      "pdf": "/programs/programa-2009.pdf"
+    },
+    {
+      "year": 2008,
+      "edition": "XIV",
+      "highlights": "Programació amb artistes internacionals",
+      "concerts": 4,
+      "pdf": "/programs/programa-2008.pdf"
+    },
+    {
+      "year": 2007,
+      "edition": "XIII",
+      "highlights": "Creixement del festival",
+      "concerts": 4,
+      "pdf": "/programs/programa-2007.pdf"
+    },
+    {
+      "year": 2006,
+      "edition": "XII",
+      "highlights": "Consolidació del format de 4 concerts",
+      "concerts": 4,
+      "pdf": "/programs/programa-2006.pdf"
+    },
+    {
+      "year": 2005,
+      "edition": "XI",
+      "highlights": "Primera dècada del festival",
+      "concerts": 4,
+      "pdf": "/programs/programa-2005.pdf"
+    },
+    {
+      "year": 2004,
+      "edition": "X",
+      "highlights": "Edició del 10è aniversari",
+      "concerts": 4,
+      "pdf": "/programs/programa-2004.pdf"
+    },
+    {
+      "year": 2003,
+      "edition": "IX",
+      "highlights": "Nous espais per als concerts",
+      "concerts": 3,
+      "pdf": "/programs/programa-2003.pdf"
+    },
+    {
+      "year": 2002,
+      "edition": "VIII",
+      "highlights": "Ampliació de la programació",
+      "concerts": 3,
+      "pdf": null
+    },
+    {
+      "year": 2001,
+      "edition": "VII",
+      "highlights": "Setena edició amb creixement d'assistència",
+      "concerts": 3,
+      "pdf": null
+    },
+    {
+      "year": 2000,
+      "edition": "VI",
+      "highlights": "Entrada al nou mil·lenni",
+      "concerts": 3,
+      "pdf": null
+    },
+    {
+      "year": 1999,
+      "edition": "V",
+      "highlights": "Cinquena edició, consolidació del festival",
+      "concerts": 3,
+      "pdf": null
+    },
+    {
+      "year": 1998,
+      "edition": "IV",
+      "highlights": "Creixement de públic i reconeixement",
+      "concerts": 3,
+      "pdf": null
+    },
+    {
+      "year": 1997,
+      "edition": "III",
+      "highlights": "Tercera edició amb artistes nacionals",
+      "concerts": 2,
+      "pdf": null
+    },
+    {
+      "year": 1996,
+      "edition": "II",
+      "highlights": "Segona edició del festival",
+      "concerts": 2,
+      "pdf": null
+    },
+    {
+      "year": 1995,
+      "edition": "I",
+      "highlights": "Primera edició del Festival Internacional de Música Clàssica",
+      "concerts": 2,
+      "pdf": null
+    }
+  ],
+  "milestones": [
+    {
+      "year": 1995,
+      "text": "Fundació del Festival Internacional de Música Clàssica a Sant Fruitós de Bages"
+    },
+    {
+      "year": 2003,
+      "text": "El festival rep el nom de Memorial Eduard Casajoana"
+    },
+    {
+      "year": 2010,
+      "text": "Trasllat de la seu del festival a Mon Sant Benet"
+    },
+    {
+      "year": 2014,
+      "text": "Celebració del 20è aniversari amb edició especial"
+    },
+    {
+      "year": 2019,
+      "text": "25è aniversari: un quart de segle de música clàssica d'excel·lència"
+    },
+    {
+      "year": 2024,
+      "text": "30è aniversari del festival"
+    },
+    {
+      "year": 2025,
+      "text": "XXXI edició - El festival continua creixent"
+    }
+  ]
+}
