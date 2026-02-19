@@ -56,7 +56,7 @@ export default function ProgramPreview() {
                   
                   <div className="mt-[2.4rem] pt-[1.6rem] border-t border-[var(--color-gray-100)] flex items-center justify-between">
                     <span className="text-[1.4rem] font-bold text-[var(--color-primary)]">
-                      Des de {concert.price.split(' ')[0]}
+                      Més informació
                     </span>
                     <span className="text-[1.2rem] font-bold text-[var(--color-secondary)] uppercase tracking-wider group-hover:translate-x-1 transition-transform">
                       Entrades &rarr;
