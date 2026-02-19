@@ -8,7 +8,7 @@ export default function ProgramPreview() {
   const { concerts } = concertData;
 
   return (
-    <section className="py-[8rem] md:py-[12rem] bg-[var(--color-surface)]">
+    <section className="py-[6rem] md:py-[12rem] bg-[var(--color-surface)]">
       <Container>
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-[4rem] gap-4">
           <SectionHeading
@@ -27,7 +27,7 @@ export default function ProgramPreview() {
             <div key={concert.id}>
               <Link href={`/programa#${concert.id}`} className="group block h-full flex flex-col bg-white border border-[var(--color-border)] hover:border-[var(--color-secondary)] transition-colors duration-300">
                 {/* Image container */}
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-900">
+                <div className="relative aspect-[4/3] md:aspect-[3/4] overflow-hidden bg-gray-900">
                   <div
                     className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
                     style={{

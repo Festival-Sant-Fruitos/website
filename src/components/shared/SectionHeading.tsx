@@ -17,7 +17,7 @@ export default function SectionHeading({
     <div className={cn('mb-[4rem] md:mb-[6rem]', className)}>
       <h2
         className={cn(
-          'text-[3.2rem] md:text-[4.8rem] lg:text-[6.4rem] font-serif font-medium leading-[1.05] tracking-tight',
+          'text-[2.4rem] md:text-[4.8rem] lg:text-[6.4rem] font-serif font-medium leading-[1.05] tracking-tight',
           light ? 'text-white' : 'text-[var(--color-primary)]'
         )}
       >

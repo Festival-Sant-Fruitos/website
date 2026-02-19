@@ -8,7 +8,7 @@ export default function Hero() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative h-[100dvh] min-h-[60rem] bg-black flex flex-col justify-end">
+    <section className="relative h-[100dvh] min-h-[60rem] bg-black flex flex-col justify-end -mt-[8rem]">
       {/* Background - dark with subtle image/video placeholder */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gray-900" />
@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       {/* Content - positioned at bottom-left like La Pedrera */}
-      <div className="relative z-10 w-full pb-[8rem] md:pb-[10rem]">
+      <div className="relative z-10 w-full pb-[4rem] md:pb-[10rem]">
         <Container size="lg">
           <motion.div
             initial={reduced ? false : { opacity: 0, y: 40 }}
@@ -34,19 +34,19 @@ export default function Hero() {
             </p>
 
             {/* Main headline - large serif like La Pedrera */}
-            <h1 className="text-[5.6rem] md:text-[8rem] lg:text-[10rem] font-serif font-medium text-white leading-[0.95] tracking-tight max-w-[100rem]">
+            <h1 className="text-[4rem] md:text-[8rem] lg:text-[10rem] font-serif font-medium text-white leading-[0.95] tracking-tight max-w-[100rem]">
               Festival Internacional
               <br />
               de Música Clàssica
             </h1>
 
             {/* Subtitle */}
-            <p className="text-[2rem] md:text-[2.4rem] text-white/70 mt-[2.4rem] max-w-[60rem] leading-relaxed font-light">
+            <p className="text-[1.6rem] md:text-[2.4rem] text-white/70 mt-[2.4rem] max-w-[60rem] leading-relaxed font-light">
               Memorial Eduard Casajoana
             </p>
 
             {/* Info bar - like La Pedrera's practical info */}
-            <div className="flex flex-wrap items-center gap-[3rem] mt-[4rem] text-[1.5rem] text-white/60 font-medium tracking-wide">
+            <div className="flex flex-wrap items-center gap-[2rem] md:gap-[3rem] mt-[3rem] md:mt-[4rem] text-[1.5rem] text-white/60 font-medium tracking-wide">
               <span className="flex items-center gap-[1rem]">
                 <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
@@ -64,7 +64,7 @@ export default function Hero() {
             </div>
 
             {/* CTAs - square buttons like La Pedrera */}
-            <div className="flex flex-wrap gap-[1.6rem] mt-[4rem]">
+            <div className="flex flex-wrap gap-[1.2rem] md:gap-[1.6rem] mt-[3rem] md:mt-[4rem]">
               <Button href="/programa" variant="primary" size="lg">
                 Veure Programa
               </Button>

@@ -22,10 +22,10 @@ export default function VenueSection() {
                 <p className="text-[1.3rem] font-bold tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-[1.6rem]">
                   L&apos;escenari
                 </p>
-                <h2 className="text-[4rem] md:text-[5.6rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-[2.4rem]">
+                <h2 className="text-[3.2rem] md:text-[5.6rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-[2.4rem]">
                   Mon Sant Benet
                 </h2>
-                <p className="text-[1.8rem] text-[var(--color-text-muted)] leading-relaxed font-light mb-[2rem]">
+                <p className="text-[1.6rem] md:text-[1.8rem] text-[var(--color-text-muted)] leading-relaxed font-light mb-[2rem]">
                   El monestir de Sant Benet de Bages, fundat l&apos;any 960, és un dels conjunts
                   monumentals més impressionants de Catalunya. Restaurat per la Fundació Catalunya
                   La Pedrera, ofereix un marc incomparable per gaudir de la música clàssica sota les estrelles.

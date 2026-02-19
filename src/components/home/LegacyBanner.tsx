@@ -40,17 +40,17 @@ export default function LegacyBanner() {
       <hr className="border-[var(--color-border-dark)]" />
       <section className="py-[8rem] md:py-[12rem] bg-[var(--color-primary)]">
         <Container>
-          <div className="mb-[6rem]">
-            <h2 className="text-[3.6rem] md:text-[5.6rem] lg:text-[7.2rem] font-serif font-medium text-white leading-[1.05] max-w-[80rem]">
+          <div className="mb-[4rem] md:mb-[6rem]">
+            <h2 className="text-[2.8rem] md:text-[5.6rem] lg:text-[7.2rem] font-serif font-medium text-white leading-[1.05] max-w-[80rem]">
               Més de tres dècades
               de música clàssica
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-[4rem]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-[2.4rem] md:gap-[4rem]">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <p className="text-[4.8rem] md:text-[6.4rem] font-medium text-[var(--color-secondary)] leading-none font-serif">
+                <p className="text-[3.6rem] md:text-[6.4rem] font-medium text-[var(--color-secondary)] leading-none font-serif">
                   <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                 </p>
                 <p className="text-[1.4rem] text-white/50 mt-[1.2rem] uppercase tracking-[0.15em] font-medium">

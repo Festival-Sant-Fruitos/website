@@ -19,7 +19,7 @@ export default function Newsletter() {
       <section className="py-[8rem] md:py-[12rem] bg-[var(--color-surface)]">
         <Container>
           <div className="max-w-[60rem]">
-              <h2 className="text-[3.2rem] md:text-[4.8rem] font-serif font-medium text-[var(--color-primary)] leading-[1.1]">
+              <h2 className="text-[2.4rem] md:text-[4.8rem] font-serif font-medium text-[var(--color-primary)] leading-[1.1]">
                 No et perdis cap concert
               </h2>
               <p className="text-[1.8rem] text-[var(--color-text-muted)] mt-[1.6rem] leading-[1.5]">
