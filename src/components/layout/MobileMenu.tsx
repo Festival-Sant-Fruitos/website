@@ -32,7 +32,7 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
           className="fixed inset-0 z-[200] bg-white flex flex-col"
         >
           {/* Top bar */}
-          <div className="h-[5.5rem] flex items-center justify-between px-[2.4rem] border-b border-gray-200">
+          <div className="h-[8rem] flex items-center justify-between px-[2.4rem] border-b border-gray-200">
             <span className="text-[1.4rem] font-bold tracking-tight text-gray-800 uppercase">
               Festival Internacional
             </span>
