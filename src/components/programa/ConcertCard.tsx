@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ArtistBio from './ArtistBio';
 
 interface Artist {
@@ -19,6 +20,7 @@ interface ConcertCardProps {
   repertoire: string[];
   description: string;
   ticketUrl: string;
+  image: string;
   price: string;
   index: number;
 }
@@ -35,6 +37,7 @@ export default function ConcertCard({
   repertoire,
   description,
   ticketUrl,
+  image,
   price,
   index,
 }: ConcertCardProps) {
@@ -46,11 +49,11 @@ export default function ConcertCard({
           {/* Image Side */}
           <div className={isReversed ? 'lg:order-2' : ''}>
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-900">
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: `linear-gradient(${135 + index * 30}deg, #1A1A1A 0%, #2C2C2C 50%, #1A1A1A 100%)`,
-                }}
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover"
               />
               {/* Date overlay */}
               <div className="absolute top-[2rem] left-[2rem]">

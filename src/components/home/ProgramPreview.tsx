@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
@@ -28,11 +29,11 @@ export default function ProgramPreview() {
               <Link href={`/programa#${concert.id}`} className="group block h-full flex flex-col bg-white border border-[var(--color-border)] hover:border-[var(--color-secondary)] transition-colors duration-300">
                 {/* Image container */}
                 <div className="relative aspect-[4/3] md:aspect-[3/4] overflow-hidden bg-gray-900">
-                  <div
-                    className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
-                    style={{
-                      background: `linear-gradient(${160 + i * 20}deg, #1A1A1A 0%, #2C2C2C ${40 + i * 10}%, #1A1A1A 100%)`,
-                    }}
+                  <Image
+                    src={concert.image}
+                    alt={concert.title}
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   {/* Date badge */}
                   <div className="absolute top-0 left-0 bg-[var(--color-secondary)] text-white px-[1.2rem] py-[0.6rem] text-[1.2rem] font-bold uppercase tracking-wider">

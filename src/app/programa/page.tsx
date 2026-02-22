@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import ConcertCard from '@/components/programa/ConcertCard';
 import Button from '@/components/shared/Button';
@@ -54,18 +55,12 @@ export default function ProgramaPage() {
                   {/* Left: Image & Key Info */}
                   <div className="lg:col-span-5 space-y-[3rem]">
                     <div className="relative aspect-[4/5] overflow-hidden bg-gray-100 group">
-                       <div
-                        className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
-                        style={{
-                          background: `linear-gradient(${160 + i * 20}deg, #1A1A1A 0%, #2C2C2C ${40 + i * 10}%, #1A1A1A 100%)`,
-                        }}
+                      <Image
+                        src={concert.image}
+                        alt={concert.title}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       />
-                      {/* Image placeholder wrapper */}
-                      <div className="absolute inset-0 flex items-center justify-center p-8 text-center">
-                        <span className="text-white/20 font-serif text-3xl italic">
-                          {concert.artists[0]?.name}
-                        </span>
-                      </div>
                     </div>
                     
                     <div className="bg-[var(--color-surface)] p-[3rem]">
