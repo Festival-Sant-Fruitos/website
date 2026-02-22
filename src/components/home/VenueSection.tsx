@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import Button from '@/components/shared/Button';
 
@@ -10,11 +11,12 @@ export default function VenueSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[4rem] lg:gap-[8rem] items-center">
             {/* Image side - no border radius, sharp rectangle */}
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 group">
-              <div
-                className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105"
-                style={{ background: 'linear-gradient(135deg, #2C2C2C 0%, #474747 50%, #2C2C2C 100%)' }}
+              <Image
+                src="/images/venue/mon-sant-benet.jpg"
+                alt="Mon Sant Benet"
+                fill
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
-              {/* When real image: <Image src="/images/venue/mon-sant-benet.jpg" alt="Mon Sant Benet" fill className="object-cover" /> */}
             </div>
 
             {/* Text side */}
