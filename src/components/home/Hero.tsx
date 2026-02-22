@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
 import Container from '../shared/Container';
 import Button from '../shared/Button';
@@ -9,15 +10,17 @@ export default function Hero() {
 
   return (
     <section className="relative h-[100dvh] min-h-[60rem] bg-black flex flex-col justify-end -mt-[8rem]">
-      {/* Background - dark with subtle image/video placeholder */}
+      {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gray-900" />
-        {/* When real hero video/image is available: */}
-        {/* <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover opacity-50">
-          <source src="/images/hero/mon-sant-benet.mp4" type="video/mp4" />
-        </video> */}
+        <Image
+          src="/images/venue/mon-sant-benet.jpg"
+          alt="Mon Sant Benet"
+          fill
+          className="object-cover"
+          priority
+        />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Content - positioned at bottom-left like La Pedrera */}
