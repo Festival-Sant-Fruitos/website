@@ -1,78 +1,94 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import Container from '../shared/Container';
 import Button from '../shared/Button';
 
+const heroImages = [
+  { src: '/images/archive/organitzacio.jpg', alt: 'Concert nocturn al festival' },
+  { src: '/images/venue/mon-sant-benet.jpg', alt: 'Monestir de Sant Benet de Bages' },
+];
+
 export default function Hero() {
   const reduced = useReducedMotion();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="relative h-[100dvh] min-h-[60rem] bg-black flex flex-col justify-end -mt-[8rem]">
-      {/* Background */}
+    <section className="relative h-[calc(100dvh-8rem)] min-h-[60rem] bg-black overflow-hidden group">
+      {/* Background Slideshow */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/venue/mon-sant-benet.jpg"
-          alt="Mon Sant Benet"
-          fill
-          className="object-cover"
-          priority
-        />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        <AnimatePresence mode="popLayout">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={heroImages[currentIndex].src}
+              alt={heroImages[currentIndex].alt}
+              fill
+              className="object-cover"
+              priority={currentIndex === 0}
+            />
+          </motion.div>
+        </AnimatePresence>
+        
+        {/* Subtle gradient for text readability - Bottom up */}
+        <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none" />
       </div>
 
-      {/* Content - positioned at bottom-left like La Pedrera */}
-      <div className="relative z-10 w-full pb-[4rem] md:pb-[10rem]">
-        <Container size="lg">
+      {/* Content Overlay */}
+      <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-8 md:px-16">
+        <Container size="lg" className="w-full">
           <motion.div
-            initial={reduced ? false : { opacity: 0, y: 40 }}
+            initial={reduced ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="max-w-4xl"
           >
-            {/* Edition tag */}
-            <p className="text-[1.4rem] text-white/80 font-medium tracking-[0.2em] uppercase mb-[2rem] border-l-2 border-[var(--color-secondary)] pl-[1.2rem]">
-              XXXI Edició &middot; Juliol 2025
-            </p>
-
-            {/* Main headline - large serif like La Pedrera */}
-            <h1 className="text-[4rem] md:text-[8rem] lg:text-[10rem] font-serif font-medium text-white leading-[0.95] tracking-tight max-w-[100rem]">
-              Festival Internacional
-              <br />
-              de Música Clàssica
+            {/* Main Headline - Bold & Clean like La Pedrera */}
+            <h1 
+              className="text-6xl md:text-8xl lg:text-[7rem] font-sans font-bold !text-white leading-[0.9] tracking-tight mb-8 drop-shadow-lg"
+            >
+              Festival Internacional <br/>
+              <span className="!text-white/90">de Música Clàssica</span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-[1.6rem] md:text-[2.4rem] text-white/70 mt-[2.4rem] max-w-[60rem] leading-relaxed font-light">
-              Memorial Eduard Casajoana
-            </p>
-
-            {/* Info bar - like La Pedrera's practical info */}
-            <div className="flex flex-wrap items-center gap-[2rem] md:gap-[3rem] mt-[3rem] md:mt-[4rem] text-[1.5rem] text-white/60 font-medium tracking-wide">
-              <span className="flex items-center gap-[1rem]">
-                <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                Mon Sant Benet
-              </span>
-              <span className="flex items-center gap-[1rem]">
-                <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12,6 12,12 16,14" />
-                </svg>
-                Juliol 2025
-              </span>
+            {/* Subtitle & Details */}
+            <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mb-10 text-lg md:text-xl font-medium !text-white/90 drop-shadow-md">
+              <p className="tracking-wide text-white !mb-0 border-l-4 border-[var(--color-secondary)] pl-4">Memorial Eduard Casajoana</p>
+              
+              <div className="flex items-center gap-6 text-base md:text-lg text-white opacity-90">
+                <span className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  Mon Sant Benet
+                </span>
+                <span className="flex items-center gap-2">
+                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                  Juliol 2025
+                </span>
+              </div>
             </div>
 
-            {/* CTAs - square buttons like La Pedrera */}
-            <div className="flex flex-wrap gap-[1.2rem] md:gap-[1.6rem] mt-[3rem] md:mt-[4rem]">
-              <Button href="/programa" variant="primary" size="lg">
-                Veure Programa
-              </Button>
-              <Button href="/entrades" variant="white" size="lg">
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-4">
+              <Button href="/entrades" variant="primary" size="lg" className="shadow-lg hover:scale-105 transition-transform">
                 Comprar Entrades
+              </Button>
+              <Button href="/programa" variant="outline" size="lg" className="bg-white/10 backdrop-blur-md !text-white !border-white/30 hover:bg-white/20">
+                Veure Programa
               </Button>
             </div>
           </motion.div>
