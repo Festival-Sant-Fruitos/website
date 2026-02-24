@@ -12,7 +12,7 @@ export default function VenueSection() {
             {/* Image side - no border radius, sharp rectangle */}
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 group">
               <Image
-                src="/images/venue/mon-sant-benet.jpg"
+                src="/images/hero/mon-sant-benet.jpg"
                 alt="Mon Sant Benet"
                 fill
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
