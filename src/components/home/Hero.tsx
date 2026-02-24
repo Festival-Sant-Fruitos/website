@@ -8,7 +8,7 @@ import Button from '../shared/Button';
 
 const heroImages = [
   { src: '/images/archive/organitzacio.jpg', alt: 'Concert nocturn al festival' },
-  { src: '/images/venue/mon-sant-benet.jpg', alt: 'Monestir de Sant Benet de Bages' },
+  { src: '/images/hero/mon-sant-benet.jpg', alt: 'Monestir de Sant Benet de Bages' },
 ];
 
 export default function Hero() {
