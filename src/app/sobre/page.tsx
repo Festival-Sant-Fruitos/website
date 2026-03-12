@@ -143,46 +143,38 @@ export default function SobrePage() {
           <div className="max-w-[720px]">
             <SectionHeading title="Contacte" />
 
-            <div className="border border-[var(--color-border)] p-8 mb-6">
-              <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
-                Email
-              </p>
+            <div className="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
               <a
                 href="mailto:festivalsantfruitos@gmail.com"
-                className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
+                className="flex items-center justify-between py-5 group"
               >
-                festivalsantfruitos@gmail.com
+                <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Email</span>
+                <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
+                  festivalsantfruitos@gmail.com
+                </span>
               </a>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              <div className="border border-[var(--color-border)] p-8">
-                <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
-                  Facebook
-                </p>
-                <a
-                  href="https://www.facebook.com/festivalsantfruitos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
-                >
+              <a
+                href="https://www.facebook.com/festivalsantfruitos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between py-5 group"
+              >
+                <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Facebook</span>
+                <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
                   @festivalsantfruitos
-                </a>
-              </div>
-
-              <div className="border border-[var(--color-border)] p-8">
-                <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
-                  Instagram
-                </p>
-                <a
-                  href="https://www.instagram.com/festivalsantfruitos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
-                >
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/festivalsantfruitos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between py-5 group"
+              >
+                <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Instagram</span>
+                <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
                   @festivalsantfruitos
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
 
             {/* Press */}
