@@ -143,25 +143,39 @@ export default function SobrePage() {
           <div className="max-w-[720px]">
             <SectionHeading title="Contacte" />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="border border-[var(--color-border)] p-8">
-                <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
-                  Email
-                </p>
-                <a
-                  href="mailto:festivalsantfruitos@gmail.com"
-                  className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
-                >
-                  festivalsantfruitos@gmail.com
-                </a>
-              </div>
+            <div className="border border-[var(--color-border)] p-8 mb-6">
+              <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
+                Email
+              </p>
+              <a
+                href="mailto:festivalsantfruitos@gmail.com"
+                className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
+              >
+                festivalsantfruitos@gmail.com
+              </a>
+            </div>
 
+            <div className="grid grid-cols-2 gap-6">
               <div className="border border-[var(--color-border)] p-8">
                 <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
                   Facebook
                 </p>
                 <a
                   href="https://www.facebook.com/festivalsantfruitos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
+                >
+                  @festivalsantfruitos
+                </a>
+              </div>
+
+              <div className="border border-[var(--color-border)] p-8">
+                <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
+                  Instagram
+                </p>
+                <a
+                  href="https://www.instagram.com/festivalsantfruitos"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base text-[var(--color-secondary)] font-semibold hover:text-[var(--color-text-main)] transition-colors"
