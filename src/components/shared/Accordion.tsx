@@ -27,22 +27,22 @@ export default function Accordion({ items, className = '' }: AccordionProps) {
           <div key={index} className="border-b border-[var(--color-border)]">
             <button
               onClick={() => toggle(index)}
-              className="w-full flex items-center justify-between py-[2rem] text-left group hover:bg-[var(--color-surface)]/50 transition-colors px-[1rem] -mx-[1rem]"
+              className="w-full flex items-center justify-between py-5 text-left group hover:bg-[var(--color-surface)]/50 transition-colors px-2.5 -mx-2.5"
               aria-expanded={isOpen}
             >
-              <span className="text-[1.6rem] font-medium uppercase tracking-wide text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
+              <span className="text-base font-medium uppercase tracking-wide text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
                 {item.title}
               </span>
-              <span className={`text-[2rem] leading-none text-[var(--color-secondary)] transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>
+              <span className={`text-xl leading-none text-[var(--color-secondary)] transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>
                 +
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                isOpen ? 'max-h-[100rem] opacity-100 pb-[2rem]' : 'max-h-0 opacity-0'
+                isOpen ? 'max-h-[1000px] opacity-100 pb-5' : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="text-[1.6rem] text-[var(--color-text-muted)] leading-relaxed px-[1rem] -mx-[1rem]">
+              <div className="text-base text-[var(--color-text-muted)] leading-relaxed px-2.5 -mx-2.5">
                 {item.content}
               </div>
             </div>

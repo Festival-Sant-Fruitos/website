@@ -15,15 +15,15 @@ export default function ProgramaPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-[10rem] pb-[6rem] bg-[var(--color-primary)]">
+      <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-[1.4rem] font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-[2rem]">
+          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
             {concertData.edition} Edició &middot; Juliol {concertData.year}
           </p>
-          <h1 className="text-[5.6rem] md:text-[8rem] font-serif font-medium text-white leading-[0.95] mb-[3rem]">
+          <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
             Programa Oficial
           </h1>
-          <p className="text-[2rem] text-white/70 max-w-[70rem] leading-[1.4] font-light">
+          <p className="text-xl text-white/70 max-w-[700px] leading-[1.4] font-light">
             Quatre vetllades de música clàssica d&apos;excepció als jardins de Mon Sant Benet.
             Cada dijous del juliol a les 22:15h.
           </p>
@@ -31,29 +31,29 @@ export default function ProgramaPage() {
       </section>
 
       {/* Concerts List */}
-      <section className="py-[8rem] md:py-[12rem]">
+      <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="space-y-[10rem]">
+          <div className="space-y-[100px]">
             {concertData.concerts.map((concert, i) => (
-              <article key={concert.id} id={concert.id} className="scroll-mt-[10rem]">
+              <article key={concert.id} id={concert.id} className="scroll-mt-[100px]">
                 {/* Date Header */}
-                <div className="flex items-center gap-[2rem] mb-[4rem]">
-                  <span className="text-[4rem] md:text-[6rem] font-serif font-medium text-[var(--color-secondary)] leading-none">
+                <div className="flex items-center gap-5 mb-10">
+                  <span className="text-[2.5rem] md:text-[3.75rem] font-serif font-medium text-[var(--color-secondary)] leading-none">
                     {concert.day}
                   </span>
-                  <div className="flex flex-col border-l border-[var(--color-border)] pl-[2rem]">
-                    <span className="text-[1.6rem] font-bold uppercase tracking-widest text-[var(--color-primary)]">
+                  <div className="flex flex-col border-l border-[var(--color-border)] pl-5">
+                    <span className="text-base font-bold uppercase tracking-widest text-[var(--color-primary)]">
                       {concert.month}
                     </span>
-                    <span className="text-[1.4rem] text-[var(--color-text-muted)] uppercase tracking-wider">
+                    <span className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider">
                       {concert.dayOfWeek} &middot; {concert.time}h
                     </span>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-[4rem] lg:gap-[6rem]">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[60px]">
                   {/* Left: Image & Key Info */}
-                  <div className="lg:col-span-5 space-y-[3rem]">
+                  <div className="lg:col-span-5 space-y-[30px]">
                     <div className="relative aspect-[4/5] overflow-hidden bg-gray-100 group">
                       <Image
                         src={concert.image}
@@ -62,19 +62,19 @@ export default function ProgramaPage() {
                         className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       />
                     </div>
-                    
-                    <div className="bg-[var(--color-surface)] p-[3rem]">
-                       <h4 className="text-[1.4rem] font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-[2rem]">
+
+                    <div className="bg-[var(--color-surface)] p-[30px]">
+                       <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5">
                          Intèrprets
                        </h4>
-                       <ul className="space-y-[1.2rem]">
+                       <ul className="space-y-3">
                          {concert.artists.map((artist) => (
                            <li key={artist.name}>
-                             <span className="block text-[1.8rem] font-serif font-medium text-[var(--color-primary)]">
+                             <span className="block text-lg font-serif font-medium text-[var(--color-primary)]">
                                {artist.name}
                              </span>
                              {artist.role && (
-                               <span className="block text-[1.4rem] text-[var(--color-text-muted)] italic">
+                               <span className="block text-sm text-[var(--color-text-muted)] italic">
                                  {artist.role}
                                </span>
                              )}
@@ -86,29 +86,29 @@ export default function ProgramaPage() {
 
                   {/* Right: Content & Repertoire */}
                   <div className="lg:col-span-7 flex flex-col">
-                    <h2 className="text-[3.6rem] md:text-[4.8rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-[1.2rem]">
+                    <h2 className="text-[2.25rem] md:text-[3rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-3">
                       {concert.title}
                     </h2>
-                    <p className="text-[2rem] text-[var(--color-text-muted)] font-light leading-relaxed mb-[3rem]">
+                    <p className="text-xl text-[var(--color-text-muted)] font-light leading-relaxed mb-[30px]">
                       {concert.subtitle}
                     </p>
-                    
-                    <div className="prose prose-lg text-[var(--color-text-main)] mb-[4rem]">
-                      <p className="text-[1.6rem] leading-relaxed">
+
+                    <div className="prose prose-lg text-[var(--color-text-main)] mb-10">
+                      <p className="text-base leading-relaxed">
                         {concert.description}
                       </p>
                     </div>
 
                     {/* Repertoire List */}
                     {concert.repertoire && (
-                      <div className="mb-[4rem]">
-                         <h4 className="text-[1.4rem] font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-[2rem] flex items-center gap-4">
+                      <div className="mb-10">
+                         <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5 flex items-center gap-4">
                            Programa
                            <span className="h-px bg-[var(--color-border)] flex-1"></span>
                          </h4>
-                         <ul className="grid grid-cols-1 gap-[1.2rem]">
+                         <ul className="grid grid-cols-1 gap-3">
                            {concert.repertoire.map((item, idx) => (
-                             <li key={idx} className="flex gap-[1.6rem] text-[1.5rem] text-[var(--color-text-main)]">
+                             <li key={idx} className="flex gap-4 text-[15px] text-[var(--color-text-main)]">
                                <span className="text-[var(--color-secondary)] font-bold">
                                  {String(idx + 1).padStart(2, '0')}
                                </span>
@@ -119,10 +119,10 @@ export default function ProgramaPage() {
                       </div>
                     )}
 
-                    <div className="mt-auto pt-[4rem] border-t border-[var(--color-border)] flex flex-wrap items-center gap-[2rem] justify-between">
+                    <div className="mt-auto pt-10 border-t border-[var(--color-border)] flex flex-wrap items-center gap-5 justify-between">
                        <div className="flex flex-col">
-                         <span className="text-[1.4rem] text-[var(--color-text-muted)] uppercase tracking-wider">Preu entrada</span>
-                         <span className="text-[2.4rem] font-serif font-medium text-[var(--color-primary)]">
+                         <span className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider">Preu entrada</span>
+                         <span className="text-2xl font-serif font-medium text-[var(--color-primary)]">
                            {concert.price}
                          </span>
                        </div>
@@ -132,8 +132,8 @@ export default function ProgramaPage() {
                     </div>
                   </div>
                 </div>
-                
-                {i < concertData.concerts.length - 1 && <hr className="mt-[10rem] border-[var(--color-border)]" />}
+
+                {i < concertData.concerts.length - 1 && <hr className="mt-[100px] border-[var(--color-border)]" />}
               </article>
             ))}
           </div>
@@ -141,10 +141,10 @@ export default function ProgramaPage() {
       </section>
 
       {/* Rain Plan Notice */}
-      <section className="border-t border-[var(--color-border)] py-[4rem] bg-[var(--color-surface)]">
+      <section className="border-t border-[var(--color-border)] py-10 bg-[var(--color-surface)]">
         <Container>
-          <div className="flex items-start gap-[2rem] max-w-[70rem] mx-auto text-center md:text-left md:items-center">
-            <div className="hidden md:flex w-[5rem] h-[5rem] bg-white border border-[var(--color-border)] rounded-full items-center justify-center flex-shrink-0 text-[var(--color-secondary)]">
+          <div className="flex items-start gap-5 max-w-[700px] mx-auto text-center md:text-left md:items-center">
+            <div className="hidden md:flex w-[50px] h-[50px] bg-white border border-[var(--color-border)] rounded-full items-center justify-center flex-shrink-0 text-[var(--color-secondary)]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 17.58A5 5 0 0018 8h-1.26A8 8 0 104 16.25" />
                 <line x1="8" y1="16" x2="8.01" y2="21" />
@@ -153,8 +153,8 @@ export default function ProgramaPage() {
               </svg>
             </div>
             <div>
-              <p className="text-[1.6rem] font-bold text-[var(--color-primary)] mb-[0.4rem]">Garantia de concert</p>
-              <p className="text-[1.4rem] text-[var(--color-text-muted)]">
+              <p className="text-base font-bold text-[var(--color-primary)] mb-1">Garantia de concert</p>
+              <p className="text-sm text-[var(--color-text-muted)]">
                 En cas de pluja, els concerts es traslladaran a <strong>{concertData.rainVenue}</strong>,
                 garantint la mateixa qualitat acústica i aforament.
               </p>

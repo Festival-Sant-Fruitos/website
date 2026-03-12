@@ -13,15 +13,15 @@ export default function UbicacioPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-[10rem] pb-[6rem] bg-[var(--color-primary)]">
+      <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-[1.4rem] font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-[2rem]">
+          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
             L&apos;escenari
           </p>
-          <h1 className="text-[5.6rem] md:text-[8rem] font-serif font-medium text-white leading-[0.95] mb-[3rem]">
+          <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
             {venueData.name}
           </h1>
-          <p className="text-[2rem] text-white/70 max-w-[70rem] leading-[1.4] font-light">
+          <p className="text-xl text-white/70 max-w-[700px] leading-[1.4] font-light">
             Un monestir mil·lenari envoltat de natura, història i silenci.
             El marc perfecte per a la música.
           </p>
@@ -29,9 +29,9 @@ export default function UbicacioPage() {
       </section>
 
       {/* Map & Description */}
-      <section className="py-[8rem] md:py-[12rem]">
+      <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[6rem] lg:gap-[10rem]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] lg:gap-[100px]">
             {/* Map - Larger and cleaner */}
             <div className="aspect-square lg:aspect-[4/5] bg-gray-100">
               <iframe
@@ -49,33 +49,33 @@ export default function UbicacioPage() {
 
             {/* Content */}
             <div className="flex flex-col justify-center">
-              <SectionHeading 
-                title="El Monestir" 
+              <SectionHeading
+                title="El Monestir"
                 subtitle={venueData.fullAddress}
-                className="mb-[4rem]"
+                className="mb-10"
               />
-              
-              <div className="prose prose-lg text-[var(--color-text-main)] mb-[4rem]">
-                <p className="text-[1.6rem] leading-relaxed">
+
+              <div className="prose prose-lg text-[var(--color-text-main)] mb-10">
+                <p className="text-base leading-relaxed">
                   {venueData.description}
                 </p>
               </div>
 
-              <div className="grid gap-[2rem]">
-                <div className="bg-[var(--color-surface)] p-[2.4rem]">
-                  <h4 className="text-[1.2rem] font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-[1rem]">
+              <div className="grid gap-5">
+                <div className="bg-[var(--color-surface)] p-6">
+                  <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-2.5">
                     Aparcament
                   </h4>
-                  <p className="text-[1.5rem] text-[var(--color-text-main)]">
+                  <p className="text-[15px] text-[var(--color-text-main)]">
                     {venueData.transport.parking}
                   </p>
                 </div>
-                
-                <div className="bg-[var(--color-surface)] p-[2.4rem]">
-                   <h4 className="text-[1.2rem] font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-[1rem]">
+
+                <div className="bg-[var(--color-surface)] p-6">
+                   <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-2.5">
                     Pla de Pluja
                   </h4>
-                  <p className="text-[1.5rem] text-[var(--color-text-main)]">
+                  <p className="text-[15px] text-[var(--color-text-main)]">
                     {venueData.rainPlan}
                   </p>
                 </div>
@@ -88,23 +88,23 @@ export default function UbicacioPage() {
       <hr className="border-[var(--color-border)]" />
 
       {/* Transport Grid */}
-      <section className="py-[8rem] md:py-[12rem]">
+      <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[80rem] mx-auto">
-            <h2 className="text-[3.2rem] md:text-[4rem] font-serif font-medium text-[var(--color-primary)] mb-[4rem] text-center">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="text-[2rem] md:text-[2.5rem] font-serif font-medium text-[var(--color-primary)] mb-10 text-center">
               Com arribar
             </h2>
-            <Accordion 
+            <Accordion
               items={[
                 {
                   title: "Com arribar en cotxe",
-                  content: <Accordion items={venueData.transport.car} className="pl-[2rem] border-t-0" />
+                  content: <Accordion items={venueData.transport.car} className="pl-5 border-t-0" />
                 },
                 {
                   title: "Transport Públic",
-                  content: <Accordion items={venueData.transport.publicTransport} className="pl-[2rem] border-t-0" />
+                  content: <Accordion items={venueData.transport.publicTransport} className="pl-5 border-t-0" />
                 }
-              ]} 
+              ]}
             />
           </div>
         </Container>

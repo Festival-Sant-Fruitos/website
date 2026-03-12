@@ -17,13 +17,13 @@ export default function ArtistBio({ name, role, bio }: ArtistBioProps) {
     <div className="border-b border-gray-200 last:border-0">
       <button
         onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between py-[1.6rem] text-left group"
+        className="w-full flex items-center justify-between py-4 text-left group"
       >
         <div>
-          <span className="text-[1.6rem] font-bold text-gray-800 group-hover:text-teal transition-colors">
+          <span className="text-base font-bold text-gray-800 group-hover:text-teal transition-colors">
             {name}
           </span>
-          <span className="text-[1.4rem] text-gray-400 ml-[0.8rem] capitalize">
+          <span className="text-sm text-gray-400 ml-2 capitalize">
             {role}
           </span>
         </div>
@@ -50,7 +50,7 @@ export default function ArtistBio({ name, role, bio }: ArtistBioProps) {
             transition={{ duration: reduced ? 0 : 0.3 }}
             className="overflow-hidden"
           >
-            <p className="text-[1.4rem] text-gray-600 leading-[1.6] pb-[1.6rem]">
+            <p className="text-sm text-gray-600 leading-[1.6] pb-4">
               {bio}
             </p>
           </motion.div>

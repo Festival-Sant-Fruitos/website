@@ -68,7 +68,7 @@ export default function RootLayout({
     <html lang="ca">
       <body className={`${dmSans.variable} ${cormorant.variable} antialiased`}>
         <Header />
-        <main className="pt-[8rem]">{children}</main>
+        <main className="pt-20">{children}</main>
         <Footer />
       </body>
     </html>
