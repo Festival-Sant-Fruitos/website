@@ -8,7 +8,7 @@ Rebuilding festivalsantfruitos.com from legacy WordPress to Next.js 16 + React 1
 - `npm run build` — production build (run before pushing to catch type/build errors)
 - `npm run lint` — ESLint
 - `npx shadcn@latest add <component>` — install shadcn components
-- `npx magicui@latest add <component>` — install Magic UI components
+- `npx shadcn@latest add "https://magicui.design/r/<component>"` — install Magic UI components (magicui npm package does NOT exist; always use the shadcn registry URL)
 - `npx playwright test` — run all E2E tests
 - `npx playwright test --ui` — interactive test runner
 
