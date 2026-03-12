@@ -34,6 +34,7 @@ Rebuilding festivalsantfruitos.com from legacy WordPress to Next.js 16 + React 1
 - This project uses Tailwind v4 with CSS-based config, NOT `tailwind.config.ts`. Do not create a JS/TS config file.
 - Custom theme values are defined in `src/app/globals.css` using `@theme`, not in a config file.
 - If you need to extend the theme, add `@theme` directives in `globals.css`.
+- **Standard rem (1rem = 16px)**. Do NOT use the 62.5% font-size hack. Use standard Tailwind utility classes (`text-sm`, `text-base`, `p-4`, etc.) or `[Xpx]` arbitrary values.
 
 ## Content & i18n
 

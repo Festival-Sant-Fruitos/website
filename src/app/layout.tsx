@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { DM_Sans, Cormorant_Garamond, Geist } from "next/font/google";
+import { DM_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -68,10 +65,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ca" className={cn("font-sans", geist.variable)}>
+    <html lang="ca">
       <body className={`${dmSans.variable} ${cormorant.variable} antialiased`}>
         <Header />
-        <main className="pt-[8rem]">{children}</main>
+        <main className="pt-20">{children}</main>
         <Footer />
       </body>
     </html>

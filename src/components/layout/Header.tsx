@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 import Container from '../shared/Container';
@@ -16,51 +16,58 @@ const navLinks = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)]">
-        <Container size="lg" className="h-[8rem] flex items-center justify-between">
-          {/* Logo */}
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 backdrop-blur-md border-b border-[var(--color-border)]'
+            : 'bg-white/90 backdrop-blur-sm'
+        }`}
+      >
+        <Container size="lg" className="h-20 flex items-center justify-between">
           <Link href="/" className="flex flex-col leading-none group">
-            <span className="text-[1.6rem] font-serif font-medium tracking-tight text-[var(--color-primary)] uppercase group-hover:text-[var(--color-secondary)] transition-colors">
+            <span className="text-[15px] font-serif font-medium tracking-tight text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors duration-300">
               Festival Internacional
             </span>
-            <span className="text-[1.1rem] tracking-[0.2em] uppercase text-[var(--color-text-muted)] mt-[0.4rem]">
+            <span className="text-[11px] tracking-[0.15em] uppercase text-[var(--color-text-light)] mt-[3px]">
               de Música Clàssica
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-[3.2rem]">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[1.4rem] font-medium text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors duration-300 tracking-wide uppercase"
+                className="text-[13px] font-medium text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors duration-300 tracking-wide uppercase"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Right side: CTA + Mobile burger */}
-          <div className="flex items-center gap-[1.6rem]">
-            {/* Teal CTA - always visible, like La Pedrera */}
-            <Button href="/entrades" variant="primary" size="md" className="hidden sm:inline-flex">
+          <div className="flex items-center gap-4">
+            <Button href="/entrades" variant="primary" size="sm" className="hidden sm:inline-flex">
               Entrades
             </Button>
-
-            {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden p-[0.4rem] text-[var(--color-primary)]"
+              className="lg:hidden p-1 text-[var(--color-primary)]"
               aria-label="Obrir menú"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <line x1="3" y1="12" x2="21" y2="12" />
-                <line x1="3" y1="18" x2="21" y2="18" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
               </svg>
             </button>
           </div>

@@ -31,47 +31,44 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
           transition={{ type: 'tween', duration: reduced ? 0.15 : 0.3, ease: [0.25, 0.1, 0.25, 1] }}
           className="fixed inset-0 z-[200] bg-white flex flex-col"
         >
-          {/* Top bar */}
-          <div className="h-[8rem] flex items-center justify-between px-[2.4rem] border-b border-gray-200">
-            <span className="text-[1.4rem] font-bold tracking-tight text-gray-800 uppercase">
+          <div className="h-20 flex items-center justify-between px-6 border-b border-gray-200">
+            <span className="text-sm font-bold tracking-tight text-gray-800 uppercase">
               Festival Internacional
             </span>
             <button
               onClick={onClose}
-              className="p-[0.4rem] text-gray-800"
+              className="p-1 text-gray-800"
               aria-label="Tancar menú"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
           </div>
 
-          {/* Links */}
           <nav className="flex-1 overflow-y-auto">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={onClose}
-                className="block text-[2rem] font-bold text-gray-800 px-[2.4rem] py-[2rem] border-b border-gray-200 hover:bg-gray-50 transition-colors"
+                className="block text-xl font-medium text-gray-800 px-6 py-5 border-b border-gray-100 hover:bg-gray-50 transition-colors"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Bottom CTA */}
-          <div className="p-[2.4rem] border-t border-gray-200">
+          <div className="p-6 border-t border-gray-200">
             <Link
               href="/entrades"
               onClick={onClose}
-              className="block w-full bg-teal text-white text-center text-[1.6rem] font-bold py-[1.4rem] hover:bg-gray-800 transition-colors"
+              className="block w-full bg-[var(--color-secondary)] text-white text-center text-base font-medium py-4 hover:bg-[var(--color-secondary-dark)] transition-colors"
             >
               Comprar Entrades
             </Link>
-            <p className="text-gray-400 text-[1.2rem] text-center mt-[1.2rem]">
+            <p className="text-gray-400 text-xs text-center mt-3">
               XXXI Edició &middot; Juliol 2025
             </p>
           </div>

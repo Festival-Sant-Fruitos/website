@@ -10,8 +10,8 @@ interface ContainerProps {
 export default function Container({ children, className, as: Tag = 'div', size = 'md' }: ContainerProps) {
   return (
     <Tag className={cn(
-      'mx-auto px-[2.4rem] md:px-[4rem] w-full',
-      size === 'lg' ? 'max-w-[160rem]' : 'max-w-[126rem]',
+      'mx-auto px-6 md:px-10 w-full',
+      size === 'lg' ? 'max-w-[1600px]' : 'max-w-[1260px]',
       className
     )}>
       {children}

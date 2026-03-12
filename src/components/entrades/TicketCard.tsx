@@ -21,27 +21,27 @@ export default function TicketCard({
   ticketUrl,
 }: TicketCardProps) {
   return (
-    <div className="border border-gray-200 p-[2.4rem] flex flex-col h-full hover:border-teal transition-colors duration-300">
+    <div className="border border-gray-200 p-6 flex flex-col h-full hover:border-teal transition-colors duration-300">
         {/* Date + Title */}
-        <div className="flex items-start gap-[2rem] mb-[1.6rem]">
-          <div className="bg-teal text-white w-[6rem] h-[6rem] flex flex-col items-center justify-center flex-shrink-0">
-            <span className="text-[2.4rem] font-bold leading-none">{day}</span>
-            <span className="text-[1rem] uppercase tracking-wider">{month}</span>
+        <div className="flex items-start gap-5 mb-4">
+          <div className="bg-teal text-white w-[60px] h-[60px] flex flex-col items-center justify-center flex-shrink-0">
+            <span className="text-2xl font-bold leading-none">{day}</span>
+            <span className="text-[10px] uppercase tracking-wider">{month}</span>
           </div>
           <div>
-            <h3 className="text-[1.8rem] font-bold text-gray-800">{title}</h3>
-            <p className="text-[1.4rem] text-gray-400 mt-[0.2rem]">
+            <h3 className="text-lg font-bold text-gray-800">{title}</h3>
+            <p className="text-sm text-gray-400 mt-[2px]">
               {dayOfWeek} &middot; {time}h
             </p>
           </div>
         </div>
 
         {/* Artists */}
-        <div className="flex flex-wrap gap-[0.6rem] mb-[2rem] flex-1">
+        <div className="flex flex-wrap gap-1.5 mb-5 flex-1">
           {artists.map((artist) => (
             <span
               key={artist}
-              className="text-[1.2rem] border border-gray-200 text-gray-600 px-[0.8rem] py-[0.3rem]"
+              className="text-xs border border-gray-200 text-gray-600 px-2 py-[3px]"
             >
               {artist}
             </span>
@@ -49,13 +49,13 @@ export default function TicketCard({
         </div>
 
         {/* Price & CTA */}
-        <div className="flex items-center justify-between pt-[1.6rem] border-t border-gray-200">
-          <span className="text-[2.4rem] font-bold text-gray-800">{price}</span>
+        <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+          <span className="text-2xl font-bold text-gray-800">{price}</span>
           <a
             href={ticketUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-teal text-white text-[1.4rem] font-bold px-[1.8rem] py-[0.8rem] hover:bg-gray-800 transition-colors duration-300"
+            className="bg-teal text-white text-sm font-bold px-[18px] py-2 hover:bg-gray-800 transition-colors duration-300"
           >
             Comprar
           </a>

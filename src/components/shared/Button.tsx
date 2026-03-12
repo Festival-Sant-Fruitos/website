@@ -21,9 +21,9 @@ const variants = {
 };
 
 const sizes = {
-  sm: 'px-[1.6rem] py-[0.8rem] text-[1.4rem]',
-  md: 'px-[2.4rem] py-[1.2rem] text-[1.5rem]',
-  lg: 'px-[3.2rem] py-[1.6rem] text-[1.6rem]',
+  sm: 'px-4 py-2 text-sm',
+  md: 'px-6 py-3 text-[15px]',
+  lg: 'px-8 py-4 text-base',
 };
 
 export default function Button({
@@ -38,7 +38,7 @@ export default function Button({
 }: ButtonProps) {
   const baseClasses = cn(
     'inline-flex items-center justify-center font-medium tracking-wide transition-all duration-300',
-    'focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2',
+    'focus:outline-none focus:ring-2 focus:ring-[var(--color-secondary)] focus:ring-offset-2',
     variants[variant],
     sizes[size],
     className

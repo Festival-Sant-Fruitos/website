@@ -10,28 +10,28 @@ export default function AvisLegalPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-[7rem] bg-gray-800">
-        <Container className="py-[6rem] md:py-[8rem]">
-          <h1 className="text-[4.8rem] md:text-[6.4rem] font-bold text-white leading-[1.05]">
+      <section className="pt-[70px] bg-gray-800">
+        <Container className="py-[60px] md:py-20">
+          <h1 className="text-[3rem] md:text-[4rem] font-bold text-white leading-[1.05]">
             Avís Legal
           </h1>
-          <p className="text-[1.4rem] text-white/40 mt-[1.2rem]">
+          <p className="text-sm text-white/40 mt-3">
             Última actualització: Gener 2025
           </p>
         </Container>
       </section>
 
       {/* Content */}
-      <section className="py-[6rem] md:py-[10rem]">
+      <section className="py-[60px] md:py-[100px]">
         <Container>
-          <div className="max-w-[72rem]">
+          <div className="max-w-[720px]">
             {/* Identity */}
-            <div className="mb-[6rem]">
-              <h2 className="text-[2.4rem] font-bold text-gray-800 mb-[2rem]">
+            <div className="mb-[60px]">
+              <h2 className="text-2xl font-bold text-gray-800 mb-5">
                 1. Identificació del titular
               </h2>
-              <div className="border border-gray-200 p-[2.4rem]">
-                <ul className="space-y-[1.2rem] text-[1.4rem] text-gray-600">
+              <div className="border border-gray-200 p-6">
+                <ul className="space-y-3 text-sm text-gray-600">
                   <li><strong className="text-gray-800">Titular:</strong> Associació MEMORIAL EDUARD CASAJUANA</li>
                   <li><strong className="text-gray-800">CIF:</strong> G-62580303</li>
                   <li><strong className="text-gray-800">Domicili:</strong> C/ Sallent, 1 2n 2ª – 08272 Sant Fruitós de Bages</li>
@@ -41,18 +41,18 @@ export default function AvisLegalPage() {
             </div>
 
             {/* Privacy */}
-            <div className="mb-[6rem]">
-              <h2 className="text-[2.4rem] font-bold text-gray-800 mb-[2rem]">
+            <div className="mb-[60px]">
+              <h2 className="text-2xl font-bold text-gray-800 mb-5">
                 2. Política de privacitat
               </h2>
-              <div className="space-y-[1.6rem] text-[1.6rem] text-gray-600 leading-[1.6]">
+              <div className="space-y-4 text-base text-gray-600 leading-[1.6]">
                 <p>
                   D&apos;acord amb el Reglament General de Protecció de Dades (RGPD) (UE) 2016/679
                   i la Llei Orgànica 3/2018 de Protecció de Dades Personals i Garantia dels
                   Drets Digitals (LOPDGDD), us informem del següent:
                 </p>
 
-                <h3 className="text-[1.8rem] font-bold text-gray-800 pt-[1.6rem]">
+                <h3 className="text-lg font-bold text-gray-800 pt-4">
                   2.1. Responsable del tractament
                 </h3>
                 <p>
@@ -60,7 +60,7 @@ export default function AvisLegalPage() {
                   és responsable del tractament de les dades personals que ens proporcioneu.
                 </p>
 
-                <h3 className="text-[1.8rem] font-bold text-gray-800 pt-[1.6rem]">
+                <h3 className="text-lg font-bold text-gray-800 pt-4">
                   2.2. Finalitat del tractament
                 </h3>
                 <p>
@@ -69,7 +69,7 @@ export default function AvisLegalPage() {
                   venda d&apos;entrades i activitats relacionades.
                 </p>
 
-                <h3 className="text-[1.8rem] font-bold text-gray-800 pt-[1.6rem]">
+                <h3 className="text-lg font-bold text-gray-800 pt-4">
                   2.3. Base jurídica
                 </h3>
                 <p>
@@ -78,7 +78,7 @@ export default function AvisLegalPage() {
                   a través dels canals disponibles.
                 </p>
 
-                <h3 className="text-[1.8rem] font-bold text-gray-800 pt-[1.6rem]">
+                <h3 className="text-lg font-bold text-gray-800 pt-4">
                   2.4. Drets dels interessats
                 </h3>
                 <p>
@@ -92,7 +92,7 @@ export default function AvisLegalPage() {
                   el tractament no s&apos;ajusta a la normativa vigent.
                 </p>
 
-                <h3 className="text-[1.8rem] font-bold text-gray-800 pt-[1.6rem]">
+                <h3 className="text-lg font-bold text-gray-800 pt-4">
                   2.5. Conservació de les dades
                 </h3>
                 <p>
@@ -102,14 +102,14 @@ export default function AvisLegalPage() {
               </div>
             </div>
 
-            <hr className="mb-[6rem]" />
+            <hr className="mb-[60px]" />
 
             {/* Cookies */}
-            <div className="mb-[6rem]">
-              <h2 className="text-[2.4rem] font-bold text-gray-800 mb-[2rem]">
+            <div className="mb-[60px]">
+              <h2 className="text-2xl font-bold text-gray-800 mb-5">
                 3. Política de cookies
               </h2>
-              <div className="space-y-[1.6rem] text-[1.6rem] text-gray-600 leading-[1.6]">
+              <div className="space-y-4 text-base text-gray-600 leading-[1.6]">
                 <p>
                   Aquest lloc web utilitza únicament cookies tècniques necessàries per al
                   correcte funcionament del lloc. No s&apos;utilitzen cookies de seguiment,
@@ -118,14 +118,14 @@ export default function AvisLegalPage() {
               </div>
             </div>
 
-            <hr className="mb-[6rem]" />
+            <hr className="mb-[60px]" />
 
             {/* Terms */}
-            <div className="mb-[6rem]">
-              <h2 className="text-[2.4rem] font-bold text-gray-800 mb-[2rem]">
+            <div className="mb-[60px]">
+              <h2 className="text-2xl font-bold text-gray-800 mb-5">
                 4. Condicions d&apos;ús
               </h2>
-              <div className="space-y-[1.6rem] text-[1.6rem] text-gray-600 leading-[1.6]">
+              <div className="space-y-4 text-base text-gray-600 leading-[1.6]">
                 <p>
                   L&apos;accés i ús d&apos;aquest lloc web implica l&apos;acceptació de les presents
                   condicions. L&apos;associació es reserva el dret de modificar-les en qualsevol moment.
@@ -139,14 +139,14 @@ export default function AvisLegalPage() {
               </div>
             </div>
 
-            <hr className="mb-[6rem]" />
+            <hr className="mb-[60px]" />
 
             {/* External Links */}
-            <div className="mb-[6rem]">
-              <h2 className="text-[2.4rem] font-bold text-gray-800 mb-[2rem]">
+            <div className="mb-[60px]">
+              <h2 className="text-2xl font-bold text-gray-800 mb-5">
                 5. Enllaços externs
               </h2>
-              <p className="text-[1.6rem] text-gray-600 leading-[1.6]">
+              <p className="text-base text-gray-600 leading-[1.6]">
                 Aquest lloc web pot contenir enllaços a pàgines externes (com CodeTickets
                 per a la venda d&apos;entrades). L&apos;associació no es fa responsable dels
                 continguts, polítiques de privacitat o pràctiques d&apos;aquests llocs web
@@ -154,14 +154,14 @@ export default function AvisLegalPage() {
               </p>
             </div>
 
-            <hr className="mb-[6rem]" />
+            <hr className="mb-[60px]" />
 
             {/* Applicable Law */}
             <div>
-              <h2 className="text-[2.4rem] font-bold text-gray-800 mb-[2rem]">
+              <h2 className="text-2xl font-bold text-gray-800 mb-5">
                 6. Legislació aplicable
               </h2>
-              <p className="text-[1.6rem] text-gray-600 leading-[1.6]">
+              <p className="text-base text-gray-600 leading-[1.6]">
                 Les presents condicions es regeixen per la legislació espanyola.
                 Per a qualsevol controvèrsia seran competents els jutjats i tribunals
                 de Manresa (Barcelona).
