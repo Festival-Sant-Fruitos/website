@@ -1,24 +1,47 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Container from '@/components/shared/Container';
-import ConcertCard from '@/components/programa/ConcertCard';
 import Button from '@/components/shared/Button';
-import concertData from '@/data/concerts.json';
-import { cn } from '@/lib/utils';
+import ProgramaTeaser from '@/components/programa/ProgramaTeaser';
+import { getCurrentEdition } from '@/lib/festival';
+
+const edition = getCurrentEdition();
 
 export const metadata: Metadata = {
-  title: 'Programa 2025',
-  description: `Programa del ${concertData.edition} Festival Internacional de Música Clàssica. ${concertData.concerts.length} concerts al juliol de 2025 a Mon Sant Benet.`,
+  title: `Programa ${edition.year}`,
+  description: `Programa del ${edition.edition} Festival Internacional de Música Clàssica. ${edition.concerts.length} concerts al juliol de ${edition.year} a Mon Sant Benet.`,
 };
 
 export default function ProgramaPage() {
+  if (!edition.revealed) {
+    return (
+      <>
+        {/* Hero Banner */}
+        <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
+          <Container>
+            <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+              {edition.edition} Edició &middot; Juliol {edition.year}
+            </p>
+            <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
+              Programa Oficial
+            </h1>
+            <p className="text-xl text-white/70 max-w-[700px] leading-[1.4] font-light">
+              La programació del {edition.edition} Festival s&apos;anunciarà properament.
+            </p>
+          </Container>
+        </section>
+        <ProgramaTeaser edition={edition} />
+      </>
+    );
+  }
+
   return (
     <>
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
-            {concertData.edition} Edició &middot; Juliol {concertData.year}
+            {edition.edition} Edició &middot; Juliol {edition.year}
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
             Programa Oficial
@@ -34,7 +57,7 @@ export default function ProgramaPage() {
       <section className="py-20 md:py-[120px]">
         <Container>
           <div className="space-y-[100px]">
-            {concertData.concerts.map((concert, i) => (
+            {edition.concerts.map((concert, i) => (
               <article key={concert.id} id={concert.id} className="scroll-mt-[100px]">
                 {/* Date Header */}
                 <div className="flex items-center gap-5 mb-10">
@@ -133,7 +156,7 @@ export default function ProgramaPage() {
                   </div>
                 </div>
 
-                {i < concertData.concerts.length - 1 && <hr className="mt-[100px] border-[var(--color-border)]" />}
+                {i < edition.concerts.length - 1 && <hr className="mt-[100px] border-[var(--color-border)]" />}
               </article>
             ))}
           </div>
@@ -155,7 +178,7 @@ export default function ProgramaPage() {
             <div>
               <p className="text-base font-bold text-[var(--color-primary)] mb-1">Garantia de concert</p>
               <p className="text-sm text-[var(--color-text-muted)]">
-                En cas de pluja, els concerts es traslladaran a <strong>{concertData.rainVenue}</strong>,
+                En cas de pluja, els concerts es traslladaran a <strong>{edition.rainVenue}</strong>,
                 garantint la mateixa qualitat acústica i aforament.
               </p>
             </div>

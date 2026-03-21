@@ -4,14 +4,17 @@ import Container from '@/components/shared/Container';
 import { BlurFade } from '@/components/ui/blur-fade';
 import { NumberTicker } from '@/components/ui/number-ticker';
 
-const stats = [
-  { value: 31, label: 'Edicions', suffix: '' },
-  { value: 120, label: 'Concerts', suffix: '+' },
-  { value: 30, label: 'Anys', suffix: '+' },
-  { value: 200, label: 'Artistes', suffix: '+' },
-];
+interface LegacyBannerProps {
+  editionNumber: number;
+}
 
-export default function LegacyBanner() {
+export default function LegacyBanner({ editionNumber }: LegacyBannerProps) {
+  const stats = [
+    { value: editionNumber, label: 'Edicions', suffix: '' },
+    { value: 120, label: 'Concerts', suffix: '+' },
+    { value: 30, label: 'Anys', suffix: '+' },
+    { value: 200, label: 'Artistes', suffix: '+' },
+  ];
   return (
     <section className="py-20 md:py-[140px] bg-[var(--color-primary)]">
       <Container>

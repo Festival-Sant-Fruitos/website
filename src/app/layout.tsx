@@ -3,6 +3,9 @@ import { DM_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { getCurrentEdition } from "@/lib/festival";
+
+const edition = getCurrentEdition();
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -22,11 +25,11 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL('https://festivalmusicaclassica.cat'),
   title: {
-    default: "XXXI Festival Internacional de Música Clàssica | Memorial Eduard Casajoana",
+    default: `${edition.edition} Festival Internacional de Música Clàssica | Memorial Eduard Casajoana`,
     template: "%s | Festival Internacional de Música Clàssica",
   },
   description:
-    "XXXI Festival Internacional de Música Clàssica Memorial Eduard Casajoana. Juliol 2025 a Mon Sant Benet, Sant Fruitós de Bages. Més de 30 anys d'excel·lència musical.",
+    `${edition.edition} Festival Internacional de Música Clàssica Memorial Eduard Casajoana. Juliol ${edition.year} a Mon Sant Benet, Sant Fruitós de Bages. Més de 30 anys d'excel·lència musical.`,
   keywords: [
     "festival música clàssica",
     "Mon Sant Benet",
@@ -41,9 +44,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ca_ES",
     siteName: "Festival Internacional de Música Clàssica",
-    title: "XXXI Festival Internacional de Música Clàssica",
+    title: `${edition.edition} Festival Internacional de Música Clàssica`,
     description:
-      "Juliol 2025 a Mon Sant Benet. Més de 30 anys de música clàssica d'excel·lència.",
+      `Juliol ${edition.year} a Mon Sant Benet. Més de 30 anys de música clàssica d'excel·lència.`,
     images: [
       {
         url: "/images/og-image.jpg",

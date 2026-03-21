@@ -6,10 +6,37 @@ import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
 import { BlurFade } from '@/components/ui/blur-fade';
-import concertData from '@/data/concerts.json';
+import type { Concert } from '@/types/festival';
 
-export default function ProgramPreview() {
-  const { concerts } = concertData;
+interface ProgramPreviewProps {
+  concerts: Concert[];
+  year: number;
+  revealed: boolean;
+}
+
+export default function ProgramPreview({ concerts, year, revealed }: ProgramPreviewProps) {
+
+  if (!revealed) {
+    return (
+      <section className="py-20 md:py-[140px]">
+        <Container>
+          <div className="max-w-[600px] mx-auto text-center">
+            <SectionHeading
+              title={`Programa ${year}`}
+              subtitle="Pròximament"
+              className="mb-6"
+            />
+            <p className="text-lg text-[var(--color-text-muted)] leading-relaxed mb-10">
+              La programació s&apos;anunciarà properament. Subscriu-te per ser dels primers en saber-ho.
+            </p>
+            <Button href="/#newsletter" variant="outline">
+              Subscriu-te per rebre les novetats
+            </Button>
+          </div>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <section className="py-20 md:py-[140px]">
@@ -17,7 +44,7 @@ export default function ProgramPreview() {
         <BlurFade inView inViewMargin="-80px">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
             <SectionHeading
-              title="Programa 2025"
+              title={`Programa ${year}`}
               subtitle="Quatre vetllades d'excepció als jardins de Mon Sant Benet"
               className="mb-0"
             />

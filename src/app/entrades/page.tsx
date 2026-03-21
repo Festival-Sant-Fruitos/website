@@ -2,11 +2,13 @@ import type { Metadata } from 'next';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
-import concertData from '@/data/concerts.json';
+import { getCurrentEdition } from '@/lib/festival';
+
+const edition = getCurrentEdition();
 
 export const metadata: Metadata = {
   title: 'Entrades',
-  description: 'Compra les entrades pel Festival Internacional de Música Clàssica 2025. Preus, punts de venda i informació.',
+  description: `Compra les entrades pel Festival Internacional de Música Clàssica ${edition.year}. Preus, punts de venda i informació.`,
 };
 
 export default function EntradesPage() {
@@ -16,7 +18,7 @@ export default function EntradesPage() {
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
-            Juliol {concertData.year}
+            Juliol {edition.year}
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
             Entrades
@@ -36,7 +38,7 @@ export default function EntradesPage() {
             {/* Left: General Info & Prices */}
             <div>
               <SectionHeading
-                title="Tarifes 2025"
+                title={`Tarifes ${edition.year}`}
                 subtitle="Preus populars per apropar la cultura a tothom"
                 className="mb-10"
               />

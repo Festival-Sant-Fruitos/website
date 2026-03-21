@@ -6,16 +6,18 @@ import LegacyBanner from '@/components/home/LegacyBanner';
 import SponsorsGrid from '@/components/home/SponsorsGrid';
 import Newsletter from '@/components/home/Newsletter';
 import JsonLd from '@/components/shared/JsonLd';
-import concertData from '@/data/concerts.json';
+import { getCurrentEdition } from '@/lib/festival';
+
+const edition = getCurrentEdition();
 
 const eventJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'MusicFestival',
-  name: `${concertData.edition} Festival Internacional de Música Clàssica`,
+  name: `${edition.edition} Festival Internacional de Música Clàssica`,
   alternateName: 'Memorial Eduard Casajoana',
   url: 'https://festivalmusicaclassica.cat',
-  startDate: concertData.concerts[0]?.date,
-  endDate: concertData.concerts[concertData.concerts.length - 1]?.date,
+  startDate: edition.concerts[0]?.date,
+  endDate: edition.concerts[edition.concerts.length - 1]?.date,
   location: {
     '@type': 'Place',
     name: 'Mon Sant Benet',
@@ -31,30 +33,34 @@ const eventJsonLd = {
     '@type': 'Organization',
     name: 'Associació Música Clàssica Memorial Eduard Casajoana',
   },
-  subEvent: concertData.concerts.map((c) => ({
-    '@type': 'MusicEvent',
-    name: c.title,
-    startDate: `${c.date}T${c.time}:00`,
-    description: c.subtitle,
-    location: { '@type': 'Place', name: 'Mon Sant Benet' },
-    performer: c.artists.map((a) => ({ '@type': 'Person', name: a.name })),
-    offers: {
-      '@type': 'Offer',
-      url: c.ticketUrl,
-      availability: 'https://schema.org/InStock',
-    },
-  })),
+  ...(edition.revealed
+    ? {
+        subEvent: edition.concerts.map((c) => ({
+          '@type': 'MusicEvent',
+          name: c.title,
+          startDate: `${c.date}T${c.time}:00`,
+          description: c.subtitle,
+          location: { '@type': 'Place', name: 'Mon Sant Benet' },
+          performer: c.artists.map((a) => ({ '@type': 'Person', name: a.name })),
+          offers: {
+            '@type': 'Offer',
+            url: c.ticketUrl,
+            availability: 'https://schema.org/InStock',
+          },
+        })),
+      }
+    : {}),
 };
 
 export default function Home() {
   return (
     <>
       <JsonLd data={eventJsonLd} />
-      <Hero />
-      <ProgramPreview />
+      <Hero edition={edition.edition} year={edition.year} />
+      <ProgramPreview concerts={edition.concerts} year={edition.year} revealed={edition.revealed} />
       <MemorialSection />
       <VenueSection />
-      <LegacyBanner />
+      <LegacyBanner editionNumber={edition.editionNumber} />
       <SponsorsGrid />
       <Newsletter />
     </>

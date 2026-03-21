@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import Container from '@/components/shared/Container';
+import { getCurrentEdition } from '@/lib/festival';
+
+const edition = getCurrentEdition();
 
 const footerColumns = [
   {
     title: 'Festival',
     links: [
-      { label: 'Programa 2025', href: '/programa' },
+      { label: `Programa ${edition.year}`, href: '/programa' },
       { label: 'Comprar Entrades', href: '/entrades' },
       { label: 'Ubicació i Accés', href: '/ubicacio' },
       { label: 'Història', href: '/historia' },
