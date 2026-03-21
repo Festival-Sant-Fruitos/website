@@ -12,11 +12,11 @@ test.describe('Homepage', () => {
 
   test('hero has CTA buttons', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Veure Programa' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Comprar Entrades' })).toBeVisible();
+    await expect(page.getByRole('main').getByRole('link', { name: 'Comprar Entrades' })).toBeVisible();
   });
 
   test('shows 4 concert cards in program section', async ({ page }) => {
-    const programSection = page.locator('section').filter({ hasText: 'Programa 2025' });
+    const programSection = page.locator('section').filter({ hasText: /Programa \d{4}/ });
     await expect(programSection).toBeVisible();
     const concertLinks = programSection.getByRole('link').filter({ hasText: /juliol/i });
     await expect(concertLinks).toHaveCount(4);
@@ -24,7 +24,7 @@ test.describe('Homepage', () => {
 
   test('displays memorial section', async ({ page }) => {
     await expect(page.getByText('In Memoriam')).toBeVisible();
-    await expect(page.getByText('Eduard Casajoana')).toBeVisible();
+    await expect(page.getByRole('main').getByText('Memorial Eduard Casajoana', { exact: true })).toBeVisible();
   });
 
   test('shows venue section with Mon Sant Benet', async ({ page }) => {
@@ -34,7 +34,7 @@ test.describe('Homepage', () => {
 
   test('shows stats in legacy banner', async ({ page }) => {
     await expect(page.getByText('Edicions')).toBeVisible();
-    await expect(page.getByText('Concerts')).toBeVisible();
+    await expect(page.getByText('Concerts', { exact: true })).toBeVisible();
     await expect(page.getByText('Artistes')).toBeVisible();
   });
 
@@ -55,7 +55,7 @@ test.describe('Homepage', () => {
     await page.setViewportSize({ width: 1280, height: 720 });
     await expect(page.getByRole('link', { name: 'Programa' }).first()).toBeVisible();
     await expect(page.getByRole('link', { name: 'Entrades' }).first()).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Ubicació' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Ubicació' }).first()).toBeVisible();
   });
 
   test('has JSON-LD structured data', async ({ page }) => {
