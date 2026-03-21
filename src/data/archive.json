@@ -1,6 +1,91 @@
 {
   "editions": [
     {
+      "year": 2025,
+      "edition": "XXXI",
+      "highlights": "Gala d'Òpera i Sarsuela, homenatge a Conxita Badia, Una Schubertíada i bandes sonores",
+      "concerts": 4,
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2025-07-03",
+          "title": "Gala d'Òpera i Sarsuela",
+          "artists": [
+            { "name": "Laura Brasó", "role": "soprano" },
+            { "name": "Carles Pachón", "role": "baríton" },
+            { "name": "Francisco Cruz", "role": "tenor (artista emergent)" },
+            { "name": "Anna Crexells", "role": "piano" }
+          ],
+          "repertoire": [
+            "R. Wagner - O du mein holder Abendstern (Tannhäuser)",
+            "P.I. Txaikovski - Kuda, kuda (Eugene Onegin)",
+            "G. Bizet - Me voici seule dans la nuit (Les pêcheurs de perles)",
+            "G. Verdi - E lui desso l'infante (Don Carlo)",
+            "W.A. Mozart - Crudel, perchè finora (Le nozze di Figaro)",
+            "G. Verdi - Ah! la paterna mano (Macbeth)",
+            "G. Puccini - Sì, mi chiamano Mimì (La Bohème)",
+            "G. Rossini - Largo al factotum (Il barbiere di Siviglia)",
+            "Selecció de Sarsuela (Moreno Torroba, Fernández Caballero, Soutullo y Vert, Arrieta)"
+          ]
+        },
+        {
+          "date": "2025-07-10",
+          "title": "Conxita Badia: esclat de l'artista, exili i retorn",
+          "artists": [
+            { "name": "Maria Hinojosa", "role": "soprano" },
+            { "name": "Francisco Poyato", "role": "piano" },
+            { "name": "Sílvia Bel", "role": "actriu" },
+            { "name": "Oriol Pérez i Treviño", "role": "textos" }
+          ],
+          "repertoire": [
+            "E. Granados - Canciones amatorias (selecció)",
+            "Robert Gerhard - Sis cançons populars franceses (selecció)",
+            "Manuel de Falla - Siete canciones populares españolas",
+            "Pau Casals - Cançons dedicades a Conxita Badia",
+            "Frederic Mompou - El combat del somni (selecció)",
+            "C. Guastavino - La rosa y el sauce",
+            "Eduard Toldrà - Cicle de cançons"
+          ]
+        },
+        {
+          "date": "2025-07-17",
+          "title": "Una Schubertíada",
+          "artists": [
+            { "name": "Cor de Cambra del Palau de la Música", "role": "cor" },
+            { "name": "Jordi Armengol", "role": "piano" },
+            { "name": "Bernat Cot", "role": "actor i dramatúrgia" },
+            { "name": "Anna Romaní", "role": "direcció escènica" },
+            { "name": "Xavier Puig", "role": "director" }
+          ],
+          "repertoire": [
+            "F. Schubert - Des Tages Weihe, Ständchen, Trinklied, Im Gegenwärtigen Vergangenes",
+            "L. van Beethoven - Das Göttliche",
+            "G. Rossini - Salve Regina",
+            "J. Haydn - Die Beredsamkeit",
+            "F. Schubert - Heidenröslein, Grab und Mond, Gott im Ungewitter"
+          ]
+        },
+        {
+          "date": "2025-07-24",
+          "title": "«And the winner is…» Bandes sonores",
+          "artists": [
+            { "name": "Orquestra «Solistes de Catalunya»", "role": "orquestra" },
+            { "name": "Carles Lama i Sofia Cabruja", "role": "piano a 4 mans" },
+            { "name": "Marc Moncusí", "role": "direcció" }
+          ],
+          "repertoire": [
+            "J. Williams - E.T., La llista de Schindler, Pirates del Carib",
+            "H. Zimmer - El Rei Lleó, Gladiator, Pearl Harbour",
+            "E. Morricone - Cinema Paradiso, La Missió",
+            "R. Djawadi - Joc de Trons",
+            "N. Piovani - La vida és bella",
+            "J. Barry - Memòries d'Àfrica",
+            "ABBA - Mamma Mia (medley)"
+          ]
+        }
+      ]
+    },
+    {
       "year": 2024,
       "edition": "XXX",
       "highlights": "Edició especial del 30è aniversari",
@@ -10,163 +95,935 @@
     {
       "year": 2023,
       "edition": "XXIX",
-      "highlights": "Retorn a la normalitat post-pandèmia amb programació completa",
+      "highlights": "A Piacere, Quartets Vocals amb Piano, Beethoven i homenatge a Callas, Victòria dels Àngels i Margarida Elias",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2023-07-06",
+          "title": "A Piacere",
+          "artists": []
+        },
+        {
+          "date": "2023-07-13",
+          "title": "Quartets Vocals amb Piano",
+          "artists": []
+        },
+        {
+          "date": "2023-07-20",
+          "title": "El Quart Concert per a Piano de Beethoven",
+          "artists": []
+        },
+        {
+          "date": "2023-07-27",
+          "title": "Homenatges: Centenaris Maria Callas, Victòria dels Àngels i Margarida Elias",
+          "artists": []
+        }
+      ]
     },
     {
       "year": 2022,
       "edition": "XXVIII",
-      "highlights": "Recuperació del format habitual amb aforament complet",
+      "highlights": "Divina Òpera, Temperaments, Venècia i L'Essència del Bel Canto",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2022-07-07",
+          "title": "Divina Òpera",
+          "artists": []
+        },
+        {
+          "date": "2022-07-14",
+          "title": "Temperaments",
+          "artists": []
+        },
+        {
+          "date": "2022-07-21",
+          "title": "Venècia",
+          "artists": []
+        },
+        {
+          "date": "2022-07-28",
+          "title": "L'Essència del Bel Canto",
+          "artists": []
+        }
+      ]
     },
     {
       "year": 2021,
       "edition": "XXVII",
-      "highlights": "Edició adaptada amb mesures sanitàries",
+      "highlights": "Zefiro Torna, Artistes Emergents i La Veu del Poble",
       "concerts": 3,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2021-07-08",
+          "title": "Zefiro Torna",
+          "artists": []
+        },
+        {
+          "date": "2021-07-15",
+          "title": "Artistes Emergents",
+          "artists": []
+        },
+        {
+          "date": "2021-07-22",
+          "title": "La Veu del Poble",
+          "artists": []
+        }
+      ]
     },
     {
       "year": 2020,
       "edition": "XXVI",
-      "highlights": "Edició reduïda per la pandèmia COVID-19",
-      "concerts": 2,
-      "pdf": null
+      "highlights": "Eudald Buch, Josep Bros, Mireia Pintó amb Orquestra de Cambra Terrassa 48 i Cor Jove Nacional de Catalunya",
+      "concerts": 4,
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2020-07-09",
+          "title": "Eudald Buch, violí / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Eudald Buch", "role": "violí" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2020-07-16",
+          "title": "Josep Bros, tenor / Maria Miró, soprano / Marco Evangelisti, piano",
+          "artists": [
+            { "name": "Josep Bros", "role": "tenor" },
+            { "name": "Maria Miró", "role": "soprano" },
+            { "name": "Marco Evangelisti", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2020-07-23",
+          "title": "Mireia Pintó / Sílvia Bel / Orquestra de Cambra Terrassa 48",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Sílvia Bel", "role": "actriu" },
+            { "name": "Orquestra de Cambra Terrassa 48", "role": "orquestra" }
+          ]
+        },
+        {
+          "date": "2020-07-30",
+          "title": "Cor Jove Nacional de Catalunya",
+          "artists": [
+            { "name": "Cor Jove Nacional de Catalunya", "role": "cor" }
+          ]
+        }
+      ]
     },
     {
       "year": 2019,
       "edition": "XXV",
-      "highlights": "Edició especial del 25è aniversari amb concerts extraordinaris",
-      "concerts": 5,
-      "pdf": null
+      "highlights": "25è aniversari: Beethoven amb Orquestra Camera Musicae, Gala de Tenors, Amb Veu de Dona i Songs of Hope",
+      "concerts": 4,
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2019-07-04",
+          "title": "Beethoven: Tradició i modernitat",
+          "artists": [
+            { "name": "Orquestra Simfònica Camera Musicae", "role": "orquestra" }
+          ]
+        },
+        {
+          "date": "2019-07-11",
+          "title": "Gala de Tenors",
+          "artists": []
+        },
+        {
+          "date": "2019-07-18",
+          "title": "Amb Veu de Dona",
+          "artists": []
+        },
+        {
+          "date": "2019-07-25",
+          "title": "Songs of Hope",
+          "artists": []
+        }
+      ]
     },
     {
       "year": 2018,
       "edition": "XXIV",
-      "highlights": "Consolidació del festival com a referent comarcal",
+      "highlights": "Germans Claret, Carmina Burana, Vladislav Bronevetzky i Sooyeon Kim amb Mireia Pintó",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2018-07-05",
+          "title": "Germans Claret",
+          "artists": [
+            { "name": "Germans Claret", "role": "" }
+          ]
+        },
+        {
+          "date": "2018-07-12",
+          "title": "Carmina Burana",
+          "artists": []
+        },
+        {
+          "date": "2018-07-19",
+          "title": "Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2018-07-26",
+          "title": "Sooyeon Kim / Mireia Pintó / Viviana Salisi",
+          "artists": [
+            { "name": "Sooyeon Kim", "role": "" },
+            { "name": "Mireia Pintó", "role": "" },
+            { "name": "Viviana Salisi", "role": "" }
+          ]
+        }
+      ]
     },
     {
       "year": 2017,
       "edition": "XXIII",
-      "highlights": "Incorporació de nous formats de concert",
+      "highlights": "Brad Repp, Ainhoa Arteta, Maria Solozobova i Mireia Pintó amb Arcattia Ensemble",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2017-07-06",
+          "title": "Brad Repp, violí / Aldo Gentileschi, piano",
+          "artists": [
+            { "name": "Brad Repp", "role": "violí" },
+            { "name": "Aldo Gentileschi", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2017-07-13",
+          "title": "Ainhoa Arteta, soprano / Marco Evangelisti, piano",
+          "artists": [
+            { "name": "Ainhoa Arteta", "role": "soprano" },
+            { "name": "Marco Evangelisti", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2017-07-20",
+          "title": "Maria Solozobova, violí / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Maria Solozobova", "role": "violí" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2017-07-27",
+          "title": "Mireia Pintó, mezzosoprano / Arcattia Ensemble",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Arcattia Ensemble", "role": "ensemble" }
+          ]
+        }
+      ]
     },
     {
       "year": 2016,
       "edition": "XXII",
-      "highlights": "Ampliació de la programació amb música de cambra",
+      "highlights": "Núria Rial amb Artemandoline, Mireia Pintó, Quartet Mèlt i Vladislav Bronevetzky amb Terrassa 48",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2016-07-07",
+          "title": "Núria Rial, soprano / Artemandoline",
+          "artists": [
+            { "name": "Núria Rial", "role": "soprano" },
+            { "name": "Artemandoline", "role": "ensemble" }
+          ]
+        },
+        {
+          "date": "2016-07-14",
+          "title": "Mireia Pintó, mezzosoprano / Mac McClure, piano",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Mac McClure", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2016-07-21",
+          "title": "Quartet Mèlt",
+          "artists": [
+            { "name": "Quartet Mèlt", "role": "quartet de corda" }
+          ]
+        },
+        {
+          "date": "2016-07-28",
+          "title": "Vladislav Bronevetzky, piano / Orquestra de Cambra Terrassa 48",
+          "artists": [
+            { "name": "Vladislav Bronevetzky", "role": "piano" },
+            { "name": "Orquestra de Cambra Terrassa 48", "role": "orquestra" }
+          ]
+        }
+      ]
     },
     {
       "year": 2015,
       "edition": "XXI",
-      "highlights": "Celebració dels 20 anys del festival",
+      "highlights": "Josep Bros i Mireia Pintó, Anna Alàs, Cor Infantil Amics de la Unió i Maria Solozobova",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2015-07-09",
+          "title": "Josep Bros, tenor / Mireia Pintó, mezzosoprano / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Josep Bros", "role": "tenor" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2015-07-16",
+          "title": "Anna Alàs, mezzosoprano / Josep Ramon Olivé, baríton / Ben-San Lau, piano",
+          "artists": [
+            { "name": "Anna Alàs", "role": "mezzosoprano" },
+            { "name": "Josep Ramon Olivé", "role": "baríton" },
+            { "name": "Ben-San Lau", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2015-07-23",
+          "title": "Cor Infantil Amics de la Unió / Josep Vila Jover, director",
+          "artists": [
+            { "name": "Cor Infantil Amics de la Unió", "role": "cor infantil" },
+            { "name": "Josep Vila Jover", "role": "director" }
+          ]
+        },
+        {
+          "date": "2015-07-30",
+          "title": "Maria Solozobova, violí / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Maria Solozobova", "role": "violí" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2014,
       "edition": "XX",
-      "highlights": "Edició especial del 20è aniversari",
-      "concerts": 5,
-      "pdf": null
+      "highlights": "20è aniversari: Àngel Òdena, Ensemble O Vos Omnes, Carles Cases i Mireia Pintó",
+      "concerts": 4,
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2014-07-10",
+          "title": "Àngel Òdena, baríton / Marco Evangelisti, piano",
+          "artists": [
+            { "name": "Àngel Òdena", "role": "baríton" },
+            { "name": "Marco Evangelisti", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2014-07-17",
+          "title": "Ensemble \"O Vos Omnes\" / Xavier Pastrana, direcció",
+          "artists": [
+            { "name": "Ensemble \"O Vos Omnes\"", "role": "ensemble vocal" },
+            { "name": "Xavier Pastrana", "role": "direcció" }
+          ]
+        },
+        {
+          "date": "2014-07-24",
+          "title": "Carles Cases Ensemble",
+          "artists": [
+            { "name": "Carles Cases Ensemble", "role": "ensemble" }
+          ]
+        },
+        {
+          "date": "2014-07-31",
+          "title": "Mireia Pintó, mezzosoprano / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2013,
       "edition": "XIX",
-      "highlights": "Programació internacional destacada",
+      "highlights": "Pierre Réach, Manel Camp, La poesia de l'oboè i Montserrat Carulla amb Mireia Pintó",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2013-07-04",
+          "title": "Pierre Réach / Karst de Jong, piano",
+          "artists": [
+            { "name": "Pierre Réach", "role": "piano" },
+            { "name": "Karst de Jong", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2013-07-11",
+          "title": "Manel Camp, piano / Llibert Fortuny, saxos i computers / Mireia Farrés, trompeta",
+          "artists": [
+            { "name": "Manel Camp", "role": "piano" },
+            { "name": "Llibert Fortuny", "role": "saxos i computers" },
+            { "name": "Mireia Farrés", "role": "trompeta" }
+          ]
+        },
+        {
+          "date": "2013-07-18",
+          "title": "La poesia de l'oboè",
+          "artists": [],
+          "repertoire": ["Mozart", "Bach", "Schumann"]
+        },
+        {
+          "date": "2013-07-25",
+          "title": "Montserrat Carulla, actriu / Mireia Pintó, mezzosoprano / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Montserrat Carulla", "role": "actriu" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2012,
       "edition": "XVIII",
-      "highlights": "Concerts al claustre de Mon Sant Benet",
+      "highlights": "María Bayo, Cor de Cambra Auditori Enric Granados, Mireia Pintó i piano a 4 mans",
       "concerts": 4,
-      "pdf": "/programs/programa-2012.pdf"
+      "pdf": "/programs/programa-2012.pdf",
+      "concertDetails": [
+        {
+          "date": "2012-07-05",
+          "title": "Cor de Cambra Auditori Enric Granados / Xavier Puig, director",
+          "artists": [
+            { "name": "Cor de Cambra Auditori Enric Granados", "role": "cor" },
+            { "name": "Xavier Puig", "role": "director" }
+          ],
+          "repertoire": ["Spirituals (M. Tippet, M. Hogan)", "Missa Gospel (Robert Ray)"]
+        },
+        {
+          "date": "2012-07-12",
+          "title": "Mark Solé-Leris / Frédéric Chauvel, piano a 4 mans",
+          "artists": [
+            { "name": "Mark Solé-Leris", "role": "piano" },
+            { "name": "Frédéric Chauvel", "role": "piano" }
+          ],
+          "repertoire": [
+            "Rossini - Obertura de Semiramide",
+            "Grieg - 4 Danses Noruegues",
+            "Milhaud - Le Bœuf sur le Toit",
+            "Gershwin - Rhapsody in Blue"
+          ]
+        },
+        {
+          "date": "2012-07-19",
+          "title": "Mireia Pintó, mezzosoprano / Claudi Arimany, flauta / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Claudi Arimany", "role": "flauta" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ],
+          "repertoire": [
+            "Händel - Cantata 'Nell dolce dell'oblio'",
+            "Telemann - Cantata 'Ihr Völker, hört'",
+            "Hahn - Quand je fus pris au pavillon / À Chloris",
+            "Viardot - Havanaise",
+            "Saint-Saëns - Une flûte invisible",
+            "Schubert - 3 Moments musicales Op. 94",
+            "Schumann - Adagio-Allegro Op. 70",
+            "Brahms - Cançons gitanes Op. 103"
+          ]
+        },
+        {
+          "date": "2012-07-26",
+          "title": "María Bayo, soprano / Rubén Fernández-Aguirre, piano",
+          "artists": [
+            { "name": "María Bayo", "role": "soprano" },
+            { "name": "Rubén Fernández-Aguirre", "role": "piano" }
+          ],
+          "repertoire": [
+            "Beethoven - Cançons italianes",
+            "Schubert - Cançons italianes",
+            "Guastavino - Obres vocals",
+            "Montsalvatge - Cançons negres",
+            "Lecuona - Cicle de cançons"
+          ]
+        }
+      ]
     },
     {
       "year": 2011,
       "edition": "XVII",
-      "highlights": "Trasllat definitiu a Mon Sant Benet",
+      "highlights": "Josep Bros, Mozart en Jazz amb Manel Camp, Coral Cantiga i Orquestra de Cambra Terrassa 48",
       "concerts": 4,
-      "pdf": "/programs/programa-2011.pdf"
+      "pdf": "/programs/programa-2011.pdf",
+      "concertDetails": [
+        {
+          "date": "2011-07-07",
+          "title": "Josep Bros, tenor / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Josep Bros", "role": "tenor" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ],
+          "repertoire": ["Bellini", "Fauré", "Strauss", "Rachmaninoff"]
+        },
+        {
+          "date": "2011-07-14",
+          "title": "Mozart en Jazz",
+          "artists": [
+            { "name": "Manel Camp", "role": "piano" },
+            { "name": "Llibert Fortuny", "role": "saxòfon" }
+          ]
+        },
+        {
+          "date": "2011-07-21",
+          "title": "Serenata d'estiu",
+          "artists": [
+            { "name": "Coral Cantiga", "role": "cor" },
+            { "name": "Jonathan Rathbone", "role": "director" }
+          ]
+        },
+        {
+          "date": "2011-07-28",
+          "title": "Orquestra de Cambra Terrassa 48 / Quim Termens / Mireia Pintó",
+          "artists": [
+            { "name": "Orquestra de Cambra Terrassa 48", "role": "orquestra" },
+            { "name": "Quim Termens", "role": "" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" }
+          ],
+          "repertoire": ["Händel", "Grieg"]
+        }
+      ]
     },
     {
       "year": 2010,
       "edition": "XVI",
-      "highlights": "Primers concerts a Mon Sant Benet",
+      "highlights": "Helena Satué, Trio Mediterrani, Mercedes Lario i Mireia Pintó amb Manel Camp",
       "concerts": 4,
-      "pdf": "/programs/programa-2010.pdf"
+      "pdf": "/programs/programa-2010.pdf",
+      "concertDetails": [
+        {
+          "date": "2010-07-08",
+          "title": "Helena Satué, violí / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Helena Satué", "role": "violí" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ],
+          "repertoire": ["Chopin", "Brahms", "Grieg"]
+        },
+        {
+          "date": "2010-07-15",
+          "title": "Trio Mediterrani",
+          "artists": [
+            { "name": "Trio Mediterrani", "role": "trio" }
+          ],
+          "repertoire": ["Brahms", "Schubert"]
+        },
+        {
+          "date": "2010-07-22",
+          "title": "Mercedes Lario / Marta Knorr / Felipe Nieto / José Bernardo Àlvarez / Aurelio Viribay",
+          "artists": [
+            { "name": "Mercedes Lario", "role": "" },
+            { "name": "Marta Knorr", "role": "" },
+            { "name": "Felipe Nieto", "role": "" },
+            { "name": "José Bernardo Àlvarez", "role": "" },
+            { "name": "Aurelio Viribay", "role": "" }
+          ],
+          "repertoire": ["Haydn", "Rossini", "Guastavino", "Copland"]
+        },
+        {
+          "date": "2010-07-29",
+          "title": "Mireia Pintó, mezzosoprano / Manel Camp, piano",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Manel Camp", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2009,
       "edition": "XV",
-      "highlights": "Quinzena edició del festival",
+      "highlights": "Cor Vivaldi, Federico Paci amb Pierre Réach, Lluís Claret i Marta Almajano amb Mireia Pintó",
       "concerts": 4,
-      "pdf": "/programs/programa-2009.pdf"
+      "pdf": "/programs/programa-2009.pdf",
+      "concertDetails": [
+        {
+          "date": "2009-07-02",
+          "title": "Cor Vivaldi / Òscar Boada, piano i direcció",
+          "artists": [
+            { "name": "Cor Vivaldi", "role": "cor" },
+            { "name": "Òscar Boada", "role": "piano i direcció" }
+          ]
+        },
+        {
+          "date": "2009-07-09",
+          "title": "Federico Paci, clarinet / Pierre Réach, piano",
+          "artists": [
+            { "name": "Federico Paci", "role": "clarinet" },
+            { "name": "Pierre Réach", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2009-07-16",
+          "title": "Lluís Claret — Violoncel·listes de Barcelona",
+          "artists": [
+            { "name": "Lluís Claret", "role": "violoncel" },
+            { "name": "Violoncel·listes de Barcelona", "role": "ensemble" }
+          ]
+        },
+        {
+          "date": "2009-07-23",
+          "title": "Marta Almajano, soprano / Mireia Pintó, mezzosoprano / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Marta Almajano", "role": "soprano" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2008,
       "edition": "XIV",
-      "highlights": "Programació amb artistes internacionals",
+      "highlights": "Núria Rial, Orquestra de Cambra Terrassa 48, The Scholars Baroque Ensemble i Joan Pons",
       "concerts": 4,
-      "pdf": "/programs/programa-2008.pdf"
+      "pdf": "/programs/programa-2008.pdf",
+      "concertDetails": [
+        {
+          "date": "2008-07-10",
+          "title": "Núria Rial, soprano / Mireia Pintó / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "Núria Rial", "role": "soprano" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2008-07-17",
+          "title": "Orquestra de Cambra Terrassa 48",
+          "artists": [
+            { "name": "Orquestra de Cambra Terrassa 48", "role": "orquestra" }
+          ]
+        },
+        {
+          "date": "2008-07-24",
+          "title": "The Scholars Baroque Ensemble",
+          "artists": [
+            { "name": "The Scholars Baroque Ensemble", "role": "ensemble" }
+          ]
+        },
+        {
+          "date": "2008-07-31",
+          "title": "Joan Pons, baríton / Joana Pons, piano",
+          "artists": [
+            { "name": "Joan Pons", "role": "baríton" },
+            { "name": "Joana Pons", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2007,
       "edition": "XIII",
-      "highlights": "Creixement del festival",
+      "highlights": "Claudi Arimany, Pierre Réach, Mireia Pintó amb Jordi Boixaderas i Isabel Rey",
       "concerts": 4,
-      "pdf": "/programs/programa-2007.pdf"
+      "pdf": "/programs/programa-2007.pdf",
+      "concertDetails": [
+        {
+          "date": "2007-07-05",
+          "title": "Claudi Arimany, flauta / Josep F. Palou, flauta / Alan Branch, piano",
+          "artists": [
+            { "name": "Claudi Arimany", "role": "flauta" },
+            { "name": "Josep F. Palou", "role": "flauta" },
+            { "name": "Alan Branch", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2007-07-12",
+          "title": "Pierre Réach, piano / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Pierre Réach", "role": "piano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2007-07-19",
+          "title": "Mireia Pintó / Jordi Boixaderas, actor / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Jordi Boixaderas", "role": "actor" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2007-07-26",
+          "title": "Isabel Rey, soprano / Alejandro Zabala, piano",
+          "artists": [
+            { "name": "Isabel Rey", "role": "soprano" },
+            { "name": "Alejandro Zabala", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2006,
       "edition": "XII",
-      "highlights": "Consolidació del format de 4 concerts",
+      "highlights": "Teresa Berganza, Virtuosos de la Filharmònica de Berlín, Laia Masramon i Orquestra Simfònica del Vallès",
       "concerts": 4,
-      "pdf": "/programs/programa-2006.pdf"
+      "pdf": "/programs/programa-2006.pdf",
+      "concertDetails": [
+        {
+          "date": "2006-07-06",
+          "title": "Teresa Berganza, mezzosoprano / Cecilia Lavilla, soprano / Juan Antonio Álvarez-Parejo, piano",
+          "artists": [
+            { "name": "Teresa Berganza", "role": "mezzosoprano" },
+            { "name": "Cecilia Lavilla", "role": "soprano" },
+            { "name": "Juan Antonio Álvarez-Parejo", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2006-07-13",
+          "title": "Virtuosos de la Filharmònica de Berlín / Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Virtuosos de la Filharmònica de Berlín", "role": "ensemble" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2006-07-20",
+          "title": "Laia Masramon, piano",
+          "artists": [
+            { "name": "Laia Masramon", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2006-07-27",
+          "title": "Orquestra Simfònica del Vallès / Mireia Pintó / Virginia Martínez, directora",
+          "artists": [
+            { "name": "Orquestra Simfònica del Vallès", "role": "orquestra" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Virginia Martínez", "role": "directora" }
+          ]
+        }
+      ]
     },
     {
       "year": 2005,
       "edition": "XI",
-      "highlights": "Primera dècada del festival",
+      "highlights": "Jaume Aragall, Mireia Farrés, Mireia Pintó i I Musici di Vivaldi",
       "concerts": 4,
-      "pdf": "/programs/programa-2005.pdf"
+      "pdf": "/programs/programa-2005.pdf",
+      "concertDetails": [
+        {
+          "date": "2005-07-07",
+          "title": "Jaume Aragall, tenor / Marco Evangelisti, piano",
+          "artists": [
+            { "name": "Jaume Aragall", "role": "tenor" },
+            { "name": "Marco Evangelisti", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2005-07-14",
+          "title": "Mireia Farrés, trompeta / Mercè Hervada, piano",
+          "artists": [
+            { "name": "Mireia Farrés", "role": "trompeta" },
+            { "name": "Mercè Hervada", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2005-07-21",
+          "title": "Mireia Pintó / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2005-07-28",
+          "title": "I Musici di Vivaldi / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "I Musici di Vivaldi", "role": "ensemble" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2004,
       "edition": "X",
-      "highlights": "Edició del 10è aniversari",
+      "highlights": "10è aniversari: Josep Bros, Claudi Arimany amb Trio Beethoven i Virtuosi di Praga",
       "concerts": 4,
-      "pdf": "/programs/programa-2004.pdf"
+      "pdf": "/programs/programa-2004.pdf",
+      "concertDetails": [
+        {
+          "date": "2004-07-08",
+          "title": "Josep Bros, tenor / Marco Evangelisti, piano",
+          "artists": [
+            { "name": "Josep Bros", "role": "tenor" },
+            { "name": "Marco Evangelisti", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2004-07-15",
+          "title": "Claudi Arimany, flauta / Trio Beethoven",
+          "artists": [
+            { "name": "Claudi Arimany", "role": "flauta" },
+            { "name": "Trio Beethoven", "role": "trio" }
+          ]
+        },
+        {
+          "date": "2004-07-22",
+          "title": "Vladislav Bronevetzky / Alla Voronkova / Gueràssim Voronkov / Cristoforo Pestalozzi",
+          "artists": [
+            { "name": "Vladislav Bronevetzky", "role": "piano" },
+            { "name": "Alla Voronkova", "role": "" },
+            { "name": "Gueràssim Voronkov", "role": "" },
+            { "name": "Cristoforo Pestalozzi", "role": "" }
+          ]
+        },
+        {
+          "date": "2004-07-29",
+          "title": "Mireia Pintó / Claudi Arimany / Virtuosi di Praga",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Claudi Arimany", "role": "flauta" },
+            { "name": "Virtuosi di Praga", "role": "orquestra" }
+          ]
+        }
+      ]
     },
     {
       "year": 2003,
       "edition": "IX",
-      "highlights": "Nous espais per als concerts",
-      "concerts": 3,
-      "pdf": "/programs/programa-2003.pdf"
+      "highlights": "Annick Massis, The Scholars, Jordi Savall amb Montserrat Figueras i família Savall",
+      "concerts": 4,
+      "pdf": "/programs/programa-2003.pdf",
+      "concertDetails": [
+        {
+          "date": "2003-07-10",
+          "title": "Annick Massis, soprano / Mireia Pintó / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "Annick Massis", "role": "soprano" },
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2003-07-17",
+          "title": "The Scholars",
+          "artists": [
+            { "name": "The Scholars", "role": "ensemble vocal" }
+          ]
+        },
+        {
+          "date": "2003-07-24",
+          "title": "Alla Voronkova / Gueràssim Voronkov / Ana Glisic / Mark Friedhoff / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "Alla Voronkova", "role": "" },
+            { "name": "Gueràssim Voronkov", "role": "" },
+            { "name": "Ana Glisic", "role": "" },
+            { "name": "Mark Friedhoff", "role": "" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2003-07-31",
+          "title": "Jordi Savall / Montserrat Figueras / Arianna Savall / Ferran Savall",
+          "artists": [
+            { "name": "Jordi Savall", "role": "" },
+            { "name": "Montserrat Figueras", "role": "" },
+            { "name": "Arianna Savall", "role": "" },
+            { "name": "Ferran Savall", "role": "" }
+          ]
+        }
+      ]
     },
     {
       "year": 2002,
       "edition": "VIII",
-      "highlights": "Ampliació de la programació",
-      "concerts": 3,
-      "pdf": null
+      "highlights": "Mireia Pintó amb Manel Camp, Cor de Cambra del Palau de la Música i Orquestra Nacional de Cambra d'Andorra",
+      "concerts": 4,
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2002-07-04",
+          "title": "Mireia Pintó / Manel Camp, piano",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Manel Camp", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2002-07-11",
+          "title": "Cor de Cambra del Palau de la Música Catalana / Diana Baker, piano / Jordi Casas, director",
+          "artists": [
+            { "name": "Cor de Cambra del Palau de la Música Catalana", "role": "cor" },
+            { "name": "Diana Baker", "role": "piano" },
+            { "name": "Jordi Casas", "role": "director" }
+          ]
+        },
+        {
+          "date": "2002-07-18",
+          "title": "Vladislav Bronevetzky, piano",
+          "artists": [
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2002-07-25",
+          "title": "Orquestra Nacional de Cambra d'Andorra / Gerard Claret, concertino-director",
+          "artists": [
+            { "name": "Orquestra Nacional de Cambra d'Andorra", "role": "orquestra" },
+            { "name": "Gerard Claret", "role": "concertino-director" }
+          ]
+        }
+      ]
     },
     {
       "year": 2001,
       "edition": "VII",
-      "highlights": "Setena edició amb creixement d'assistència",
-      "concerts": 3,
-      "pdf": null
+      "highlights": "Camerata Mediterrània, The Scholars, Pilar López Carrasco i Mireia Pintó",
+      "concerts": 4,
+      "pdf": null,
+      "concertDetails": [
+        {
+          "date": "2001-07-05",
+          "title": "Camerata Mediterrània / G. Voronkov, director / A. Voronkova, violí / V. Bronevetzky, piano",
+          "artists": [
+            { "name": "Camerata Mediterrània", "role": "orquestra" },
+            { "name": "Gueràssim Voronkov", "role": "director" },
+            { "name": "Alla Voronkova", "role": "violí" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2001-07-12",
+          "title": "The Scholars",
+          "artists": [
+            { "name": "The Scholars", "role": "ensemble vocal" }
+          ]
+        },
+        {
+          "date": "2001-07-19",
+          "title": "Pilar López Carrasco, piano",
+          "artists": [
+            { "name": "Pilar López Carrasco", "role": "piano" }
+          ]
+        },
+        {
+          "date": "2001-07-26",
+          "title": "Mireia Pintó / Vladislav Bronevetzky",
+          "artists": [
+            { "name": "Mireia Pintó", "role": "mezzosoprano" },
+            { "name": "Vladislav Bronevetzky", "role": "piano" }
+          ]
+        }
+      ]
     },
     {
       "year": 2000,
