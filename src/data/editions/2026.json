@@ -1,0 +1,107 @@
+{
+  "edition": "XXXII",
+  "editionNumber": 32,
+  "year": 2026,
+  "revealed": false,
+  "tagline": "Festival Internacional de Música Clàssica",
+  "memorial": "Memorial Eduard Casajoana",
+  "venue": "Mon Sant Benet, Sant Fruitós de Bages",
+  "rainVenue": "La Fàbrica, Mon Sant Benet",
+  "concerts": [
+    {
+      "id": "barcelona-buenos-aires",
+      "date": "2026-07-09",
+      "dayOfWeek": "Dijous",
+      "day": 9,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "De Barcelona a Buenos Aires: de la cançó al tango",
+      "subtitle": "[CA: pendent de subtítol]",
+      "artists": [
+        { "name": "Mireia Pintó", "role": "mezzosoprano", "bio": "" },
+        { "name": "Georgi Mundrov", "role": "piano", "bio": "" }
+      ],
+      "repertoire": [
+        "Montsalvatge",
+        "Ovalle",
+        "Guastavino",
+        "Ginastera",
+        "Piazzolla"
+      ],
+      "description": "[CA: pendent de descripció]",
+      "ticketUrl": "",
+      "image": "/images/concerts/placeholder.jpg",
+      "price": "Consultar",
+      "status": "partial"
+    },
+    {
+      "id": "pianant",
+      "date": "2026-07-16",
+      "dayOfWeek": "Dijous",
+      "day": 16,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "Pianant",
+      "subtitle": "[CA: pendent de subtítol]",
+      "artists": [
+        { "name": "Manel Camp", "role": "piano", "bio": "" },
+        { "name": "Carles Cases", "role": "piano", "bio": "" }
+      ],
+      "repertoire": [
+        "Obres de Carles Cases i Manel Camp"
+      ],
+      "description": "[CA: pendent de descripció]",
+      "ticketUrl": "",
+      "image": "/images/concerts/placeholder.jpg",
+      "price": "Consultar",
+      "status": "partial"
+    },
+    {
+      "id": "haydn-mozart",
+      "date": "2026-07-23",
+      "dayOfWeek": "Dijous",
+      "day": 23,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "Haydn i els Mozart",
+      "subtitle": "[CA: pendent de subtítol]",
+      "artists": [
+        { "name": "Sara Òdena", "role": "violoncel (Artista Emergent)", "bio": "" },
+        { "name": "Vladislav Bronevetzky", "role": "piano", "bio": "" },
+        { "name": "Orquestra de Cambra Terrassa 48", "role": "orquestra", "bio": "" },
+        { "name": "Quim Térmens", "role": "concertino", "bio": "" }
+      ],
+      "repertoire": [
+        "Haydn",
+        "Kraus",
+        "Mozart"
+      ],
+      "description": "[CA: pendent de descripció]",
+      "ticketUrl": "",
+      "image": "/images/concerts/placeholder.jpg",
+      "price": "Consultar",
+      "status": "partial"
+    },
+    {
+      "id": "bandes-sonores-2026",
+      "date": "2026-07-30",
+      "dayOfWeek": "Dijous",
+      "day": 30,
+      "month": "juliol",
+      "time": "22:15",
+      "title": "«And the winner is…» Bandes sonores de cinema",
+      "subtitle": "Nova edició 2026",
+      "artists": [
+        { "name": "Orquestra «Solistes de Catalunya»", "role": "orquestra", "bio": "" },
+        { "name": "Carles Lama i Sofia Cabruja", "role": "piano a 4 mans", "bio": "" },
+        { "name": "Natanael Espinoza", "role": "direcció", "bio": "" }
+      ],
+      "repertoire": [],
+      "description": "[CA: pendent de descripció]",
+      "ticketUrl": "",
+      "image": "/images/concerts/placeholder.jpg",
+      "price": "Consultar",
+      "status": "partial"
+    }
+  ]
+}
