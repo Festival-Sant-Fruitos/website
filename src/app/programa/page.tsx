@@ -178,8 +178,8 @@ export default function ProgramaPage() {
             <div>
               <p className="text-base font-bold text-[var(--color-primary)] mb-1">Garantia de concert</p>
               <p className="text-sm text-[var(--color-text-muted)]">
-                En cas de pluja, els concerts estan garantits. La ubicació alternativa
-                s&apos;anunciarà a través de les nostres xarxes socials.
+                En cas de pluja, els concerts es traslladaran a un espai cobert dins del recinte
+                de Mon Sant Benet. L&apos;espai exacte s&apos;anunciarà a les xarxes socials del festival.
               </p>
             </div>
           </div>

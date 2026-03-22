@@ -154,7 +154,7 @@ export default function EntradesPage() {
                <div>
                  <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Pla de pluja</h4>
                  <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
-                   En cas de pluja, els concerts estan garantits. S&apos;anunciarà la ubicació alternativa a les xarxes socials. Les entrades mantenen la seva validesa.
+                   En cas de pluja, el concert es trasllada a un espai cobert dins de Mon Sant Benet. L&apos;espai exacte s&apos;anunciarà a les xarxes socials. Les entrades mantenen la seva validesa.
                  </p>
                </div>
                <div>
