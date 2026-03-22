@@ -8,10 +8,10 @@ const editions: Record<number, Edition> = {
   2026: edition2026 as Edition,
 };
 
-const currentYear = Number(process.env.NEXT_PUBLIC_FESTIVAL_EDITION || 2025);
+const currentYear = Number(process.env.NEXT_PUBLIC_FESTIVAL_EDITION || 2026);
 
 export function getCurrentEdition(): Edition {
-  return editions[currentYear] ?? editions[2025];
+  return editions[currentYear] ?? editions[2026];
 }
 
 export function getEdition(year: number): Edition | undefined {
