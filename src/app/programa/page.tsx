@@ -178,8 +178,8 @@ export default function ProgramaPage() {
             <div>
               <p className="text-base font-bold text-[var(--color-primary)] mb-1">Garantia de concert</p>
               <p className="text-sm text-[var(--color-text-muted)]">
-                En cas de pluja, els concerts es traslladaran a <strong>{edition.rainVenue}</strong>,
-                garantint la mateixa qualitat acústica i aforament.
+                En cas de pluja, els concerts estan garantits. La ubicació alternativa
+                s&apos;anunciarà a través de les nostres xarxes socials.
               </p>
             </div>
           </div>
