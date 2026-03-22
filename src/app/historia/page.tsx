@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import archiveData from '@/data/archive.json';
@@ -9,7 +10,16 @@ export const metadata: Metadata = {
   description: 'Més de 30 anys de música clàssica. Descobreix la història del Festival Internacional de Música Clàssica Memorial Eduard Casajoana.',
 };
 
+const FEATURED_YEARS = [2025, 2024, 2023, 2022, 2021];
+
 export default function HistoriaPage() {
+  const featuredEditions = archiveData.editions.filter((e) =>
+    FEATURED_YEARS.includes(e.year)
+  );
+  const olderEditions = archiveData.editions.filter(
+    (e) => !FEATURED_YEARS.includes(e.year)
+  );
+
   return (
     <>
       {/* Hero Banner */}
@@ -82,69 +92,146 @@ export default function HistoriaPage() {
         </Container>
       </section>
 
-      <hr />
+      <hr className="border-[var(--color-border)]" />
 
-      {/* Past Editions */}
+      {/* Featured Recent Editions */}
       <section className="py-[60px] md:py-[100px]">
         <Container>
           <SectionHeading
-            title="Edicions anteriors"
-            subtitle="30 anys de programació musical"
+            title="Edicions recents"
+            subtitle="Descobreix les darreres programacions del festival"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {archiveData.editions.map((edition) => {
-              const hasDetails = edition.concertDetails && edition.concertDetails.length > 0;
+          <div className="space-y-6">
+            {/* First edition: full width */}
+            {featuredEditions[0] && (
+              <Link
+                href={`/historia/${featuredEditions[0].year}`}
+                className="group block relative overflow-hidden aspect-[21/9] bg-gray-100"
+              >
+                {featuredEditions[0].image && (
+                  <Image
+                    src={featuredEditions[0].image}
+                    alt={`${featuredEditions[0].edition} Edició`}
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                  <p className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-2">
+                    {featuredEditions[0].edition} Edició
+                  </p>
+                  <h3 className="text-[2rem] md:text-[3rem] font-serif font-medium text-white leading-[1.05] mb-3">
+                    Festival {featuredEditions[0].year}
+                  </h3>
+                  <p className="text-sm md:text-base text-white/70 max-w-[600px] leading-relaxed">
+                    {featuredEditions[0].highlights}
+                  </p>
+                  <p className="text-[var(--color-secondary)] text-sm font-semibold mt-4 group-hover:translate-x-1 transition-transform duration-300">
+                    Veure programa complet &rarr;
+                  </p>
+                </div>
+              </Link>
+            )}
 
-              const cardContent = (
-                <>
-                  <div className="flex items-start justify-between mb-3">
-                    <div>
-                      <p className="text-2xl font-serif font-medium text-[var(--color-primary)] leading-none">{edition.year}</p>
-                      <p className="text-xs font-bold tracking-[0.1em] uppercase text-[var(--color-secondary)] mt-1.5">
+            {/* Remaining featured: 2-column grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {featuredEditions.slice(1).map((edition) => {
+                const hasDetails = edition.concertDetails && edition.concertDetails.length > 0;
+
+                return (
+                  <Link
+                    key={edition.year}
+                    href={hasDetails ? `/historia/${edition.year}` : '#'}
+                    className="group block relative overflow-hidden aspect-[16/10] bg-gray-100"
+                  >
+                    {edition.image && (
+                      <Image
+                        src={edition.image}
+                        alt={`${edition.edition} Edició`}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                      <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-1.5">
                         {edition.edition} Edició
                       </p>
+                      <h3 className="text-xl md:text-2xl font-serif font-medium text-white leading-[1.1] mb-2">
+                        Festival {edition.year}
+                      </h3>
+                      <p className="text-sm text-white/60 leading-relaxed line-clamp-2">
+                        {edition.highlights}
+                      </p>
+                      {hasDetails && (
+                        <p className="text-[var(--color-secondary)] text-sm font-semibold mt-3 group-hover:translate-x-1 transition-transform duration-300">
+                          Veure programa complet &rarr;
+                        </p>
+                      )}
                     </div>
-                    <span className="text-xs border border-[var(--color-border)] text-[var(--color-text-muted)] px-2.5 py-1">
-                      {edition.concerts} concerts
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <hr className="border-[var(--color-border)]" />
+
+      {/* Older Editions - Minimal */}
+      <section className="py-[60px] md:py-[100px]">
+        <Container>
+          <SectionHeading
+            title="Totes les edicions"
+            subtitle="Més de 30 anys de programació musical"
+          />
+
+          <div className="max-w-[800px] mx-auto">
+            {olderEditions.map((edition) => {
+              const hasDetails = edition.concertDetails && edition.concertDetails.length > 0;
+
+              const content = (
+                <div className="flex items-center justify-between py-4 border-b border-[var(--color-border)]">
+                  <div className="flex items-center gap-5">
+                    <span className="text-2xl font-serif font-medium text-[var(--color-primary)] w-[60px]">
+                      {edition.year}
                     </span>
+                    <div>
+                      <span className="text-xs font-bold tracking-[0.1em] uppercase text-[var(--color-secondary)]">
+                        {edition.edition} Edició
+                      </span>
+                      <span className="text-sm text-[var(--color-text-muted)] ml-3">
+                        {edition.concerts} concerts
+                      </span>
+                    </div>
                   </div>
-                  <p className="text-[15px] text-[var(--color-text-main)] leading-[1.5]">{edition.highlights}</p>
-                  {hasDetails && (
-                    <p className="text-[var(--color-secondary)] text-sm font-semibold mt-4">
-                      Veure programa complet &rarr;
-                    </p>
-                  )}
-                  {edition.pdf && (
-                    <span className="inline-flex items-center gap-1.5 text-[var(--color-secondary)] text-sm font-semibold mt-4">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                        <polyline points="14,2 14,8 20,8" />
-                      </svg>
-                      Descarregar programa
-                    </span>
-                  )}
-                </>
+                  <div className="flex items-center gap-4">
+                    {edition.pdf && (
+                      <span className="text-xs text-[var(--color-text-light)] hidden sm:inline">PDF</span>
+                    )}
+                    {hasDetails && (
+                      <span className="text-[var(--color-secondary)] text-sm font-semibold">
+                        &rarr;
+                      </span>
+                    )}
+                  </div>
+                </div>
               );
 
               if (hasDetails) {
                 return (
-                  <Link
-                    key={edition.year}
-                    href={`/historia/${edition.year}`}
-                    className="border border-[var(--color-border)] p-6 hover:border-[var(--color-secondary)] transition-colors duration-300 block"
-                  >
-                    {cardContent}
+                  <Link key={edition.year} href={`/historia/${edition.year}`} className="block hover:bg-[var(--color-surface)] transition-colors duration-200">
+                    {content}
                   </Link>
                 );
               }
 
               return (
-                <div
-                  key={edition.year}
-                  className="border border-[var(--color-border)] p-6 hover:border-[var(--color-secondary)] transition-colors duration-300"
-                >
-                  {cardContent}
+                <div key={edition.year}>
+                  {content}
                 </div>
               );
             })}

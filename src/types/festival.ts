@@ -43,6 +43,8 @@ export interface ArchiveEdition {
   highlights: string;
   concerts: number;
   pdf: string | null;
+  /** Optional cover image for featured editions */
+  image?: string;
   /** Optional full concert data for rich archive pages */
   concertDetails?: ArchiveConcert[];
 }

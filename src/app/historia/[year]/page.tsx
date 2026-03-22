@@ -65,7 +65,7 @@ export default async function ArchiveYearPage({ params }: Props) {
                     </p>
                   ))}
                 </div>
-                {concert.repertoire && concert.repertoire.length > 0 && (
+                {'repertoire' in concert && concert.repertoire && concert.repertoire.length > 0 && (
                   <div className="mt-5">
                     <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
                       Programa
