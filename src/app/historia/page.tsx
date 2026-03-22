@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import archiveData from '@/data/archive.json';
+import type { ArchiveEdition } from '@/types/festival';
 
 export const metadata: Metadata = {
   title: 'Història',
@@ -13,10 +14,11 @@ export const metadata: Metadata = {
 const FEATURED_YEARS = [2025, 2024, 2023, 2022, 2021];
 
 export default function HistoriaPage() {
-  const featuredEditions = archiveData.editions.filter((e) =>
+  const editions = archiveData.editions as ArchiveEdition[];
+  const featuredEditions = editions.filter((e) =>
     FEATURED_YEARS.includes(e.year)
   );
-  const olderEditions = archiveData.editions.filter(
+  const olderEditions = editions.filter(
     (e) => !FEATURED_YEARS.includes(e.year)
   );
 
