@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 
@@ -23,6 +24,17 @@ export default function SobrePage() {
             Una passió compartida per la música clàssica d&apos;excel·lència
           </p>
         </Container>
+      </section>
+
+      {/* Festival atmosphere image */}
+      <section className="relative aspect-[21/9] overflow-hidden">
+        <Image
+          src="/images/concerts/gallery/artists-bow.jpg"
+          alt="Artistes saludant el públic al final d'un concert"
+          fill
+          className="object-cover"
+          priority
+        />
       </section>
 
       {/* Mission */}
@@ -105,6 +117,14 @@ export default function SobrePage() {
             <SectionHeading
               title="L'organització"
             />
+            <div className="relative aspect-[16/10] overflow-hidden mb-10">
+              <Image
+                src="/images/concerts/gallery/post-concert-social.jpg"
+                alt="Públic socialitzant després d'un concert"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="space-y-6">
               <div className="border border-[var(--color-border)] p-8">
                 <h3 className="text-xl font-bold text-[var(--color-text-main)] mb-3">

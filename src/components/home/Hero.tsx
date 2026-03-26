@@ -15,8 +15,8 @@ export default function Hero({ edition, year }: HeroProps) {
     <section className="relative h-[calc(100dvh-80px)] min-h-[600px] bg-black overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/mon-sant-benet.jpg"
-          alt="Monestir de Sant Benet de Bages"
+          src="/images/concerts/gallery/monastery-night.jpg"
+          alt="Concert nocturn al Monestir de Sant Benet de Bages"
           fill
           className="object-cover"
           priority

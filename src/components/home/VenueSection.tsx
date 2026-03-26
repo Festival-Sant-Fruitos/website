@@ -13,8 +13,8 @@ export default function VenueSection() {
           <BlurFade inView inViewMargin="-80px" direction="left">
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 group">
               <Image
-                src="/images/hero/mon-sant-benet.jpg"
-                alt="Mon Sant Benet"
+                src="/images/venue/venue-arch-view.jpg"
+                alt="Vista del recinte des de l'arc del monestir"
                 fill
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Accordion from '@/components/shared/Accordion';
@@ -26,6 +27,17 @@ export default function UbicacioPage() {
             El marc perfecte per a la música.
           </p>
         </Container>
+      </section>
+
+      {/* Venue photo */}
+      <section className="relative aspect-[21/9] overflow-hidden">
+        <Image
+          src="/images/venue/venue-panoramic.jpg"
+          alt="Vista panoràmica del recinte del festival a Mon Sant Benet"
+          fill
+          className="object-cover"
+          priority
+        />
       </section>
 
       {/* Map & Description */}

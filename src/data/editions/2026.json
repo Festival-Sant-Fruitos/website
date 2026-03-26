@@ -96,7 +96,12 @@
         { "name": "Carles Lama i Sofia Cabruja", "role": "piano a 4 mans", "bio": "" },
         { "name": "Natanael Espinoza", "role": "direcció", "bio": "" }
       ],
-      "repertoire": [],
+      "repertoire": [
+        "Williams",
+        "Barry",
+        "Morricone",
+        "Zimmer"
+      ],
       "description": "[CA: pendent de descripció]",
       "ticketUrl": "",
       "image": "/images/concerts/placeholder.jpg",

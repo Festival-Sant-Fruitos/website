@@ -6,6 +6,7 @@
       "highlights": "Gala d'Òpera i Sarsuela, homenatge a Conxita Badia, Una Schubertíada i bandes sonores",
       "concerts": 4,
       "pdf": null,
+      "image": "/images/concerts/gallery/opera-balcony.jpg",
       "concertDetails": [
         {
           "date": "2025-07-03",
@@ -138,7 +139,8 @@
       "edition": "XXX",
       "highlights": "Edició especial del 30è aniversari",
       "concerts": 4,
-      "pdf": null
+      "pdf": null,
+      "image": "/images/concerts/gallery/stage-duo-30th.jpg"
     },
     {
       "year": 2023,
@@ -146,6 +148,7 @@
       "highlights": "A Piacere, Quartets Vocals amb Piano, Beethoven i homenatge a Callas, Victòria dels Àngels i Margarida Elias",
       "concerts": 4,
       "pdf": null,
+      "image": "/images/concerts/gallery/soprano-pianist.jpg",
       "concertDetails": [
         {
           "date": "2023-07-06",
@@ -175,6 +178,7 @@
       "highlights": "Divina Òpera, Temperaments, Venècia i L'Essència del Bel Canto",
       "concerts": 4,
       "pdf": null,
+      "image": "/images/concerts/gallery/orchestra-full.jpg",
       "concertDetails": [
         {
           "date": "2022-07-07",
@@ -204,6 +208,7 @@
       "highlights": "Zefiro Torna, Artistes Emergents i La Veu del Poble",
       "concerts": 3,
       "pdf": null,
+      "image": "/images/concerts/gallery/flutist-performance.jpg",
       "concertDetails": [
         {
           "date": "2021-07-08",
