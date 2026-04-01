@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import Button from '@/components/shared/Button';
 import ProgramaTeaser from '@/components/programa/ProgramaTeaser';
+import ConcertArtistCollage from '@/components/programa/ConcertArtistCollage';
 import { getCurrentEdition } from '@/lib/festival';
 
 const edition = getCurrentEdition();
@@ -50,6 +50,20 @@ export default function ProgramaPage() {
             Quatre vetllades de música clàssica d&apos;excepció als jardins de Mon Sant Benet.
             Cada dijous del juliol a les 22:15h.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8">
+            <a
+              href="/downloads/triptic-2026-interior.pdf"
+              download="Tríptic Festival 2026.pdf"
+              className="inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white border border-white/30 hover:border-white/60 px-5 py-2.5 transition-colors duration-300"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Descarrega el tríptic
+            </a>
+          </div>
         </Container>
       </section>
 
@@ -77,14 +91,11 @@ export default function ProgramaPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[60px]">
                   {/* Left: Image & Key Info */}
                   <div className="lg:col-span-5 space-y-[30px]">
-                    <div className="relative aspect-[4/5] overflow-hidden bg-gray-100 group">
-                      <Image
-                        src={concert.image}
-                        alt={concert.title}
-                        fill
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      />
-                    </div>
+                    <ConcertArtistCollage
+                      images={concert.artistImages ?? []}
+                      fallbackImage={concert.image}
+                      fallbackAlt={concert.title}
+                    />
 
                     <div className="bg-[var(--color-surface)] p-[30px]">
                        <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5">

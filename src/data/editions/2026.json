@@ -16,7 +16,7 @@
       "month": "juliol",
       "time": "22:15",
       "title": "De Barcelona a Buenos Aires: de la cançó al tango",
-      "subtitle": "[CA: pendent de subtítol]",
+      "subtitle": "Un viatge de la cançó catalana al tango argentí",
       "artists": [
         { "name": "Mireia Pintó", "role": "mezzosoprano", "bio": "" },
         { "name": "Georgi Mundrov", "role": "piano", "bio": "" }
@@ -24,15 +24,20 @@
       "repertoire": [
         "Montsalvatge",
         "Ovalle",
+        "Villa-Lobos",
         "Guastavino",
         "Ginastera",
         "Piazzolla"
       ],
-      "description": "[CA: pendent de descripció]",
-      "ticketUrl": "",
-      "image": "/images/concerts/placeholder.jpg",
-      "price": "Consultar",
-      "status": "partial"
+      "description": "Un viatge musical que ens porta des de la cançó catalana fins al tango argentí. La mezzosoprano Mireia Pintó i el pianista Georgi Mundrov ens oferiran un recorregut per les melodies que uneixen Barcelona i Buenos Aires, amb obres de Montsalvatge, Ovalle, Villa-Lobos, Guastavino, Ginastera i Piazzolla.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/artists/mireia-pinto.jpg",
+      "artistImages": [
+        { "src": "/images/artists/mireia-pinto.jpg", "alt": "Mireia Pintó, mezzosoprano" },
+        { "src": "/images/artists/georgi-mundrov.jpg", "alt": "Georgi Mundrov, piano" }
+      ],
+      "price": "25€",
+      "status": "complete"
     },
     {
       "id": "pianant",
@@ -42,7 +47,7 @@
       "month": "juliol",
       "time": "22:15",
       "title": "Pianant",
-      "subtitle": "[CA: pendent de subtítol]",
+      "subtitle": "Dos pianos, dues visions",
       "artists": [
         { "name": "Manel Camp", "role": "piano", "bio": "" },
         { "name": "Carles Cases", "role": "piano", "bio": "" }
@@ -50,11 +55,14 @@
       "repertoire": [
         "Obres de Carles Cases i Manel Camp"
       ],
-      "description": "[CA: pendent de descripció]",
-      "ticketUrl": "",
-      "image": "/images/concerts/placeholder.jpg",
-      "price": "Consultar",
-      "status": "partial"
+      "description": "Dos dels pianistes i compositors catalans més reconeguts, Manel Camp i Carles Cases, comparteixen escenari en una vetllada única interpretant les seves pròpies composicions. Dos pianos, dues visions de la música catalana contemporània.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/artists/carles-cases-manel-camp.jpg",
+      "artistImages": [
+        { "src": "/images/artists/carles-cases-manel-camp.jpg", "alt": "Manel Camp i Carles Cases, piano" }
+      ],
+      "price": "30€",
+      "status": "complete"
     },
     {
       "id": "haydn-mozart",
@@ -64,7 +72,7 @@
       "month": "juliol",
       "time": "22:15",
       "title": "Haydn i els Mozart",
-      "subtitle": "[CA: pendent de subtítol]",
+      "subtitle": "Haydn, l'influencer",
       "artists": [
         { "name": "Sara Òdena", "role": "violoncel (Artista Emergent)", "bio": "" },
         { "name": "Vladislav Bronevetzky", "role": "piano", "bio": "" },
@@ -72,15 +80,20 @@
         { "name": "Quim Térmens", "role": "concertino", "bio": "" }
       ],
       "repertoire": [
+        "Fàbrega",
         "Haydn",
-        "Kraus",
         "Mozart"
       ],
-      "description": "[CA: pendent de descripció]",
-      "ticketUrl": "",
-      "image": "/images/concerts/placeholder.jpg",
-      "price": "Consultar",
-      "status": "partial"
+      "description": "Un concert que explora la influència de Haydn sobre la família Mozart. Amb la violoncel·lista emergent Sara Òdena, el pianista Vladislav Bronevetzky i l'Orquestra de Cambra Terrassa 48, dirigida pel concertino Quim Térmens, amb obres de Fàbrega, Haydn i Mozart.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/artists/sara-odena.jpg",
+      "artistImages": [
+        { "src": "/images/artists/orquestra-cambra-terrassa-48.jpg", "alt": "Orquestra de Cambra Terrassa 48" },
+        { "src": "/images/artists/sara-odena.jpg", "alt": "Sara Òdena, violoncel" },
+        { "src": "/images/artists/vladik.jpg", "alt": "Vladislav Bronevetzky, piano" }
+      ],
+      "price": "25€",
+      "status": "complete"
     },
     {
       "id": "bandes-sonores-2026",
@@ -102,11 +115,16 @@
         "Morricone",
         "Zimmer"
       ],
-      "description": "[CA: pendent de descripció]",
-      "ticketUrl": "",
-      "image": "/images/concerts/placeholder.jpg",
-      "price": "Consultar",
-      "status": "partial"
+      "description": "El concert de bandes sonores del festival torna amb una nova edició 2026. L'Orquestra «Solistes de Catalunya», el duo pianístic Carles Lama i Sofia Cabruja, i el director Natanael Espinoza ens oferiran les millors bandes sonores del cinema, amb obres de Williams, Barry, Morricone i Zimmer.",
+      "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
+      "image": "/images/artists/natanael-espinoza.jpg",
+      "artistImages": [
+        { "src": "/images/artists/carles-sofia-piano-duo.jpg", "alt": "Carles Lama i Sofia Cabruja, piano a 4 mans" },
+        { "src": "/images/artists/natanael-espinoza.jpg", "alt": "Natanael Espinoza, direcció" },
+        { "src": "/images/artists/orquestra-solistes-de-catalunya.jpg", "alt": "Orquestra Solistes de Catalunya" }
+      ],
+      "price": "30€",
+      "status": "complete"
     }
   ]
 }
