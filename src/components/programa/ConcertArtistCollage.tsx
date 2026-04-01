@@ -64,13 +64,13 @@ export default function ConcertArtistCollage({
     );
   }
 
-  // 3+ images — lead image portrait, two landscape below
+  // 3+ images — wide group on top, two individual portraits below
   return (
     <div className="flex flex-col gap-1">
-      <CollageCell src={images[0].src} alt={images[0].alt} className="aspect-[4/5]" />
+      <CollageCell src={images[0].src} alt={images[0].alt} className="aspect-[9/4] [&_img]:object-bottom" />
       <div className="grid grid-cols-2 gap-1">
-        <CollageCell src={images[1].src} alt={images[1].alt} className="aspect-[3/2]" />
-        <CollageCell src={images[2].src} alt={images[2].alt} className="aspect-[3/2]" />
+        <CollageCell src={images[1].src} alt={images[1].alt} className="aspect-[3/4]" />
+        <CollageCell src={images[2].src} alt={images[2].alt} className="aspect-[3/4]" />
       </div>
     </div>
   );
