@@ -18,6 +18,8 @@ export interface Concert {
   description: string;
   ticketUrl: string;
   image: string;
+  /** Array of artist/group photos for the collage grid on the programa page */
+  artistImages?: { src: string; alt: string; className?: string }[];
   price: string;
   /** "complete" = all info present, "partial" = some fields are placeholders */
   status?: "complete" | "partial";
