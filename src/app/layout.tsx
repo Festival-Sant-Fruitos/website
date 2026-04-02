@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -62,6 +62,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: '#2C2C2C',
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -70,8 +74,11 @@ export default function RootLayout({
   return (
     <html lang="ca">
       <body className={`${dmSans.variable} ${cormorant.variable} antialiased`}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999] focus:bg-white focus:text-[var(--color-primary)] focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:shadow-lg">
+          Salta al contingut
+        </a>
         <Header />
-        <main className="pt-20">{children}</main>
+        <main id="main-content" className="pt-20">{children}</main>
         <Footer />
       </body>
     </html>

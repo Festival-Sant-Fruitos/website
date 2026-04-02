@@ -98,9 +98,9 @@ export default function ProgramaPage() {
                     />
 
                     <div className="bg-[var(--color-surface)] p-[30px]">
-                       <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5">
+                       <h3 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5">
                          Intèrprets
-                       </h4>
+                       </h3>
                        <ul className="space-y-3">
                          {concert.artists.map((artist) => (
                            <li key={artist.name}>
@@ -136,10 +136,10 @@ export default function ProgramaPage() {
                     {/* Repertoire List */}
                     {concert.repertoire && (
                       <div className="mb-10">
-                         <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5 flex items-center gap-4">
+                         <h3 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5 flex items-center gap-4">
                            Programa
                            <span className="h-px bg-[var(--color-border)] flex-1"></span>
-                         </h4>
+                         </h3>
                          <ul className="grid grid-cols-1 gap-3">
                            {concert.repertoire.map((item, idx) => (
                              <li key={idx} className="flex gap-4 text-[15px] text-[var(--color-text-main)]">

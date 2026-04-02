@@ -7,15 +7,26 @@ import { BlurFade } from '@/components/ui/blur-fade';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus('loading');
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error();
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
-    <section id="newsletter" className="py-20 md:py-[140px] bg-[var(--color-surface-dark)]">
+    <section className="py-20 md:py-[140px] bg-[var(--color-surface-dark)]">
       <Container>
         <div className="max-w-[600px]">
           <BlurFade inView inViewMargin="-80px">
@@ -29,7 +40,7 @@ export default function Newsletter() {
           </BlurFade>
 
           <BlurFade inView inViewMargin="-60px" delay={0.15}>
-            {submitted ? (
+            {status === 'success' ? (
               <div className="mt-8 border border-[var(--color-secondary)]/30 p-6">
                 <p className="text-base text-[var(--color-secondary)] font-medium !mb-0">
                   Gràcies per subscriure&apos;t. Et mantindrem informat.
@@ -37,19 +48,23 @@ export default function Newsletter() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-0 mt-8">
-                <label htmlFor="newsletter-email" className="sr-only">El teu email</label>
                 <input
-                  id="newsletter-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="El teu email"
                   required
-                  className="flex-1 px-5 py-3.5 bg-white/5 border border-white/15 text-base text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--color-secondary)] transition-colors min-w-0"
+                  disabled={status === 'loading'}
+                  className="flex-1 px-5 py-3.5 bg-white/5 border border-white/15 text-base text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--color-secondary)] transition-colors min-w-0 disabled:opacity-50"
                 />
-                <Button type="submit" variant="primary" className="shrink-0 rounded-none sm:w-auto w-full">
-                  Subscriure&apos;m
+                <Button type="submit" variant="primary" className="shrink-0 rounded-none sm:w-auto w-full" disabled={status === 'loading'}>
+                  {status === 'loading' ? 'Enviant...' : 'Subscriure\'m'}
                 </Button>
+                {status === 'error' && (
+                  <p className="text-sm text-red-400 mt-2 sm:mt-0 sm:ml-4 self-center">
+                    Error. Torna-ho a provar.
+                  </p>
+                )}
               </form>
             )}
           </BlurFade>

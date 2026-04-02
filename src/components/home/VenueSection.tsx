@@ -16,6 +16,7 @@ export default function VenueSection() {
                 src="/images/venue/venue-arch-view.jpg"
                 alt="Vista del recinte des de l'arc del monestir"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
             </div>

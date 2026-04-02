@@ -65,7 +65,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button href="/entrades" variant="primary" size="sm" className="hidden sm:inline-flex">
+            <Button href="/entrades" variant="primary" size="sm" className="inline-flex">
               Entrades
             </Button>
             <button
