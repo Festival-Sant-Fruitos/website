@@ -90,7 +90,7 @@
       "artistImages": [
         { "src": "/images/artists/orquestra-cambra-terrassa-48.jpg", "alt": "Orquestra de Cambra Terrassa 48" },
         { "src": "/images/artists/sara-odena.jpg", "alt": "Sara Òdena, violoncel" },
-        { "src": "/images/artists/vladik.jpg", "alt": "Vladislav Bronevetzky, piano" }
+        { "src": "/images/artists/vladik.jpg", "alt": "Vladislav Bronevetzky, piano", "className": "[&_img]:object-[60%_center]" }
       ],
       "price": "25€",
       "status": "complete"
@@ -120,8 +120,8 @@
       "image": "/images/artists/natanael-espinoza.jpg",
       "artistImages": [
         { "src": "/images/artists/orquestra-solistes-de-catalunya.jpg", "alt": "Orquestra Solistes de Catalunya" },
-        { "src": "/images/artists/carles-sofia-piano-duo.jpg", "alt": "Carles Lama i Sofia Cabruja, piano a 4 mans" },
-        { "src": "/images/artists/natanael-espinoza.jpg", "alt": "Natanael Espinoza, direcció" }
+        { "src": "/images/artists/carles-sofia-piano-duo.jpg", "alt": "Carles Lama i Sofia Cabruja, piano a 4 mans", "className": "[&_img]:object-[65%_center]" },
+        { "src": "/images/artists/natanael-espinoza.jpg", "alt": "Natanael Espinoza, direcció", "className": "[&_img]:object-[25%_center]" }
       ],
       "price": "30€",
       "status": "complete"

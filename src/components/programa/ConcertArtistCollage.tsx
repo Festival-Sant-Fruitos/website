@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 interface ArtistImage {
   src: string;
   alt: string;
+  className?: string;
 }
 
 interface ConcertArtistCollageProps {
@@ -64,13 +65,21 @@ export default function ConcertArtistCollage({
     );
   }
 
-  // 3+ images — wide group on top, two individual portraits below
+  // 3+ images — wide group on top (full image, no crop), two individual portraits below
   return (
     <div className="flex flex-col gap-1">
-      <CollageCell src={images[0].src} alt={images[0].alt} className="aspect-[9/4] [&_img]:object-bottom" />
+      <div className={cn('overflow-hidden bg-gray-100 group', images[0].className)}>
+        <Image
+          src={images[0].src}
+          alt={images[0].alt}
+          width={1600}
+          height={900}
+          className="w-full h-auto transition-transform duration-700 ease-out group-hover:scale-105"
+        />
+      </div>
       <div className="grid grid-cols-2 gap-1">
-        <CollageCell src={images[1].src} alt={images[1].alt} className="aspect-[3/4]" />
-        <CollageCell src={images[2].src} alt={images[2].alt} className="aspect-[3/4]" />
+        <CollageCell src={images[1].src} alt={images[1].alt} className={cn('aspect-[3/4]', images[1].className)} />
+        <CollageCell src={images[2].src} alt={images[2].alt} className={cn('aspect-[3/4]', images[2].className)} />
       </div>
     </div>
   );
