@@ -18,6 +18,8 @@ export interface Concert {
   description: string;
   ticketUrl: string;
   image: string;
+  /** Optional CSS class for the hero image (e.g. object-position override) */
+  imageClassName?: string;
   /** Array of artist/group photos for the collage grid on the programa page */
   artistImages?: { src: string; alt: string; className?: string }[];
   price: string;

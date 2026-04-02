@@ -118,6 +118,7 @@
       "description": "El concert de bandes sonores del festival torna amb una nova edició 2026. L'Orquestra «Solistes de Catalunya», el duo pianístic Carles Lama i Sofia Cabruja, i el director Natanael Espinoza ens oferiran les millors bandes sonores del cinema, amb obres de Williams, Barry, Morricone i Zimmer.",
       "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
       "image": "/images/artists/natanael-espinoza.jpg",
+      "imageClassName": "object-[25%_center]",
       "artistImages": [
         { "src": "/images/artists/orquestra-solistes-de-catalunya.jpg", "alt": "Orquestra Solistes de Catalunya" },
         { "src": "/images/artists/carles-sofia-piano-duo.jpg", "alt": "Carles Lama i Sofia Cabruja, piano a 4 mans", "className": "[&_img]:object-[65%_center]" },

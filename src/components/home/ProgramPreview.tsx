@@ -66,7 +66,7 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
                     src={concert.image}
                     alt={concert.title}
                     fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    className={`object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${concert.imageClassName ?? ''}`}
                   />
                 </div>
 
