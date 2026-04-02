@@ -58,7 +58,7 @@ export default function Footer() {
                 href="https://www.facebook.com/festivalsantfruitos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/40 hover:text-white transition-colors"
+                className="text-white/60 hover:text-white transition-colors"
                 aria-label="Facebook"
               >
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ export default function Footer() {
                 href="https://www.instagram.com/festivalsantfruitos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/40 hover:text-white transition-colors"
+                className="text-white/60 hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:festivalsantfruitos@gmail.com"
-                className="text-white/40 hover:text-white transition-colors"
+                className="text-white/60 hover:text-white transition-colors"
                 aria-label="Email"
               >
                 <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

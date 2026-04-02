@@ -15,7 +15,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-20 md:py-[140px] bg-[var(--color-surface-dark)]">
+    <section id="newsletter" className="py-20 md:py-[140px] bg-[var(--color-surface-dark)]">
       <Container>
         <div className="max-w-[600px]">
           <BlurFade inView inViewMargin="-80px">
@@ -37,7 +37,9 @@ export default function Newsletter() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-0 mt-8">
+                <label htmlFor="newsletter-email" className="sr-only">El teu email</label>
                 <input
+                  id="newsletter-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}

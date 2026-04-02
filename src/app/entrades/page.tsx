@@ -49,7 +49,7 @@ export default function EntradesPage() {
                     <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">Entrada General</h3>
                     <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">Seient no numerat a zona general</p>
                   </div>
-                  <span className="text-[2rem] font-bold text-[var(--color-primary)]">25€</span>
+                  <span className="text-[2rem] font-bold font-sans text-[var(--color-primary)]">25€</span>
                 </div>
 
                 <div className="flex items-baseline justify-between border-b border-[var(--color-border)] pb-5">
@@ -57,7 +57,7 @@ export default function EntradesPage() {
                     <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">Entrada Preferent</h3>
                     <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">Seient a les primeres files</p>
                   </div>
-                  <span className="text-[2rem] font-bold text-[var(--color-secondary)]">30€</span>
+                  <span className="text-[2rem] font-bold font-sans text-[var(--color-secondary)]">30€</span>
                 </div>
 
                 <div className="bg-[var(--color-surface)] p-[30px] mt-10">
@@ -138,7 +138,7 @@ export default function EntradesPage() {
             <h2 className="text-[2rem] font-serif font-medium text-[var(--color-primary)] mb-10 text-center">
               Dubtes freqüents
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                <div>
                  <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Venda el dia del concert</h4>
                  <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">

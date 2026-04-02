@@ -26,7 +26,7 @@ export default function SponsorsGrid() {
                 <p className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--color-text-light)] mb-4">
                   {tier.name}
                 </p>
-                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
                   {tier.sponsors.map((sponsor, i) => (
                     <span key={sponsor.name} className="flex items-center gap-x-6">
                       <a
@@ -38,7 +38,7 @@ export default function SponsorsGrid() {
                         {sponsor.name}
                       </a>
                       {i < tier.sponsors.length - 1 && (
-                        <span className="text-[var(--color-border)] hidden sm:inline">&middot;</span>
+                        <span className="text-[var(--color-border)]">&middot;</span>
                       )}
                     </span>
                   ))}

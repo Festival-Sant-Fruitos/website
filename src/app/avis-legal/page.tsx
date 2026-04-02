@@ -10,9 +10,9 @@ export default function AvisLegalPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-[70px] bg-gray-800">
-        <Container className="py-[60px] md:py-20">
-          <h1 className="text-[3rem] md:text-[4rem] font-bold text-white leading-[1.05]">
+      <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
+        <Container>
+          <h1 className="text-[3rem] md:text-[4rem] font-serif font-medium text-white leading-[1.05]">
             Avís Legal
           </h1>
           <p className="text-sm text-white/40 mt-3">
@@ -27,40 +27,40 @@ export default function AvisLegalPage() {
           <div className="max-w-[720px]">
             {/* Identity */}
             <div className="mb-[60px]">
-              <h2 className="text-2xl font-bold text-gray-800 mb-5">
+              <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">
                 1. Identificació del titular
               </h2>
-              <div className="border border-gray-200 p-6">
-                <ul className="space-y-3 text-sm text-gray-600">
-                  <li><strong className="text-gray-800">Titular:</strong> Associació MEMORIAL EDUARD CASAJUANA</li>
-                  <li><strong className="text-gray-800">CIF:</strong> G-62580303</li>
-                  <li><strong className="text-gray-800">Domicili:</strong> C/ Sallent, 1 2n 2ª – 08272 Sant Fruitós de Bages</li>
-                  <li><strong className="text-gray-800">Email:</strong> festivalsantfruitos@gmail.com</li>
+              <div className="border border-[var(--color-border)] p-6">
+                <ul className="space-y-3 text-sm text-[var(--color-text-muted)]">
+                  <li><strong className="text-[var(--color-primary)]">Titular:</strong> Associació MEMORIAL EDUARD CASAJOANA</li>
+                  <li><strong className="text-[var(--color-primary)]">CIF:</strong> G-62580303</li>
+                  <li><strong className="text-[var(--color-primary)]">Domicili:</strong> C/ Sallent, 1 2n 2ª – 08272 Sant Fruitós de Bages</li>
+                  <li><strong className="text-[var(--color-primary)]">Email:</strong> festivalsantfruitos@gmail.com</li>
                 </ul>
               </div>
             </div>
 
             {/* Privacy */}
             <div className="mb-[60px]">
-              <h2 className="text-2xl font-bold text-gray-800 mb-5">
+              <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">
                 2. Política de privacitat
               </h2>
-              <div className="space-y-4 text-base text-gray-600 leading-[1.6]">
+              <div className="space-y-4 text-base text-[var(--color-text-muted)] leading-[1.6]">
                 <p>
                   D&apos;acord amb el Reglament General de Protecció de Dades (RGPD) (UE) 2016/679
                   i la Llei Orgànica 3/2018 de Protecció de Dades Personals i Garantia dels
                   Drets Digitals (LOPDGDD), us informem del següent:
                 </p>
 
-                <h3 className="text-lg font-bold text-gray-800 pt-4">
+                <h3 className="text-lg font-medium text-[var(--color-primary)] pt-4">
                   2.1. Responsable del tractament
                 </h3>
                 <p>
-                  L&apos;Associació MEMORIAL EDUARD CASAJUANA (CIF: G-62580303)
+                  L&apos;Associació MEMORIAL EDUARD CASAJOANA (CIF: G-62580303)
                   és responsable del tractament de les dades personals que ens proporcioneu.
                 </p>
 
-                <h3 className="text-lg font-bold text-gray-800 pt-4">
+                <h3 className="text-lg font-medium text-[var(--color-primary)] pt-4">
                   2.2. Finalitat del tractament
                 </h3>
                 <p>
@@ -69,7 +69,7 @@ export default function AvisLegalPage() {
                   venda d&apos;entrades i activitats relacionades.
                 </p>
 
-                <h3 className="text-lg font-bold text-gray-800 pt-4">
+                <h3 className="text-lg font-medium text-[var(--color-primary)] pt-4">
                   2.3. Base jurídica
                 </h3>
                 <p>
@@ -78,13 +78,13 @@ export default function AvisLegalPage() {
                   a través dels canals disponibles.
                 </p>
 
-                <h3 className="text-lg font-bold text-gray-800 pt-4">
+                <h3 className="text-lg font-medium text-[var(--color-primary)] pt-4">
                   2.4. Drets dels interessats
                 </h3>
                 <p>
                   Podeu exercir els vostres drets d&apos;accés, rectificació, supressió,
                   limitació del tractament, portabilitat i oposició enviant un correu
-                  electrònic a <a href="mailto:festivalsantfruitos@gmail.com" className="text-teal hover:text-gray-800 transition-colors">festivalsantfruitos@gmail.com</a>.
+                  electrònic a <a href="mailto:festivalsantfruitos@gmail.com" className="text-[var(--color-secondary)] hover:text-[var(--color-primary)] transition-colors">festivalsantfruitos@gmail.com</a>.
                 </p>
                 <p>
                   Així mateix, teniu dret a presentar una reclamació davant l&apos;Autoritat
@@ -92,7 +92,7 @@ export default function AvisLegalPage() {
                   el tractament no s&apos;ajusta a la normativa vigent.
                 </p>
 
-                <h3 className="text-lg font-bold text-gray-800 pt-4">
+                <h3 className="text-lg font-medium text-[var(--color-primary)] pt-4">
                   2.5. Conservació de les dades
                 </h3>
                 <p>
@@ -106,10 +106,10 @@ export default function AvisLegalPage() {
 
             {/* Cookies */}
             <div className="mb-[60px]">
-              <h2 className="text-2xl font-bold text-gray-800 mb-5">
+              <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">
                 3. Política de cookies
               </h2>
-              <div className="space-y-4 text-base text-gray-600 leading-[1.6]">
+              <div className="space-y-4 text-base text-[var(--color-text-muted)] leading-[1.6]">
                 <p>
                   Aquest lloc web utilitza únicament cookies tècniques necessàries per al
                   correcte funcionament del lloc. No s&apos;utilitzen cookies de seguiment,
@@ -122,10 +122,10 @@ export default function AvisLegalPage() {
 
             {/* Terms */}
             <div className="mb-[60px]">
-              <h2 className="text-2xl font-bold text-gray-800 mb-5">
+              <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">
                 4. Condicions d&apos;ús
               </h2>
-              <div className="space-y-4 text-base text-gray-600 leading-[1.6]">
+              <div className="space-y-4 text-base text-[var(--color-text-muted)] leading-[1.6]">
                 <p>
                   L&apos;accés i ús d&apos;aquest lloc web implica l&apos;acceptació de les presents
                   condicions. L&apos;associació es reserva el dret de modificar-les en qualsevol moment.
@@ -143,10 +143,10 @@ export default function AvisLegalPage() {
 
             {/* External Links */}
             <div className="mb-[60px]">
-              <h2 className="text-2xl font-bold text-gray-800 mb-5">
+              <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">
                 5. Enllaços externs
               </h2>
-              <p className="text-base text-gray-600 leading-[1.6]">
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
                 Aquest lloc web pot contenir enllaços a pàgines externes (com CodeTickets
                 per a la venda d&apos;entrades). L&apos;associació no es fa responsable dels
                 continguts, polítiques de privacitat o pràctiques d&apos;aquests llocs web
@@ -158,10 +158,10 @@ export default function AvisLegalPage() {
 
             {/* Applicable Law */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-5">
+              <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">
                 6. Legislació aplicable
               </h2>
-              <p className="text-base text-gray-600 leading-[1.6]">
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
                 Les presents condicions es regeixen per la legislació espanyola.
                 Per a qualsevol controvèrsia seran competents els jutjats i tribunals
                 de Manresa (Barcelona).

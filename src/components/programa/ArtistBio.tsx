@@ -20,7 +20,7 @@ export default function ArtistBio({ name, role, bio }: ArtistBioProps) {
         className="w-full flex items-center justify-between py-4 text-left group"
       >
         <div>
-          <span className="text-base font-bold text-gray-800 group-hover:text-teal transition-colors">
+          <span className="text-base font-bold text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors">
             {name}
           </span>
           <span className="text-sm text-gray-400 ml-2 capitalize">
@@ -50,7 +50,7 @@ export default function ArtistBio({ name, role, bio }: ArtistBioProps) {
             transition={{ duration: reduced ? 0 : 0.3 }}
             className="overflow-hidden"
           >
-            <p className="text-sm text-gray-600 leading-[1.6] pb-4">
+            <p className="text-sm text-[var(--color-text-muted)] leading-[1.6] pb-4">
               {bio}
             </p>
           </motion.div>

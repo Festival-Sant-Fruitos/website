@@ -72,17 +72,17 @@ export default function ConcertCard({
 
           {/* Content Side */}
           <div className={isReversed ? 'lg:order-1' : ''}>
-            <p className="text-xs font-bold tracking-[0.15em] uppercase text-teal mb-2">
+            <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-2">
               Concert {index + 1}
             </p>
-            <h3 className="text-[28px] md:text-[37px] font-bold text-gray-800 leading-[1.1]">
+            <h3 className="text-[28px] md:text-[37px] font-bold text-[var(--color-primary)] leading-[1.1]">
               {title}
             </h3>
-            <p className="text-[19px] text-gray-600 mt-2">{subtitle}</p>
+            <p className="text-[19px] text-[var(--color-text-muted)] mt-2">{subtitle}</p>
 
             <hr className="my-6" />
 
-            <p className="text-base text-gray-600 leading-[1.6]">
+            <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
               {description}
             </p>
 
@@ -93,7 +93,7 @@ export default function ConcertCard({
               </h4>
               <ul className="space-y-2">
                 {repertoire.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-gray-400">
+                  <li key={i} className="text-sm text-[var(--color-text-muted)] pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-gray-400">
                     {item}
                   </li>
                 ))}

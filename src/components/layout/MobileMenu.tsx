@@ -8,9 +8,11 @@ interface MobileMenuProps {
   open: boolean;
   onClose: () => void;
   links: { label: string; href: string }[];
+  edition: string;
+  year: number;
 }
 
-export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
+export default function MobileMenu({ open, onClose, links, edition, year }: MobileMenuProps) {
   const reduced = useReducedMotion();
   useEffect(() => {
     if (open) {
@@ -69,7 +71,7 @@ export default function MobileMenu({ open, onClose, links }: MobileMenuProps) {
               Comprar Entrades
             </Link>
             <p className="text-gray-400 text-xs text-center mt-3">
-              XXXI Edició &middot; Juliol 2025
+              {edition} Edició &middot; Juliol {year}
             </p>
           </div>
         </motion.div>

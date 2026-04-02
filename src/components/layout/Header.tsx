@@ -1,10 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 import Container from '../shared/Container';
 import Button from '../shared/Button';
+import { getCurrentEdition } from '@/lib/festival';
+
+const edition = getCurrentEdition();
 
 const navLinks = [
   { label: 'Programa', href: '/programa' },
@@ -15,6 +19,7 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -48,7 +53,11 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[13px] font-medium text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors duration-300 tracking-wide uppercase"
+                className={`text-[13px] font-medium transition-colors duration-300 tracking-wide uppercase ${
+                  pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
+                    ? 'text-[var(--color-primary)]'
+                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-primary)]'
+                }`}
               >
                 {link.label}
               </Link>
@@ -74,7 +83,7 @@ export default function Header() {
         </Container>
       </header>
 
-      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} links={navLinks} />
+      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} links={navLinks} edition={edition.edition} year={edition.year} />
     </>
   );
 }

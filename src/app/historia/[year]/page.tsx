@@ -83,14 +83,6 @@ export default async function ArchiveYearPage({ params }: Props) {
             ))}
           </div>
 
-          {edition.pdf && (
-            <div className="mt-12 text-center">
-              <Button href={edition.pdf} variant="outline" external>
-                Descarregar programa (PDF)
-              </Button>
-            </div>
-          )}
-
           <div className="mt-12 text-center">
             <Button href="/historia" variant="outline">
               &larr; Totes les edicions

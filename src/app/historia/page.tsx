@@ -109,7 +109,7 @@ export default function HistoriaPage() {
             {featuredEditions[0] && (
               <Link
                 href={`/historia/${featuredEditions[0].year}`}
-                className="group block relative overflow-hidden aspect-[21/9] bg-gray-100"
+                className="group block relative overflow-hidden aspect-[16/9] md:aspect-[21/9] bg-gray-100"
               >
                 {featuredEditions[0].image && (
                   <Image
@@ -142,12 +142,8 @@ export default function HistoriaPage() {
               {featuredEditions.slice(1).map((edition) => {
                 const hasDetails = edition.concertDetails && edition.concertDetails.length > 0;
 
-                return (
-                  <Link
-                    key={edition.year}
-                    href={hasDetails ? `/historia/${edition.year}` : '#'}
-                    className="group block relative overflow-hidden aspect-[16/10] bg-gray-100"
-                  >
+                const cardContent = (
+                  <>
                     {edition.image && (
                       <Image
                         src={edition.image}
@@ -173,7 +169,28 @@ export default function HistoriaPage() {
                         </p>
                       )}
                     </div>
-                  </Link>
+                  </>
+                );
+
+                if (hasDetails) {
+                  return (
+                    <Link
+                      key={edition.year}
+                      href={`/historia/${edition.year}`}
+                      className="group block relative overflow-hidden aspect-[16/10] bg-gray-100"
+                    >
+                      {cardContent}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <div
+                    key={edition.year}
+                    className="block relative overflow-hidden aspect-[16/10] bg-gray-100"
+                  >
+                    {cardContent}
+                  </div>
                 );
               })}
             </div>
@@ -211,9 +228,6 @@ export default function HistoriaPage() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    {edition.pdf && (
-                      <span className="text-xs text-[var(--color-text-light)] hidden sm:inline">PDF</span>
-                    )}
                     {hasDetails && (
                       <span className="text-[var(--color-secondary)] text-sm font-semibold">
                         &rarr;

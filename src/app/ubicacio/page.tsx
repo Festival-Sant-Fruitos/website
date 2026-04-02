@@ -83,7 +83,7 @@ export default function UbicacioPage() {
                   </p>
                 </div>
 
-                <div className="bg-[var(--color-surface)] p-6">
+                <div id="pluja" className="bg-[var(--color-surface)] p-6 scroll-mt-[100px]">
                    <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-2.5">
                     Pla de Pluja
                   </h4>
