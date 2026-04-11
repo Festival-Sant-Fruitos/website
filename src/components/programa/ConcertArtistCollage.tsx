@@ -55,31 +55,27 @@ export default function ConcertArtistCollage({
     );
   }
 
-  // 2 images — each gets its own natural aspect ratio
+  // 2 images — constrained to same total height as single-image cards
   if (count === 2) {
     return (
-      <div className="flex flex-col gap-1">
-        <CollageCell src={images[0].src} alt={images[0].alt} className="aspect-[4/4] [&_img]:object-top" />
-        <CollageCell src={images[1].src} alt={images[1].alt} className="aspect-[3/2]" />
+      <div className="flex flex-col aspect-[4/5] overflow-hidden">
+        <CollageCell src={images[0].src} alt={images[0].alt} className="flex-[3] min-h-0 [&_img]:object-[center_10%]" />
+        <CollageCell src={images[1].src} alt={images[1].alt} className="flex-[2] min-h-0 [&_img]:object-center" />
       </div>
     );
   }
 
-  // 3+ images — wide group on top (full image, no crop), two individual portraits below
+  // 3+ images — wide group on top, two individual portraits below
   return (
-    <div className="flex flex-col gap-1">
-      <div className={cn('overflow-hidden bg-gray-100 group', images[0].className)}>
-        <Image
-          src={images[0].src}
-          alt={images[0].alt}
-          width={1600}
-          height={900}
-          className="w-full h-auto transition-transform duration-700 ease-out group-hover:scale-105"
-        />
-      </div>
-      <div className="grid grid-cols-2 gap-1">
-        <CollageCell src={images[1].src} alt={images[1].alt} className={cn('aspect-[3/4]', images[1].className)} />
-        <CollageCell src={images[2].src} alt={images[2].alt} className={cn('aspect-[3/4]', images[2].className)} />
+    <div className="flex flex-col aspect-[4/5] overflow-hidden">
+      <CollageCell
+        src={images[0].src}
+        alt={images[0].alt}
+        className={cn('flex-[2] min-h-0', images[0].className)}
+      />
+      <div className="grid grid-cols-2 flex-[3] min-h-0">
+        <CollageCell src={images[1].src} alt={images[1].alt} className={cn('h-full', images[1].className)} />
+        <CollageCell src={images[2].src} alt={images[2].alt} className={cn('h-full', images[2].className)} />
       </div>
     </div>
   );

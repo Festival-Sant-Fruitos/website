@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
 import { BlurFade } from '@/components/ui/blur-fade';
+import ConcertArtistCollage from '@/components/programa/ConcertArtistCollage';
 import type { Concert } from '@/types/festival';
 
 interface ProgramPreviewProps {
@@ -61,13 +61,11 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
                 href={`/programa#${concert.id}`}
                 className="group block h-full"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-5">
-                  <Image
-                    src={concert.image}
-                    alt={concert.title}
-                    fill
-                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-                    className={`object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${concert.imageClassName ?? ''}`}
+                <div className="mb-5">
+                  <ConcertArtistCollage
+                    images={concert.artistImages ?? []}
+                    fallbackImage={concert.image}
+                    fallbackAlt={concert.title}
                   />
                 </div>
 
