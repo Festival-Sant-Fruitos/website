@@ -9,11 +9,12 @@ test.describe('Entrades page', () => {
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Entrades');
   });
 
-  test('shows pricing tiers', async ({ page }) => {
-    await expect(page.getByText('Entrada General')).toBeVisible();
-    await expect(page.getByText('Entrada Preferent')).toBeVisible();
-    await expect(page.getByText('25€')).toBeVisible();
-    await expect(page.getByText('30€')).toBeVisible();
+  test('shows per-concert pricing', async ({ page }) => {
+    await expect(page.getByText('De Barcelona a Buenos Aires')).toBeVisible();
+    await expect(page.getByText('Pianant')).toBeVisible();
+    await expect(page.getByText('Haydn i els Mozart')).toBeVisible();
+    await expect(page.getByText('25€').first()).toBeVisible();
+    await expect(page.getByText('30€').first()).toBeVisible();
   });
 
   test('shows online purchase button', async ({ page }) => {
@@ -21,13 +22,13 @@ test.describe('Entrades page', () => {
   });
 
   test('shows physical sale points', async ({ page }) => {
-    await expect(page.getByText('Sant Fruitós de Bages')).toBeVisible();
-    await expect(page.getByText('Manresa')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Sant Fruitós de Bages' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Manresa' })).toBeVisible();
   });
 
   test('shows FAQ section', async ({ page }) => {
     await expect(page.getByText('Dubtes freqüents')).toBeVisible();
-    await expect(page.getByText('Pla de pluja')).toBeVisible();
-    await expect(page.getByText('Accessibilitat')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Pla de pluja' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Accessibilitat' })).toBeVisible();
   });
 });

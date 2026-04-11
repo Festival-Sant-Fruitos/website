@@ -44,21 +44,15 @@ export default function EntradesPage() {
               />
 
               <div className="space-y-[30px]">
-                <div className="flex items-baseline justify-between border-b border-[var(--color-border)] pb-5">
-                  <div>
-                    <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">Entrada General</h3>
-                    <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">Seient no numerat a zona general</p>
+                {edition.concerts.map((concert) => (
+                  <div key={concert.date} className="flex items-baseline justify-between border-b border-[var(--color-border)] pb-5">
+                    <div>
+                      <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">{concert.title}</h3>
+                      <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">{concert.day} de juliol</p>
+                    </div>
+                    <span className="text-[2rem] font-bold font-sans text-[var(--color-primary)]">{concert.price}</span>
                   </div>
-                  <span className="text-[2rem] font-bold font-sans text-[var(--color-primary)]">25€</span>
-                </div>
-
-                <div className="flex items-baseline justify-between border-b border-[var(--color-border)] pb-5">
-                  <div>
-                    <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">Entrada Preferent</h3>
-                    <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">Seient a les primeres files</p>
-                  </div>
-                  <span className="text-[2rem] font-bold font-sans text-[var(--color-secondary)]">30€</span>
-                </div>
+                ))}
 
                 <div className="bg-[var(--color-surface)] p-[30px] mt-10">
                   <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-[15px]">
