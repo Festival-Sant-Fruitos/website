@@ -43,14 +43,6 @@ test.describe('Homepage', () => {
     await expect(page.getByText('Patrocinadors')).toBeVisible();
   });
 
-  test('newsletter form accepts email', async ({ page }) => {
-    const emailInput = page.getByPlaceholder('El teu email');
-    await expect(emailInput).toBeVisible();
-    await emailInput.fill('test@example.com');
-    await page.getByRole('button', { name: /subscriure/i }).click();
-    await expect(page.getByText('Gràcies per subscriure')).toBeVisible();
-  });
-
   test('header navigation links are visible on desktop', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 720 });
     await expect(page.getByRole('link', { name: 'Programa' }).first()).toBeVisible();

@@ -29,8 +29,8 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
             <p className="text-lg text-[var(--color-text-muted)] leading-relaxed mb-10">
               La programació s&apos;anunciarà properament. Subscriu-te per ser dels primers en saber-ho.
             </p>
-            <Button href="/#newsletter" variant="outline">
-              Subscriu-te per rebre les novetats
+            <Button href="https://www.instagram.com/festivalsantfruitos" variant="outline" external>
+              Segueix-nos a Instagram
             </Button>
           </div>
         </Container>

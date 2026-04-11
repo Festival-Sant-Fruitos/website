@@ -4,7 +4,6 @@ import MemorialSection from '@/components/home/MemorialSection';
 import VenueSection from '@/components/home/VenueSection';
 import LegacyBanner from '@/components/home/LegacyBanner';
 import SponsorsGrid from '@/components/home/SponsorsGrid';
-import Newsletter from '@/components/home/Newsletter';
 import JsonLd from '@/components/shared/JsonLd';
 import { getCurrentEdition } from '@/lib/festival';
 
@@ -62,7 +61,6 @@ export default function Home() {
       <VenueSection />
       <LegacyBanner editionNumber={edition.editionNumber} />
       <SponsorsGrid />
-      <Newsletter />
     </>
   );
 }

@@ -21,8 +21,8 @@ export default function ProgramaTeaser({ edition }: ProgramaTeaserProps) {
             La programació del {edition.edition} Festival Internacional de Música Clàssica
             s&apos;anunciarà properament.
           </p>
-          <Button href="/#newsletter" variant="outline">
-            Subscriu-te per rebre les novetats
+          <Button href="https://www.instagram.com/festivalsantfruitos" variant="outline" external>
+            Segueix-nos a Instagram
           </Button>
         </div>
       </Container>
