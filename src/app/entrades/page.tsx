@@ -45,12 +45,12 @@ export default function EntradesPage() {
 
               <div className="space-y-[30px]">
                 {edition.concerts.map((concert) => (
-                  <div key={concert.date} className="flex items-baseline justify-between border-b border-[var(--color-border)] pb-5">
-                    <div>
+                  <div key={concert.date} className="flex items-center justify-between gap-6 border-b border-[var(--color-border)] pb-5">
+                    <div className="min-w-0">
                       <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">{concert.title}</h3>
                       <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">{concert.day} de juliol</p>
                     </div>
-                    <span className="text-[2rem] font-bold font-sans text-[var(--color-primary)]">{concert.price}</span>
+                    <span className="text-[2rem] font-bold font-sans text-[var(--color-primary)] shrink-0">{concert.price}</span>
                   </div>
                 ))}
 
