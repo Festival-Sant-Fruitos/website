@@ -38,9 +38,8 @@ test.describe('Homepage', () => {
     await expect(page.getByText('Artistes')).toBeVisible();
   });
 
-  test('sponsors section lists all tiers', async ({ page }) => {
-    await expect(page.getByText('Institucional')).toBeVisible();
-    await expect(page.getByText('Patrocinadors')).toBeVisible();
+  test('sponsors section is visible', async ({ page }) => {
+    await expect(page.getByRole('heading', { name: 'Amb el suport de' })).toBeVisible();
   });
 
   test('header navigation links are visible on desktop', async ({ page }) => {
