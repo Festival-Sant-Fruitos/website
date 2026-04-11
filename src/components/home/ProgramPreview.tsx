@@ -45,7 +45,7 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
             <SectionHeading
               title={`Programa ${year}`}
-              subtitle="Quatre vetllades d'excepció als jardins de Mon Sant Benet"
+              subtitle="Quatre vetllades d'excepció als jardins de Món Sant Benet"
               className="mb-0"
             />
             <Button href="/programa" variant="outline" size="sm">

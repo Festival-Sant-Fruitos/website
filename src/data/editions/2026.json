@@ -5,8 +5,8 @@
   "revealed": true,
   "tagline": "Festival Internacional de Música Clàssica",
   "memorial": "Memorial Eduard Casajoana",
-  "venue": "Mon Sant Benet, Sant Fruitós de Bages",
-  "rainVenue": "La Fàbrica, Mon Sant Benet",
+  "venue": "Món Sant Benet, Sant Fruitós de Bages",
+  "rainVenue": "La Fàbrica, Món Sant Benet",
   "concerts": [
     {
       "id": "barcelona-buenos-aires",
@@ -102,7 +102,7 @@
       "day": 30,
       "month": "juliol",
       "time": "22:15",
-      "title": "«And the winner is…» Bandes sonores de cinema",
+      "title": "\"And the winner is....\" Bandes sonores de cinema",
       "subtitle": "Nova edició 2026",
       "artists": [
         { "name": "Orquestra «Solistes de Catalunya»", "role": "orquestra", "bio": "" },

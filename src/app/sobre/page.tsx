@@ -49,7 +49,7 @@ export default function SobrePage() {
               <p>
                 El Festival Internacional de Música Clàssica de Sant Fruitós de Bages neix l&apos;any
                 1995 amb la voluntat de portar la millor música clàssica al cor de Catalunya.
-                Des de llavors, cada estiu, el festival converteix Mon Sant Benet en un escenari
+                Des de llavors, cada estiu, el festival converteix Món Sant Benet en un escenari
                 privilegiat on la música, la història i la natura es fonen en una experiència única.
               </p>
               <p>
@@ -101,7 +101,7 @@ export default function SobrePage() {
               <h3 className="text-2xl font-medium text-[var(--color-text-main)] mb-3">Patrimoni</h3>
               <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
                 Celebrem la música en un entorn patrimonial únic, posant en valor
-                la riquesa cultural de Mon Sant Benet i el Bages.
+                la riquesa cultural de Món Sant Benet i el Bages.
               </p>
             </div>
           </div>

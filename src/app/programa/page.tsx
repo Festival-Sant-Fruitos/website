@@ -9,7 +9,7 @@ const edition = getCurrentEdition();
 
 export const metadata: Metadata = {
   title: `Programa ${edition.year}`,
-  description: `Programa del ${edition.edition} Festival Internacional de Música Clàssica. ${edition.concerts.length} concerts al juliol de ${edition.year} a Mon Sant Benet.`,
+  description: `Programa del ${edition.edition} Festival Internacional de Música Clàssica. ${edition.concerts.length} concerts al juliol de ${edition.year} a Món Sant Benet.`,
 };
 
 export default function ProgramaPage() {
@@ -47,7 +47,7 @@ export default function ProgramaPage() {
             Programa Oficial
           </h1>
           <p className="text-xl text-white/70 max-w-[700px] leading-[1.4] font-light">
-            Quatre vetllades de música clàssica d&apos;excepció als jardins de Mon Sant Benet.
+            Quatre vetllades de música clàssica d&apos;excepció als jardins de Món Sant Benet.
             Cada dijous del juliol a les 22:15h.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
@@ -190,7 +190,7 @@ export default function ProgramaPage() {
               <p className="text-base font-bold text-[var(--color-primary)] mb-1">Garantia de concert</p>
               <p className="text-sm text-[var(--color-text-muted)]">
                 En cas de pluja, els concerts es traslladaran a un espai cobert dins del recinte
-                de Mon Sant Benet. L&apos;espai exacte s&apos;anunciarà a les xarxes socials del festival.
+                de Món Sant Benet. L&apos;espai exacte s&apos;anunciarà a les xarxes socials del festival.
               </p>
             </div>
           </div>

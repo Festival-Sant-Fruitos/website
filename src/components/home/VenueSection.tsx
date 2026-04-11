@@ -29,7 +29,7 @@ export default function VenueSection() {
                 L&apos;escenari
               </p>
               <h2 className="text-[2rem] md:text-[3.5rem] font-serif font-light text-[var(--color-primary)] leading-[1.05] mb-6">
-                Mon Sant Benet
+                Món Sant Benet
               </h2>
               <p className="text-base md:text-lg text-[var(--color-text-muted)] leading-[1.7] font-light mb-5">
                 El monestir de Sant Benet de Bages, fundat l&apos;any 960, és un dels conjunts

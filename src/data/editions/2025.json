@@ -5,8 +5,8 @@
   "revealed": true,
   "tagline": "Festival Internacional de Música Clàssica",
   "memorial": "Memorial Eduard Casajoana",
-  "venue": "Mon Sant Benet, Sant Fruitós de Bages",
-  "rainVenue": "La Fàbrica, Mon Sant Benet",
+  "venue": "Món Sant Benet, Sant Fruitós de Bages",
+  "rainVenue": "La Fàbrica, Món Sant Benet",
   "concerts": [
     {
       "id": "gala-opera-sarsuela",
@@ -50,7 +50,7 @@
         "G. Rossini - Largo al factotum (Il barbiere di Siviglia)",
         "Selecció de Sarsuela (Moreno Torroba, Fernández Caballero, Soutullo y Vert, Arrieta)"
       ],
-      "description": "Una vetllada lírica excepcional que combina la grandiositat de l'òpera amb la passió de la sarsuela. Quatre intèrprets de primer nivell ens oferiran un recorregut per les àries i duets més emblemàtics del repertori, des de la profunditat de Wagner i Verdi fins a l'alegria i el costumisme de la sarsuela espanyola, tot en el marc incomparable de Mon Sant Benet.",
+      "description": "Una vetllada lírica excepcional que combina la grandiositat de l'òpera amb la passió de la sarsuela. Quatre intèrprets de primer nivell ens oferiran un recorregut per les àries i duets més emblemàtics del repertori, des de la profunditat de Wagner i Verdi fins a l'alegria i el costumisme de la sarsuela espanyola, tot en el marc incomparable de Món Sant Benet.",
       "ticketUrl": "https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online",
       "image": "/images/concerts/gala-opera.jpg",
       "price": "Consultar"

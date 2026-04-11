@@ -49,7 +49,7 @@ export default function Footer() {
               Memorial Eduard Casajoana
             </p>
             <p className="text-sm text-white/60 mt-6 leading-relaxed max-w-[360px]">
-              Més de 30 anys portant la millor música clàssica a Mon Sant Benet,
+              Més de 30 anys portant la millor música clàssica a Món Sant Benet,
               Sant Fruitós de Bages.
             </p>
 

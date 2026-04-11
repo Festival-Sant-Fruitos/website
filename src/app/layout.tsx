@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     template: "%s | Festival Internacional de Música Clàssica",
   },
   description:
-    `${edition.edition} Festival Internacional de Música Clàssica Memorial Eduard Casajoana. Juliol ${edition.year} a Mon Sant Benet, Sant Fruitós de Bages. Més de 30 anys d'excel·lència musical.`,
+    `${edition.edition} Festival Internacional de Música Clàssica Memorial Eduard Casajoana. Juliol ${edition.year} a Món Sant Benet, Sant Fruitós de Bages. Més de 30 anys d'excel·lència musical.`,
   keywords: [
     "festival música clàssica",
-    "Mon Sant Benet",
+    "Món Sant Benet",
     "Sant Fruitós de Bages",
     "concerts clàssica",
     "Eduard Casajoana",
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
     siteName: "Festival Internacional de Música Clàssica",
     title: `${edition.edition} Festival Internacional de Música Clàssica`,
     description:
-      `Juliol ${edition.year} a Mon Sant Benet. Més de 30 anys de música clàssica d'excel·lència.`,
+      `Juliol ${edition.year} a Món Sant Benet. Més de 30 anys de música clàssica d'excel·lència.`,
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Festival Internacional de Música Clàssica a Mon Sant Benet",
+        alt: "Festival Internacional de Música Clàssica a Món Sant Benet",
       },
     ],
   },

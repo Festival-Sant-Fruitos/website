@@ -27,8 +27,8 @@ test.describe('Homepage', () => {
     await expect(page.getByRole('main').getByText('Memorial Eduard Casajoana', { exact: true })).toBeVisible();
   });
 
-  test('shows venue section with Mon Sant Benet', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'Mon Sant Benet' })).toBeVisible();
+  test('shows venue section with Món Sant Benet', async ({ page }) => {
+    await expect(page.getByRole('heading', { name: 'Món Sant Benet' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Com arribar-hi' })).toBeVisible();
   });
 

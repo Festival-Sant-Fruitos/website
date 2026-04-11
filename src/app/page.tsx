@@ -20,7 +20,7 @@ const eventJsonLd = {
   endDate: edition.concerts[edition.concerts.length - 1]?.date,
   location: {
     '@type': 'Place',
-    name: 'Mon Sant Benet',
+    name: 'Món Sant Benet',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Camí de Sant Benet, s/n',
@@ -40,7 +40,7 @@ const eventJsonLd = {
           name: c.title,
           startDate: `${c.date}T${c.time}:00`,
           description: c.subtitle,
-          location: { '@type': 'Place', name: 'Mon Sant Benet' },
+          location: { '@type': 'Place', name: 'Món Sant Benet' },
           performer: c.artists.map((a) => ({ '@type': 'Person', name: a.name })),
           offers: {
             '@type': 'Offer',
