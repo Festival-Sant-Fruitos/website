@@ -111,9 +111,19 @@ export default function AvisLegalPage() {
               </h2>
               <div className="space-y-4 text-base text-[var(--color-text-muted)] leading-[1.6]">
                 <p>
-                  Aquest lloc web utilitza únicament cookies tècniques necessàries per al
-                  correcte funcionament del lloc. No s&apos;utilitzen cookies de seguiment,
-                  analítiques ni publicitàries.
+                  Aquest lloc web utilitza cookies tècniques necessàries per al
+                  correcte funcionament del lloc (com el registre de les vostres preferències
+                  de cookies).
+                </p>
+                <p>
+                  A la pàgina d&apos;ubicació, s&apos;utilitza un mapa incrustat de Google Maps
+                  que pot establir cookies de tercers. Aquesta funcionalitat només es carrega
+                  amb el vostre consentiment explícit. No s&apos;utilitzen cookies analítiques
+                  ni publicitàries.
+                </p>
+                <p>
+                  Podeu modificar les vostres preferències de cookies en qualsevol moment
+                  eliminant les dades del lloc al vostre navegador.
                 </p>
               </div>
             </div>

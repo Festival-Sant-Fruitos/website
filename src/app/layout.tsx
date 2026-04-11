@@ -3,6 +3,7 @@ import { DM_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import CookieConsentBanner from "@/components/shared/CookieConsent";
 import { getCurrentEdition } from "@/lib/festival";
 
 const edition = getCurrentEdition();
@@ -80,6 +81,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content" className="pt-20">{children}</main>
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );
