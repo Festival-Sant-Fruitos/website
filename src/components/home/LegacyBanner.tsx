@@ -35,7 +35,7 @@ export default function LegacyBanner({ editionNumber }: LegacyBannerProps) {
                 <p className="text-[2.5rem] md:text-[4.5rem] font-sans font-light text-[var(--color-secondary)] leading-none tabular-nums">
                   <NumberTicker
                     value={stat.value}
-                    className="!text-[var(--color-secondary)] !font-sans !font-light"
+                    className="text-[var(--color-secondary)] font-sans font-light"
                   />
                   {stat.suffix && (
                     <span className="text-[var(--color-secondary)]">{stat.suffix}</span>
