@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Accordion from '@/components/shared/Accordion';
+import MapEmbed from '@/components/shared/MapEmbed';
 import venueData from '@/data/venue.json';
 
 export const metadata: Metadata = {
@@ -32,7 +33,7 @@ export default function UbicacioPage() {
       {/* Venue photo */}
       <section className="relative aspect-[21/9] overflow-hidden">
         <Image
-          src="/images/venue/venue-panoramic.jpg"
+          src="/images/concerts/gallery/venue-panoramic.jpg"
           alt="Vista panoràmica del recinte del festival a Món Sant Benet"
           fill
           className="object-cover"
@@ -46,14 +47,8 @@ export default function UbicacioPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] lg:gap-[100px]">
             {/* Map - Larger and cleaner */}
             <div className="aspect-square lg:aspect-[4/5] bg-gray-100">
-              <iframe
+              <MapEmbed
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.8!2d1.8995!3d41.7420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a45a639536d525%3A0x4642997184464380!2sM%C3%B3n%20Sant%20Benet!5e0!3m2!1sen!2ses!4v1716380000000!5m2!1sen!2ses"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 title="Mapa de Món Sant Benet"
                 className="w-full h-full"
               />

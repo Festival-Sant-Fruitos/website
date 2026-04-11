@@ -13,7 +13,7 @@ export default function VenueSection() {
           <BlurFade inView inViewMargin="-80px" direction="left">
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 group">
               <Image
-                src="/images/venue/venue-arch-view.jpg"
+                src="/images/concerts/gallery/venue-arch-view.jpg"
                 alt="Vista del recinte des de l'arc del monestir"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
