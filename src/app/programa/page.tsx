@@ -52,7 +52,7 @@ export default function ProgramaPage() {
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="/downloads/triptic-2026-interior.pdf"
+              href="/downloads/triptic-2026.pdf"
               download="Tríptic Festival 2026.pdf"
               className="inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white border border-white/30 hover:border-white/60 px-5 py-2.5 transition-colors duration-300"
             >
