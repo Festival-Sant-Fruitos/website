@@ -49,19 +49,23 @@ export default function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-[13px] font-medium transition-colors duration-300 tracking-wide uppercase ${
-                  pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
-                    ? 'text-[var(--color-primary)]'
-                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-primary)]'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={`text-[13px] font-medium transition-colors duration-300 tracking-wide uppercase ${
+                    isActive
+                      ? 'text-[var(--color-primary)]'
+                      : 'text-[var(--color-text-muted)] hover:text-[var(--color-primary)]'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="flex items-center gap-4">
