@@ -1,0 +1,16 @@
+{
+  "name": "Festival Internacional de Música Clàssica",
+  "short_name": "Festival Música",
+  "description": "Festival Internacional de Música Clàssica Memorial Eduard Casajoana a Món Sant Benet",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2C2C2C",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

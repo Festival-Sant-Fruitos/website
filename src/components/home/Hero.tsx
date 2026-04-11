@@ -18,6 +18,7 @@ export default function Hero({ edition, year }: HeroProps) {
           src="/images/concerts/gallery/monastery-night.jpg"
           alt="Concert nocturn al Monestir de Sant Benet de Bages"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -35,7 +36,7 @@ export default function Hero({ edition, year }: HeroProps) {
         </BlurFade>
 
         <BlurFade delay={0.25} inView={false}>
-          <h1 className="text-[2.75rem] md:text-[4.5rem] lg:text-[5.5rem] font-serif !font-light !text-white leading-[0.95] tracking-tight mb-6 max-w-[900px] drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
+          <h1 className="text-[2.75rem] md:text-[4.5rem] lg:text-[5.5rem] font-serif font-light text-white leading-[0.95] tracking-tight mb-6 max-w-[900px] drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
             Festival Internacional
             <br />
             de Música Clàssica
@@ -61,7 +62,7 @@ export default function Hero({ edition, year }: HeroProps) {
               href="/entrades"
               variant="outline"
               size="lg"
-              className="!text-white !border-white/30 hover:!bg-white/10"
+              className="text-white border-white/30 hover:bg-white/10"
             >
               Comprar Entrades
             </Button>

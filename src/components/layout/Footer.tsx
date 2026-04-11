@@ -114,7 +114,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <Container size="lg" className="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} Associació Música Clàssica Memorial Eduard Casajoana
+            &copy; 1995&ndash;{new Date().getFullYear()} Associació Música Clàssica Memorial Eduard Casajoana
           </p>
           <div className="flex items-center gap-5">
             <Link href="/avis-legal" className="text-xs text-white/30 hover:text-white/60 transition-colors">

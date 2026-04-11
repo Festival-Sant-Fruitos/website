@@ -1,0 +1,31 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('Sobre page', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('/sobre');
+  });
+
+  test('renders page title', async ({ page }) => {
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Nosaltres');
+  });
+
+  test('shows mission section', async ({ page }) => {
+    await expect(page.getByText('La nostra missió')).toBeVisible();
+  });
+
+  test('shows values section', async ({ page }) => {
+    await expect(page.getByText('Els nostres valors')).toBeVisible();
+    await expect(page.getByText('Excel·lència')).toBeVisible();
+    await expect(page.getByText('Accessibilitat')).toBeVisible();
+    await expect(page.getByText('Patrimoni')).toBeVisible();
+  });
+
+  test('shows organization info', async ({ page }) => {
+    await expect(page.getByText('Associació Música Clàssica Memorial Eduard Casajoana')).toBeVisible();
+  });
+
+  test('shows contact section', async ({ page }) => {
+    await expect(page.getByText('Contacte')).toBeVisible();
+    await expect(page.getByText('festivalsantfruitos@gmail.com').first()).toBeVisible();
+  });
+});

@@ -41,6 +41,16 @@ export const metadata: Metadata = {
     "música clàssica Catalunya",
   ],
   authors: [{ name: "Associació Música Clàssica Memorial Eduard Casajoana" }],
+  twitter: {
+    card: 'summary_large_image',
+    title: `${edition.edition} Festival Internacional de Música Clàssica`,
+    description: `Juliol ${edition.year} a Món Sant Benet. Més de 30 anys de música clàssica d'excel·lència.`,
+    images: ['/images/og-image.jpg'],
+  },
+  icons: {
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
   openGraph: {
     type: "website",
     locale: "ca_ES",

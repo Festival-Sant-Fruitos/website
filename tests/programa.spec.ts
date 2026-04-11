@@ -30,7 +30,7 @@ test.describe('Programa page — 2026 concerts', () => {
   });
 
   test('each concert has repertoire listed', async ({ page }) => {
-    await expect(page.getByText('Villa-Lobos', { exact: true })).toBeVisible();
-    await expect(page.getByText('Fàbrega', { exact: true })).toBeVisible();
+    await expect(page.getByText('Braga', { exact: true })).toBeVisible();
+    await expect(page.getByText('Kraus', { exact: true })).toBeVisible();
   });
 });
