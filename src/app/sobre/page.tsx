@@ -32,6 +32,7 @@ export default function SobrePage() {
           src="/images/concerts/gallery/artists-bow.jpg"
           alt="Artistes saludant el públic al final d'un concert"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -122,6 +123,7 @@ export default function SobrePage() {
                 src="/images/concerts/gallery/post-concert-social.jpg"
                 alt="Públic socialitzant després d'un concert"
                 fill
+                sizes="(min-width: 1024px) 720px, 100vw"
                 className="object-cover"
               />
             </div>

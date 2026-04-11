@@ -36,6 +36,7 @@ export default function UbicacioPage() {
           src="/images/concerts/gallery/venue-panoramic.jpg"
           alt="Vista panoràmica del recinte del festival a Món Sant Benet"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />

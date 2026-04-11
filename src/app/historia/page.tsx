@@ -116,6 +116,7 @@ export default function HistoriaPage() {
                     src={featuredEditions[0].image}
                     alt={`${featuredEditions[0].edition} Edició`}
                     fill
+                    sizes="100vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 )}
@@ -149,6 +150,7 @@ export default function HistoriaPage() {
                         src={edition.image}
                         alt={`${edition.edition} Edició`}
                         fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
                         className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       />
                     )}
