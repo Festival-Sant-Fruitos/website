@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 
 interface MobileMenuProps {
   open: boolean;
@@ -14,19 +14,53 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ open, onClose, links, edition, year }: MobileMenuProps) {
   const reduced = useReducedMotion();
+  const menuRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
   useEffect(() => {
     if (open) {
       document.body.style.overflow = 'hidden';
+      closeButtonRef.current?.focus();
     } else {
       document.body.style.overflow = '';
     }
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      onClose();
+      return;
+    }
+    if (e.key !== 'Tab') return;
+
+    const menu = menuRef.current;
+    if (!menu) return;
+
+    const focusable = menu.querySelectorAll<HTMLElement>(
+      'a[href], button, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }, [onClose]);
+
   return (
     <AnimatePresence>
       {open && (
         <motion.div
+          ref={menuRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menú de navegació"
+          onKeyDown={handleKeyDown}
           initial={reduced ? { opacity: 0 } : { x: '-100%' }}
           animate={reduced ? { opacity: 1 } : { x: 0 }}
           exit={reduced ? { opacity: 0 } : { x: '-100%' }}
@@ -38,6 +72,7 @@ export default function MobileMenu({ open, onClose, links, edition, year }: Mobi
               Festival Internacional
             </span>
             <button
+              ref={closeButtonRef}
               onClick={onClose}
               className="p-1 text-gray-800"
               aria-label="Tancar menú"
