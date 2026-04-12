@@ -64,9 +64,16 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
                   <h3 className="text-xl md:text-[22px] font-serif font-medium text-[var(--color-primary)] leading-[1.15] mb-2.5 group-hover:text-[var(--color-secondary)] transition-colors duration-300">
                     {concert.title}
                   </h3>
-                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed line-clamp-2">
-                    {concert.artists.map(a => a.name).join(', ')}
-                  </p>
+                  <ul className="text-sm text-[var(--color-text-muted)] leading-relaxed space-y-0.5">
+                    {concert.artists.map((a, idx) => (
+                      <li key={idx}>
+                        <span>{a.name}</span>
+                        {a.role && (
+                          <span className="text-[var(--color-text-light)]"> · {a.role}</span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </Link>
             </BlurFade>
