@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Container from '@/components/shared/Container';
-import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
 import ComingSoon from '@/components/shared/ComingSoon';
 import { getCurrentEdition } from '@/lib/festival';
@@ -35,95 +34,109 @@ export default function EntradesPage() {
 
       {edition.revealed ? (
         <>
-          {/* Pricing & Tiers */}
+          {/* Concerts with per-concert buy buttons */}
           <section className="py-20 md:py-[100px]">
             <Container>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] lg:gap-[100px]">
+              <div className="max-w-[900px] mx-auto">
+                <div className="mb-12 text-center">
+                  <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light leading-[1.05] tracking-tight text-[var(--color-primary)]">
+                    Concerts {edition.year}
+                  </h2>
+                  <p className="text-lg md:text-xl mt-4 max-w-[600px] mx-auto leading-[1.5] font-light text-[var(--color-text-muted)]">
+                    Tria el concert i compra les entrades directament
+                  </p>
+                </div>
 
-                {/* Left: General Info & Prices */}
-                <div>
-                  <SectionHeading
-                    title={`Tarifes ${edition.year}`}
-                    subtitle="Preus populars per apropar la cultura a tothom"
-                    className="mb-10"
-                  />
-
-                  <div className="space-y-[30px]">
-                    {edition.concerts.map((concert) => (
-                      <div key={concert.date} className="flex items-center justify-between gap-6 border-b border-[var(--color-border)] pb-5">
-                        <div className="min-w-0">
-                          <h3 className="text-xl font-serif font-medium text-[var(--color-primary)]">{concert.title}</h3>
-                          <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">{concert.day} de juliol</p>
-                        </div>
-                        <span className="text-[2rem] font-bold font-sans text-[var(--color-primary)] shrink-0">{concert.price}</span>
+                <div className="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
+                  {edition.concerts.map((concert) => (
+                    <div
+                      key={concert.date}
+                      className="flex flex-col md:flex-row md:items-center gap-5 md:gap-8 py-6 md:py-8"
+                    >
+                      <div className="flex items-baseline gap-4 md:w-[140px] shrink-0">
+                        <span className="text-[2.5rem] md:text-[3rem] font-serif font-medium text-[var(--color-secondary)] leading-none">
+                          {concert.day}
+                        </span>
+                        <span className="text-sm uppercase tracking-wider text-[var(--color-text-muted)]">
+                          {concert.month}
+                        </span>
                       </div>
-                    ))}
 
-                    <div className="bg-[var(--color-surface)] p-[30px] mt-10">
-                      <h4 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-[15px]">
-                        Descomptes i Promocions
-                      </h4>
-                      <ul className="space-y-2.5 text-[15px] text-[var(--color-text-main)]">
-                        <li className="flex items-start gap-2.5">
-                          <span className="text-[var(--color-secondary)] font-bold">•</span>
-                          <span><strong>Club Regió7:</strong> 2x1 per als socis (venda exclusiva a taquilles)</span>
-                        </li>
-                        <li className="flex items-start gap-2.5">
-                          <span className="text-[var(--color-secondary)] font-bold">•</span>
-                          <span><strong>Grups:</strong> Consultar preus especials per a més de 10 persones</span>
-                        </li>
-                      </ul>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-xl md:text-2xl font-serif font-medium text-[var(--color-primary)] leading-tight">
+                          {concert.title}
+                        </h3>
+                        {concert.subtitle && (
+                          <p className="text-sm text-[var(--color-text-muted)] mt-1 font-light">
+                            {concert.subtitle}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="flex items-center gap-5 md:gap-6 md:ml-auto">
+                        <span className="text-2xl font-bold font-sans text-[var(--color-primary)]">
+                          {concert.price}
+                        </span>
+                        <Button
+                          href={concert.ticketUrl}
+                          external
+                          variant="primary"
+                          size="sm"
+                        >
+                          Comprar
+                        </Button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Container>
+          </section>
+
+          <hr className="border-[var(--color-border)]" />
+
+          {/* Punts de Venda */}
+          <section className="py-20 md:py-[100px] bg-[var(--color-surface)]">
+            <Container>
+              <div className="max-w-[1000px] mx-auto">
+                <div className="text-center mb-14">
+                  <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light leading-[1.05] tracking-tight text-[var(--color-primary)]">
+                    Punts de venda presencials
+                  </h2>
+                  <p className="text-lg md:text-xl mt-4 max-w-[600px] mx-auto leading-[1.5] font-light text-[var(--color-text-muted)]">
+                    Com aconseguir les teves entrades
+                  </p>
+                </div>
+
+                {/* Presencial grid */}
+                <div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="border border-[var(--color-border)] bg-white p-6">
+                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Sant Fruitós de Bages</h4>
+                      <p className="text-[15px] font-bold text-[var(--color-text-main)]">Joanan33@ (antic Foto Isidre)</p>
+                      <p className="text-sm text-[var(--color-text-muted)] mt-1">Carretera de Vic, 44</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Botiga</p>
+                    </div>
+                    <div className="border border-[var(--color-border)] bg-white p-6">
+                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Manresa</h4>
+                      <p className="text-[15px] font-bold text-[var(--color-text-main)]">Taquilles Teatre Kursaal</p>
+                      <p className="text-sm text-[var(--color-text-muted)] mt-1">Passeig de Pere III, 35</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Taquilles</p>
+                    </div>
+                    <div className="border border-[var(--color-border)] bg-white p-6">
+                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Club Regió7</h4>
+                      <p className="text-[15px] font-bold text-[var(--color-text-main)]">2x1 per als socis</p>
+                      <p className="text-sm text-[var(--color-text-muted)] mt-1">Venda exclusiva per a subscriptors</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Promoció</p>
+                    </div>
+                    <div className="border border-[var(--color-border)] bg-white p-6">
+                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">A l&apos;entrada del concert</h4>
+                      <p className="text-[15px] font-bold text-[var(--color-text-main)]">Món Sant Benet</p>
+                      <p className="text-sm text-[var(--color-text-muted)] mt-1">Segons disponibilitat, a partir de les 21:15h</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">El dia del concert</p>
                     </div>
                   </div>
                 </div>
-
-                {/* Right: Where to buy */}
-                <div>
-                  <SectionHeading
-                    title="Punts de Venda"
-                    subtitle="Com aconseguir les teves entrades"
-                    className="mb-10"
-                  />
-
-                  <div className="grid gap-[30px]">
-                    {/* Online Card */}
-                    <div className="border border-[var(--color-secondary)] p-10 text-center bg-[var(--color-secondary)]/5">
-                      <h3 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-2.5">
-                        Venda Online
-                      </h3>
-                      <p className="text-base text-[var(--color-text-muted)] mb-[30px]">
-                        Compra immediata i segura a través de CodeTickets.
-                        Sense cues i amb confirmació a l&apos;instant.
-                      </p>
-                      <Button
-                        href="https://entradas.codetickets.com/entradas/festivalinternacionalmusicaclassica/online"
-                        external
-                        variant="primary"
-                        size="lg"
-                        className="w-full sm:w-auto"
-                      >
-                        Comprar Entrades Ara
-                      </Button>
-                    </div>
-
-                    {/* Physical Points */}
-                    <div className="grid grid-cols-1 gap-5">
-                      <div className="border border-[var(--color-border)] p-6">
-                        <h4 className="text-base font-bold text-[var(--color-primary)] mb-[5px]">Sant Fruitós de Bages</h4>
-                        <p className="text-[15px] font-bold text-[var(--color-text-main)]">Joanan33@ (Antic Foto Isidre)</p>
-                        <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">Ctra. de Vic, 44</p>
-                        <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Botiga</p>
-                      </div>
-                      <div className="border border-[var(--color-border)] p-6">
-                        <h4 className="text-base font-bold text-[var(--color-primary)] mb-[5px]">Manresa</h4>
-                        <p className="text-[15px] font-bold text-[var(--color-text-main)]">Taquilles Teatre Kursaal</p>
-                        <p className="text-sm text-[var(--color-text-muted)] mt-[5px]">Passeig de Pere III, 35</p>
-                        <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Taquilles</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
               </div>
             </Container>
           </section>
