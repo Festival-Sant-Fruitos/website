@@ -199,10 +199,6 @@ export default function UbicacioPage() {
                 {
                   title: "Com arribar en cotxe",
                   content: <Accordion items={venueData.transport.car} className="pl-5 border-t-0" />
-                },
-                {
-                  title: "Transport Públic",
-                  content: <Accordion items={venueData.transport.publicTransport} className="pl-5 border-t-0" />
                 }
               ]}
             />

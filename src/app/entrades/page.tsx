@@ -111,29 +111,28 @@ export default function EntradesPage() {
                 {/* Presencial grid */}
                 <div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div className="border border-[var(--color-border)] bg-white p-6">
+                    <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
                       <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Sant Fruitós de Bages</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">Joanan33@ (antic Foto Isidre)</p>
                       <p className="text-sm text-[var(--color-text-muted)] mt-1">Carretera de Vic, 44</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Botiga</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">Botiga</p>
                     </div>
-                    <div className="border border-[var(--color-border)] bg-white p-6">
+                    <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
                       <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Manresa</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">Taquilles Teatre Kursaal</p>
                       <p className="text-sm text-[var(--color-text-muted)] mt-1">Passeig de Pere III, 35</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Taquilles</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">Taquilles</p>
                     </div>
-                    <div className="border border-[var(--color-border)] bg-white p-6">
+                    <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
                       <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Club Regió7</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">2x1 per als socis</p>
-                      <p className="text-sm text-[var(--color-text-muted)] mt-1">Venda exclusiva per a subscriptors</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">Promoció</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">Promoció</p>
                     </div>
-                    <div className="border border-[var(--color-border)] bg-white p-6">
+                    <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
                       <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">A l&apos;entrada del concert</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">Món Sant Benet</p>
                       <p className="text-sm text-[var(--color-text-muted)] mt-1">Segons disponibilitat, a partir de les 21:15h</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-2.5 uppercase tracking-wide">El dia del concert</p>
+                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">El dia del concert</p>
                     </div>
                   </div>
                 </div>
@@ -180,7 +179,7 @@ export default function EntradesPage() {
                <div>
                  <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Obertura de portes</h4>
                  <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
-                   L&apos;accés al recinte s&apos;obre 1 hora abans de l&apos;inici del concert (21:15h). Hi ha servei de bar.
+                   L&apos;accés al recinte s&apos;obre a les 21:30h. Hi ha servei de bar al Jardí de l&apos;Absis.
                  </p>
                </div>
                <div>
