@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
+import ComingSoon from '@/components/shared/ComingSoon';
 import { BlurFade } from '@/components/ui/blur-fade';
 import ConcertArtistCollage from '@/components/programa/ConcertArtistCollage';
 import type { Concert } from '@/types/festival';
@@ -18,23 +19,10 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
 
   if (!revealed) {
     return (
-      <section className="py-20 md:py-[140px]">
-        <Container>
-          <div className="max-w-[600px] mx-auto text-center">
-            <SectionHeading
-              title={`Programa ${year}`}
-              subtitle="Pròximament"
-              className="mb-6"
-            />
-            <p className="text-lg text-[var(--color-text-muted)] leading-relaxed mb-10">
-              La programació s&apos;anunciarà properament. Subscriu-te per ser dels primers en saber-ho.
-            </p>
-            <Button href="https://www.instagram.com/festivalsantfruitos" variant="outline" external>
-              Segueix-nos a Instagram
-            </Button>
-          </div>
-        </Container>
-      </section>
+      <ComingSoon
+        eyebrow={`Programa · Juliol ${year}`}
+        description="La programació s'anunciarà properament. Subscriu-te per ser dels primers en saber-ho."
+      />
     );
   }
 

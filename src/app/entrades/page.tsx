@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import Button from '@/components/shared/Button';
+import ComingSoon from '@/components/shared/ComingSoon';
 import { getCurrentEdition } from '@/lib/festival';
 
 const edition = getCurrentEdition();
@@ -130,24 +131,11 @@ export default function EntradesPage() {
           <hr className="border-[var(--color-border)]" />
         </>
       ) : (
-        /* Teaser — clean centered section matching homepage style */
-        <section className="py-20 md:py-[140px]">
-          <Container>
-            <div className="max-w-[600px] mx-auto text-center">
-              <SectionHeading
-                title="Pròximament"
-                subtitle="La venda d'entrades s'obrirà quan es publiqui el programa"
-                className="mb-6"
-              />
-              <p className="text-lg text-[var(--color-text-muted)] leading-relaxed mb-10">
-                Segueix-nos a xarxes socials per ser dels primers en saber quan es posen a la venda.
-              </p>
-              <Button href="https://www.instagram.com/festivalsantfruitos" variant="outline" external>
-                Segueix-nos a Instagram
-              </Button>
-            </div>
-          </Container>
-        </section>
+        /* Teaser — shared ComingSoon pattern */
+        <ComingSoon
+          eyebrow={`Entrades · Juliol ${edition.year}`}
+          description="La venda d'entrades s'obrirà quan es publiqui el programa. Segueix-nos a xarxes socials per ser dels primers en saber-ho."
+        />
       )}
 
       {/* FAQ Section — always visible */}
