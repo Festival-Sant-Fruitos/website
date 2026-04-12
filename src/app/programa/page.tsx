@@ -103,9 +103,11 @@ export default function ProgramaPage() {
                     <h2 className="text-[2.25rem] md:text-[3rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-3">
                       {concert.title}
                     </h2>
-                    <p className="text-xl text-[var(--color-text-muted)] font-light leading-relaxed mb-[30px]">
-                      {concert.subtitle}
-                    </p>
+                    {concert.subtitle && (
+                      <p className="text-xl text-[var(--color-text-muted)] font-light leading-relaxed mb-[30px]">
+                        {concert.subtitle}
+                      </p>
+                    )}
 
                     <div className="prose prose-lg text-[var(--color-text-main)] mb-10">
                       <p className="text-base leading-relaxed">
@@ -171,8 +173,9 @@ export default function ProgramaPage() {
             <div>
               <p className="text-base font-bold text-[var(--color-primary)] mb-1">Garantia de concert</p>
               <p className="text-sm text-[var(--color-text-muted)]">
-                En cas de pluja, els concerts es traslladaran a un espai cobert dins del recinte
-                de Món Sant Benet. L&apos;espai exacte s&apos;anunciarà a les xarxes socials del festival.
+                En cas de pluja, si és possible, els concerts es traslladaran a un espai cobert
+                dins del recinte de Món Sant Benet. L&apos;espai exacte s&apos;anunciarà a les
+                xarxes socials del festival.
               </p>
             </div>
           </div>

@@ -95,6 +95,98 @@ export default function UbicacioPage() {
 
       <hr className="border-[var(--color-border)]" />
 
+      {/* Experiències per als assistents */}
+      <section className="py-20 md:py-[120px] bg-[var(--color-surface)]">
+        <Container>
+          <div className="max-w-[900px] mx-auto">
+            <div className="mb-14 text-center">
+              <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light leading-[1.05] tracking-tight text-[var(--color-primary)]">
+                Experiències per als assistents
+              </h2>
+              <p className="text-lg md:text-xl mt-4 max-w-[600px] mx-auto leading-[1.5] font-light text-[var(--color-text-muted)]">
+                Món Sant Benet ofereix avantatges especials per a qui ve al festival
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {/* Sopars i Allotjament */}
+              <div className="bg-white border border-[var(--color-border)] p-8 lg:p-10 flex flex-col">
+                <p className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-3">
+                  Sopars i allotjament
+                </p>
+                <h3 className="text-2xl font-serif font-medium text-[var(--color-primary)] leading-tight mb-5">
+                  Restaurant Món i Hotel Món
+                </h3>
+                <p className="text-[15px] text-[var(--color-text-main)] leading-relaxed mb-4">
+                  Servei de sopars al Restaurant Món, ubicat dins l&apos;Hotel Món, de 20 a 22h.
+                  Recomanem l&apos;allotjament a l&apos;Hotel Món ****S: en reservar directament
+                  i mencionant que assistiu al concert, us beneficiareu d&apos;un descompte
+                  en la tarifa i altres cortesies.
+                </p>
+                <p className="text-xs text-[var(--color-text-muted)] italic mb-6">
+                  Promoció vàlida únicament per a reserves fetes directament per telèfon o e-mail.
+                </p>
+
+                <div className="mt-auto pt-5 border-t border-[var(--color-border)] space-y-1.5 text-sm">
+                  <p>
+                    <span className="font-semibold text-[var(--color-primary)]">Telèfon:</span>{' '}
+                    <a href="tel:+34938759404" className="text-[var(--color-text-main)] hover:text-[var(--color-secondary)] transition-colors">
+                      938 759 404
+                    </a>
+                  </p>
+                  <p>
+                    <span className="font-semibold text-[var(--color-primary)]">E-mail:</span>{' '}
+                    <a href="mailto:hotel@monsantbenet.com" className="text-[var(--color-text-main)] hover:text-[var(--color-secondary)] transition-colors">
+                      hotel@monsantbenet.com
+                    </a>
+                  </p>
+                  <p className="text-xs text-[var(--color-text-muted)] pt-2">
+                    Servei de bar-cafeteria a la Plaça de l&apos;Absis, de 20 a 22h.
+                  </p>
+                </div>
+              </div>
+
+              {/* Visita Especial Monestir */}
+              <div className="bg-white border border-[var(--color-border)] p-8 lg:p-10 flex flex-col">
+                <p className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-3">
+                  Visita especial
+                </p>
+                <h3 className="text-2xl font-serif font-medium text-[var(--color-primary)] leading-tight mb-5">
+                  Les dues cares del monestir
+                </h3>
+                <p className="text-[15px] text-[var(--color-text-main)] leading-relaxed mb-4">
+                  Descobreix el monestir a través de dues experiències immersives
+                  amb projeccions de gran format: l&apos;època medieval a l&apos;església,
+                  el celler i el claustre, i l&apos;època modernista, quan el monestir
+                  es va reconvertir en residència d&apos;estiu del pintor Ramon Casas.
+                </p>
+                <p className="text-[15px] text-[var(--color-text-main)] leading-relaxed mb-6">
+                  Si sou assistents als concerts, amb el codi{' '}
+                  <span className="font-semibold text-[var(--color-primary)]">FESTIVALSF</span>{' '}
+                  tindreu un preu especial.
+                </p>
+
+                <div className="mt-auto pt-5 border-t border-[var(--color-border)]">
+                  <a
+                    href="https://monsantbenet.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
+                  >
+                    Horaris i compra d&apos;entrades a monsantbenet.com
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 17L17 7M17 7H9M17 7V15" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <hr className="border-[var(--color-border)]" />
+
       {/* Transport Grid */}
       <section className="py-20 md:py-[120px]">
         <Container>
