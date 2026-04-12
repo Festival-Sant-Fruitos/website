@@ -13,7 +13,7 @@ export default function LegacyBanner({ editionNumber }: LegacyBannerProps) {
     { value: editionNumber, label: 'Edicions', suffix: '' },
     { value: 120, label: 'Concerts', suffix: '+' },
     { value: 30, label: 'Anys', suffix: '+' },
-    { value: 200, label: 'Artistes', suffix: '+' },
+    { value: 500, label: 'Artistes en total', suffix: '+' },
   ];
   return (
     <section className="py-20 md:py-[140px] bg-[var(--color-primary)]">

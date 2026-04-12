@@ -12,16 +12,9 @@ export default function MemorialSection() {
             <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-6">
               In Memoriam
             </p>
-            <h2 className="text-2xl md:text-[3rem] font-serif font-light italic text-[var(--color-primary)] leading-[1.3] mb-6">
+            <h2 className="text-2xl md:text-[3rem] font-serif font-light italic text-[var(--color-primary)] leading-[1.3]">
               &laquo;La música clàssica ha de ser per a tothom&raquo;
             </h2>
-            <div className="w-10 h-px bg-[var(--color-secondary)] mx-auto mb-6" />
-            <p className="text-base md:text-lg text-[var(--color-text-muted)] leading-relaxed font-light">
-              El festival porta el nom de Memorial Eduard Casajoana en honor a qui va ser
-              un dels grans impulsors de la cultura musical a la comarca del Bages.
-              El seu llegat perviu en cada edició, continuant la seva missió de fer
-              accessible la música clàssica d&apos;excel·lència.
-            </p>
           </div>
         </BlurFade>
       </Container>

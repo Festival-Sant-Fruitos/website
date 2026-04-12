@@ -37,8 +37,8 @@ export default function VenueSection() {
                 La Pedrera, ofereix un marc incomparable per gaudir de la música clàssica sota les estrelles.
               </p>
               <p className="text-base text-[var(--color-text-muted)] leading-[1.7] mb-8">
-                Els concerts es celebren al claustre del monestir, un espai amb una acústica
-                excepcional que crea una connexió única entre la música, la història i la natura.
+                Els concerts es celebren al Jardí dels Arcs, un espai que crea una
+                connexió única entre la música, la història i la natura.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button href="/ubicacio" variant="dark">
