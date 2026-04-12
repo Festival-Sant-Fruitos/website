@@ -89,36 +89,16 @@ export default function ProgramaPage() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[60px]">
-                  {/* Left: Image & Key Info */}
-                  <div className="lg:col-span-5 space-y-[30px]">
+                  {/* Left: Image */}
+                  <div className="lg:col-span-5">
                     <ConcertArtistCollage
                       images={concert.artistImages ?? []}
                       fallbackImage={concert.image}
                       fallbackAlt={concert.title}
                     />
-
-                    <div className="bg-[var(--color-surface)] p-[30px]">
-                       <h3 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5">
-                         Intèrprets
-                       </h3>
-                       <ul className="space-y-3">
-                         {concert.artists.map((artist) => (
-                           <li key={artist.name}>
-                             <span className="block text-lg font-serif font-medium text-[var(--color-primary)]">
-                               {artist.name}
-                             </span>
-                             {artist.role && (
-                               <span className="block text-sm text-[var(--color-text-muted)] italic">
-                                 {artist.role}
-                               </span>
-                             )}
-                           </li>
-                         ))}
-                       </ul>
-                    </div>
                   </div>
 
-                  {/* Right: Content & Repertoire */}
+                  {/* Right: Content & Interprets */}
                   <div className="lg:col-span-7 flex flex-col">
                     <h2 className="text-[2.25rem] md:text-[3rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-3">
                       {concert.title}
@@ -133,25 +113,27 @@ export default function ProgramaPage() {
                       </p>
                     </div>
 
-                    {/* Repertoire List */}
-                    {concert.repertoire && (
-                      <div className="mb-10">
-                         <h3 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5 flex items-center gap-4">
-                           Programa
-                           <span className="h-px bg-[var(--color-border)] flex-1"></span>
-                         </h3>
-                         <ul className="grid grid-cols-1 gap-3">
-                           {concert.repertoire.map((item, idx) => (
-                             <li key={idx} className="flex gap-4 text-[15px] text-[var(--color-text-main)]">
-                               <span className="text-[var(--color-secondary)] font-bold">
-                                 {String(idx + 1).padStart(2, '0')}
-                               </span>
-                               <span>{item}</span>
-                             </li>
-                           ))}
-                         </ul>
-                      </div>
-                    )}
+                    {/* Interprets List */}
+                    <div className="mb-10">
+                      <h3 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5 flex items-center gap-4">
+                        Intèrprets
+                        <span className="h-px bg-[var(--color-border)] flex-1"></span>
+                      </h3>
+                      <ul className="space-y-3">
+                        {concert.artists.map((artist) => (
+                          <li key={artist.name}>
+                            <span className="block text-lg font-serif font-medium text-[var(--color-primary)]">
+                              {artist.name}
+                            </span>
+                            {artist.role && (
+                              <span className="block text-sm text-[var(--color-text-muted)] italic">
+                                {artist.role}
+                              </span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
                     <div className="mt-auto pt-10 border-t border-[var(--color-border)] flex flex-wrap items-center gap-5 justify-between">
                        <div className="flex flex-col">
