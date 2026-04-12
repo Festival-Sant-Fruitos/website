@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Container from '@/components/shared/Container';
+import CookiePreferencesLink from '@/components/shared/CookiePreferencesLink';
 import { getCurrentEdition } from '@/lib/festival';
 
 const edition = getCurrentEdition();
@@ -120,6 +121,10 @@ export default function Footer() {
             <Link href="/avis-legal" className="text-xs text-white/30 hover:text-white/60 transition-colors">
               Avís Legal
             </Link>
+            <span className="text-white/10">|</span>
+            <CookiePreferencesLink className="text-xs text-white/30 hover:text-white/60 transition-colors">
+              Preferències de cookies
+            </CookiePreferencesLink>
             <span className="text-white/10">|</span>
             <span className="text-xs text-white/30">
               Entrades a{' '}

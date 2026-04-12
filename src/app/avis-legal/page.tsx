@@ -122,8 +122,9 @@ export default function AvisLegalPage() {
                   ni publicitàries.
                 </p>
                 <p>
-                  Podeu modificar les vostres preferències de cookies en qualsevol moment
-                  eliminant les dades del lloc al vostre navegador.
+                  Podeu modificar o retirar el vostre consentiment en qualsevol moment
+                  fent clic a <strong className="text-[var(--color-primary)]">&laquo;Preferències de cookies&raquo;</strong>{' '}
+                  al peu de pàgina. El consentiment es renova automàticament cada 12 mesos.
                 </p>
               </div>
             </div>
