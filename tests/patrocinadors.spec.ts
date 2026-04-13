@@ -9,8 +9,8 @@ test.describe('Patrocinadors page', () => {
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Patrocinadors');
   });
 
-  test('shows thank-you text', async ({ page }) => {
-    await expect(page.getByText(/Gràcies a tots/i)).toBeVisible();
+  test('shows intro text', async ({ page }) => {
+    await expect(page.getByText(/seguit de patrocinadors/i)).toBeVisible();
   });
 
   test('shows sponsors image', async ({ page }) => {

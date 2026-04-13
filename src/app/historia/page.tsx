@@ -32,7 +32,7 @@ export default function HistoriaPage() {
       <section className="py-20 md:py-[120px]">
         <Container>
           <div className="max-w-[800px] mx-auto">
-            <div className="text-[var(--color-text-main)] space-y-6">
+            <div className="text-[var(--color-text-main)] space-y-6 text-center">
               <p className="text-xl font-light leading-relaxed text-[var(--color-text-muted)]">
                 {'La Música, i més concretament la Música Clàssica, ha trobat a Sant Fruitós de Bages un destacat espai de difusió en el marc del \u201CFestival Internacional de Música Clàssica\u201D.'}
               </p>

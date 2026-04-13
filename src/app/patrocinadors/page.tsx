@@ -33,8 +33,10 @@ export default function PatrocinadorsPage() {
       <section className="py-20 md:py-[120px]">
         <Container>
           <div className="max-w-[720px] mx-auto">
-            <p className="text-lg text-[var(--color-text-muted)] leading-[1.7] mb-14 md:mb-20">
-              Gràcies a tots els qui fan possible el Festival, any rere any.
+            <p className="text-lg text-[var(--color-text-muted)] leading-[1.7] text-center mb-14 md:mb-20">
+              A les institucions s&apos;hi han afegit un seguit de patrocinadors que
+              fan possible mantenir un programa artístic de primer nivell, amb uns
+              preus molt assequibles per al públic.
             </p>
 
             <Image
