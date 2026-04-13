@@ -19,6 +19,7 @@ const footerColumns = [
     title: 'Informació',
     links: [
       { label: 'Nosaltres', href: '/sobre' },
+      { label: 'Patrocinadors', href: '/patrocinadors' },
       { label: 'Contacte', href: '/sobre#contacte' },
       { label: 'Avís Legal', href: '/avis-legal' },
     ],

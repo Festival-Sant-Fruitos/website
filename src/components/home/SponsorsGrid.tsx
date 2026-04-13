@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Container from '@/components/shared/Container';
 import { BlurFade } from '@/components/ui/blur-fade';
 
@@ -20,6 +21,17 @@ export default function SponsorsGrid() {
               height={1800}
               className="w-full h-auto"
             />
+            <div className="mt-10 text-center">
+              <Link
+                href="/patrocinadors"
+                className="inline-flex items-center gap-2 text-sm font-medium tracking-wide text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
+              >
+                Veure tots els patrocinadors
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </BlurFade>
       </Container>

@@ -16,6 +16,7 @@ const navLinks = [
   { label: 'Entrades', href: '/entrades' },
   { label: 'Ubicació', href: '/ubicacio' },
   { label: 'Història', href: '/historia' },
+  { label: 'Patrocinadors', href: '/patrocinadors' },
   { label: 'Nosaltres', href: '/sobre' },
 ];
 
