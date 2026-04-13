@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { isRevealed, currentEdition } from './utils';
 
 test.describe('Homepage', () => {
   test.beforeEach(async ({ page }) => {
@@ -15,11 +16,15 @@ test.describe('Homepage', () => {
     await expect(page.getByRole('main').getByRole('link', { name: 'Comprar Entrades' })).toBeVisible();
   });
 
-  test('shows 4 concert cards in program section', async ({ page }) => {
-    const programSection = page.locator('section').filter({ hasText: /Programa \d{4}/ });
-    await expect(programSection).toBeVisible();
-    const concertLinks = programSection.getByRole('link').filter({ hasText: /juliol/i });
-    await expect(concertLinks).toHaveCount(4);
+  test('program section adapts to revealed state', async ({ page }) => {
+    if (isRevealed) {
+      const programSection = page.locator('section').filter({ hasText: /Programa \d{4}/ });
+      await expect(programSection).toBeVisible();
+      const concertLinks = programSection.getByRole('link').filter({ hasText: /juliol/i });
+      await expect(concertLinks).toHaveCount(currentEdition.concerts.length);
+    } else {
+      await expect(page.getByRole('heading', { name: 'Pròximament' }).first()).toBeVisible();
+    }
   });
 
   test('displays quote section', async ({ page }) => {
@@ -33,9 +38,11 @@ test.describe('Homepage', () => {
   });
 
   test('shows stats in legacy banner', async ({ page }) => {
-    await expect(page.getByText('Edicions')).toBeVisible();
-    await expect(page.getByText('Concerts', { exact: true })).toBeVisible();
-    await expect(page.getByText('Artistes')).toBeVisible();
+    const banner = page.locator('section').filter({ hasText: 'Més de tres dècades' });
+    await banner.scrollIntoViewIfNeeded();
+    await expect(banner.getByText('Edicions', { exact: true })).toBeVisible();
+    await expect(banner.getByText('Concerts', { exact: true })).toBeVisible();
+    await expect(banner.getByText('Artistes en total', { exact: true })).toBeVisible();
   });
 
   test('sponsors section is visible', async ({ page }) => {
@@ -54,7 +61,11 @@ test.describe('Homepage', () => {
     expect(jsonLd).toBeTruthy();
     const data = JSON.parse(jsonLd!);
     expect(data['@type']).toBe('MusicFestival');
-    expect(data.subEvent).toHaveLength(4);
+    if (isRevealed) {
+      expect(data.subEvent).toHaveLength(currentEdition.concerts.length);
+    } else {
+      expect(data.subEvent).toBeUndefined();
+    }
   });
 
   test('mobile menu opens and closes', async ({ page }) => {

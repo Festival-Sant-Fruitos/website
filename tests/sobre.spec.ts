@@ -14,10 +14,10 @@ test.describe('Sobre page', () => {
   });
 
   test('shows values section', async ({ page }) => {
-    await expect(page.getByText('Els nostres valors')).toBeVisible();
-    await expect(page.getByText('Excel·lència')).toBeVisible();
-    await expect(page.getByText('Accessibilitat')).toBeVisible();
-    await expect(page.getByText('Patrimoni')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Els nostres valors' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Excel·lència' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Accessibilitat' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Patrimoni' })).toBeVisible();
   });
 
   test('shows organization info', async ({ page }) => {
@@ -25,7 +25,7 @@ test.describe('Sobre page', () => {
   });
 
   test('shows contact section', async ({ page }) => {
-    await expect(page.getByText('Contacte')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Contacte' })).toBeVisible();
     await expect(page.getByText('festivalsantfruitos@gmail.com').first()).toBeVisible();
   });
 });

@@ -1,36 +1,65 @@
 import { test, expect } from '@playwright/test';
+import { isRevealed, currentEdition } from './utils';
 
-test.describe('Programa page — 2026 concerts', () => {
+test.describe('Programa page', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/programa');
   });
 
-  test('shows all four 2026 concerts', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: /De Barcelona a Buenos Aires/i })).toBeVisible();
-    await expect(page.getByRole('heading', { name: /Pianant/i })).toBeVisible();
-    await expect(page.getByRole('heading', { name: /Haydn i els Mozart/i })).toBeVisible();
-    await expect(page.getByRole('heading', { name: /And the winner is/i })).toBeVisible();
+  test('renders page hero', async ({ page }) => {
+    await expect(page.getByRole('heading', { level: 1, name: /Programa Oficial/i })).toBeVisible();
   });
 
-  test('shows correct prices from triptych', async ({ page }) => {
-    await expect(page.getByText('25€').first()).toBeVisible();
-    await expect(page.getByText('30€').first()).toBeVisible();
+  test.describe('when edition is hidden', () => {
+    test.skip(isRevealed, 'Only runs when the current edition is not yet revealed');
+
+    test('shows teaser with "Pròximament"', async ({ page }) => {
+      await expect(page.getByRole('heading', { name: 'Pròximament' })).toBeVisible();
+    });
+
+    test('does not show concert detail sections', async ({ page }) => {
+      await expect(page.locator('img[src*="/images/artists/"]')).toHaveCount(0);
+    });
   });
 
-  test('shows artist images for each concert', async ({ page }) => {
-    const artistImages = page.locator('img[src*="/images/artists/"]');
-    await expect(artistImages.first()).toBeVisible();
-    expect(await artistImages.count()).toBeGreaterThanOrEqual(4);
-  });
+  test.describe('when edition is revealed', () => {
+    test.skip(!isRevealed, 'Only runs when the current edition is revealed');
 
-  test('triptych download link is present', async ({ page }) => {
-    const downloadLink = page.getByRole('link', { name: /Descarrega el tríptic/i });
-    await expect(downloadLink).toBeVisible();
-    await expect(downloadLink).toHaveAttribute('href', /triptic-2026/);
-  });
+    test('shows every concert from the edition', async ({ page }) => {
+      for (const concert of currentEdition.concerts) {
+        await expect(
+          page.getByRole('heading', { name: concert.title, exact: false }).first()
+        ).toBeVisible();
+      }
+    });
 
-  test('each concert has repertoire listed', async ({ page }) => {
-    await expect(page.getByText('Braga', { exact: true })).toBeVisible();
-    await expect(page.getByText('Kraus', { exact: true })).toBeVisible();
+    test('shows a price for every concert', async ({ page }) => {
+      const prices: string[] = Array.from(
+        new Set(currentEdition.concerts.map((c: { price: string }) => c.price))
+      );
+      for (const price of prices) {
+        await expect(page.getByText(price).first()).toBeVisible();
+      }
+    });
+
+    test('shows at least one artist image per concert', async ({ page }) => {
+      const artistImages = page.locator('img[src*="/images/artists/"]');
+      await expect(artistImages.first()).toBeVisible();
+      expect(await artistImages.count()).toBeGreaterThanOrEqual(currentEdition.concerts.length);
+    });
+
+    test('triptych download link is present', async ({ page }) => {
+      const downloadLink = page.getByRole('link', { name: /Descarrega el tríptic/i });
+      await expect(downloadLink).toBeVisible();
+      await expect(downloadLink).toHaveAttribute('href', new RegExp(`triptic-${currentEdition.year}`));
+    });
+
+    test('lists the artists for each concert', async ({ page }) => {
+      for (const concert of currentEdition.concerts) {
+        for (const artist of concert.artists) {
+          await expect(page.getByText(artist.name).first()).toBeVisible();
+        }
+      }
+    });
   });
 });

@@ -1,10 +1,11 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Historia archive', () => {
-  test('shows all editions on history page', async ({ page }) => {
+  test('shows history page with festival overview', async ({ page }) => {
     await page.goto('/historia');
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Història');
-    await expect(page.getByText('Veure programa complet').first()).toBeVisible();
+    await expect(page.getByText(/Des de 1995/).first()).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Grans noms del Festival/i })).toBeVisible();
   });
 
   test('rich archive page shows concert details', async ({ page }) => {

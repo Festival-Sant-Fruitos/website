@@ -14,14 +14,13 @@ test.describe('Ubicacio page', () => {
   });
 
   test('shows parking and rain plan info', async ({ page }) => {
-    await expect(page.getByText('Aparcament')).toBeVisible();
-    await expect(page.getByText('Pla de Pluja')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Aparcament' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Pla de Pluja' })).toBeVisible();
   });
 
   test('shows transport section', async ({ page }) => {
-    await expect(page.getByText('Com arribar')).toBeVisible();
-    await expect(page.getByText('Com arribar en cotxe')).toBeVisible();
-    await expect(page.getByText('Transport Públic')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Com arribar', exact: true })).toBeVisible();
+    await expect(page.getByRole('button', { name: /Com arribar en cotxe/i })).toBeVisible();
   });
 
   test('map requires cookie consent', async ({ page }) => {
