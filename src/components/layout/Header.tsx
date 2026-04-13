@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import MobileMenu from './MobileMenu';
 import Container from '../shared/Container';
 import Button from '../shared/Button';
@@ -39,12 +40,22 @@ export default function Header() {
         }`}
       >
         <Container size="lg" className="h-20 flex items-center justify-between">
-          <Link href="/" className="flex flex-col leading-none group">
-            <span className="text-[15px] font-serif font-medium tracking-tight text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors duration-300">
-              Festival Internacional
-            </span>
-            <span className="text-[11px] tracking-[0.15em] uppercase text-[var(--color-text-light)] mt-[3px]">
-              de Música Clàssica
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Festival Internacional de Música Clàssica">
+            <Image
+              src="/images/brand/logo-mc.svg"
+              alt=""
+              width={40}
+              height={40}
+              priority
+              className="h-10 w-10 shrink-0"
+            />
+            <span className="flex flex-col leading-none">
+              <span className="text-[15px] font-serif font-medium tracking-tight text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors duration-300">
+                Festival Internacional
+              </span>
+              <span className="text-[11px] tracking-[0.15em] uppercase text-[var(--color-text-light)] mt-[3px]">
+                de Música Clàssica
+              </span>
             </span>
           </Link>
 

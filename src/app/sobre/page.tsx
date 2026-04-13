@@ -14,17 +14,15 @@ export default function SobrePage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <div className="text-center">
-            <p className="text-sm font-medium tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-4">
-              Qui som
-            </p>
-            <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-serif font-medium text-[var(--color-text-inverted)] leading-[1.05]">
-              Nosaltres
-            </h1>
-            <p className="text-xl text-[var(--color-text-inverted)]/60 mt-4 max-w-[600px] mx-auto leading-[1.4]">
-              Una passió compartida per la música clàssica d&apos;excel·lència
-            </p>
-          </div>
+          <p className="text-sm font-medium tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-4">
+            Qui som
+          </p>
+          <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-serif font-medium text-[var(--color-text-inverted)] leading-[1.05]">
+            Nosaltres
+          </h1>
+          <p className="text-xl text-[var(--color-text-inverted)]/60 mt-4 max-w-[600px] leading-[1.4]">
+            Una passió compartida per la música clàssica d&apos;excel·lència
+          </p>
         </Container>
       </section>
 
