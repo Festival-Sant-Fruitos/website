@@ -133,6 +133,13 @@ export default function Footer() {
                 CodeTickets
               </a>
             </span>
+            <span className="text-white/10">|</span>
+            <span className="text-xs text-white/30">
+              Desenvolupat per{' '}
+              <a href="https://github.com/omorros" target="_blank" rel="noopener noreferrer" className="text-[var(--color-secondary)] hover:text-white transition-colors font-medium">
+                Oriol Morros
+              </a>
+            </span>
           </div>
         </Container>
       </div>
