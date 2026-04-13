@@ -36,9 +36,13 @@ export default function VenueSection() {
                 monumentals més impressionants de Catalunya. Restaurat per la Fundació Catalunya
                 La Pedrera, ofereix un marc incomparable per gaudir de la música clàssica sota les estrelles.
               </p>
-              <p className="text-base text-[var(--color-text-muted)] leading-[1.7] mb-8">
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.7] mb-5">
                 Els concerts es celebren al Jardí dels Arcs, un espai que crea una
                 connexió única entre la música, la història i la natura.
+              </p>
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.7] mb-8">
+                Després dels concerts el jardí de l&apos;Absis esdevé el punt de trobada
+                on públic i artistes comparteixen impressions i complicitats.
               </p>
               <a
                 href="https://monsantbenet.com"
