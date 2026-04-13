@@ -14,13 +14,13 @@ export default function SobrePage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-4">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             Qui som
           </p>
-          <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-serif font-medium text-[var(--color-text-inverted)] leading-[1.05]">
+          <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
             Nosaltres
           </h1>
-          <p className="text-xl text-[var(--color-text-inverted)]/60 mt-4 max-w-[600px] leading-[1.4]">
+          <p className="text-xl text-white/70 max-w-[700px] leading-[1.4] font-light">
             Una passió compartida per la música clàssica d&apos;excel·lència
           </p>
         </Container>
@@ -46,7 +46,7 @@ export default function SobrePage() {
               title="La nostra missió"
               subtitle="Fer accessible la música clàssica de primer nivell a la comarca del Bages"
             />
-            <div className="space-y-5 text-lg text-[var(--color-text-muted)] leading-[1.6] text-center">
+            <div className="space-y-5 text-lg text-[var(--color-text-muted)] leading-[1.7]">
               <p>
                 El Festival Internacional de Música Clàssica de Sant Fruitós de Bages neix l&apos;any
                 1995 amb la voluntat de portar la millor música clàssica al cor de Catalunya.
@@ -70,33 +70,33 @@ export default function SobrePage() {
       <section className="py-20 md:py-[120px]">
         <Container>
           <SectionHeading title="Els nostres valors" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[960px] mx-auto text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[960px]">
             <div>
-              <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-3">
+              <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-3">
                 01
               </p>
-              <h3 className="text-2xl font-medium text-[var(--color-text-main)] mb-3">Excel·lència</h3>
-              <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
+              <h3 className="text-2xl font-serif font-light text-[var(--color-primary)] mb-3">Excel·lència</h3>
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.7]">
                 Compromís amb la qualitat artística i la selecció dels millors intèrprets
                 de música clàssica nacionals i internacionals.
               </p>
             </div>
             <div>
-              <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-3">
+              <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-3">
                 02
               </p>
-              <h3 className="text-2xl font-medium text-[var(--color-text-main)] mb-3">Accessibilitat</h3>
-              <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
+              <h3 className="text-2xl font-serif font-light text-[var(--color-primary)] mb-3">Accessibilitat</h3>
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.7]">
                 La música clàssica ha de ser per a tothom. Treballem per oferir preus
                 accessibles i una experiència oberta i acollidora.
               </p>
             </div>
             <div>
-              <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-3">
+              <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-3">
                 03
               </p>
-              <h3 className="text-2xl font-medium text-[var(--color-text-main)] mb-3">Patrimoni</h3>
-              <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
+              <h3 className="text-2xl font-serif font-light text-[var(--color-primary)] mb-3">Patrimoni</h3>
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.7]">
                 Celebrem la música en un entorn patrimonial únic, posant en valor
                 la riquesa cultural de Món Sant Benet i el Bages.
               </p>
@@ -124,11 +124,11 @@ export default function SobrePage() {
               />
             </div>
             <div className="space-y-6">
-              <div className="border border-[var(--color-border)] p-8 text-center">
-                <h3 className="text-xl font-bold text-[var(--color-text-main)] mb-5">
+              <div className="border border-[var(--color-border)] p-8">
+                <h3 className="text-xl font-serif font-medium text-[var(--color-primary)] mb-5">
                   Associació Memorial Eduard Casajoana
                 </h3>
-                <div className="space-y-5 text-base text-[var(--color-text-muted)] leading-[1.6]">
+                <div className="space-y-5 text-base text-[var(--color-text-muted)] leading-[1.7]">
                   <p>
                     És l&apos;Associació sense ànim de lucre que organitza el Festival.
                   </p>
@@ -166,9 +166,9 @@ export default function SobrePage() {
             <div className="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
               <a
                 href="mailto:festivalsantfruitos@gmail.com"
-                className="flex flex-col items-center gap-1.5 py-5 group"
+                className="flex flex-row items-baseline justify-between gap-4 py-5 group"
               >
-                <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Email</span>
+                <span className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-text-light)]">Email</span>
                 <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
                   festivalsantfruitos@gmail.com
                 </span>
@@ -177,9 +177,9 @@ export default function SobrePage() {
                 href="https://www.facebook.com/festivalsantfruitos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-1.5 py-5 group"
+                className="flex flex-row items-baseline justify-between gap-4 py-5 group"
               >
-                <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Facebook</span>
+                <span className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-text-light)]">Facebook</span>
                 <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
                   @festivalsantfruitos
                 </span>
@@ -188,9 +188,9 @@ export default function SobrePage() {
                 href="https://www.instagram.com/festivalsantfruitos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-1.5 py-5 group"
+                className="flex flex-row items-baseline justify-between gap-4 py-5 group"
               >
-                <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Instagram</span>
+                <span className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-text-light)]">Instagram</span>
                 <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
                   @festivalsantfruitos
                 </span>
@@ -198,11 +198,11 @@ export default function SobrePage() {
             </div>
 
             {/* Press */}
-            <div className="border border-[var(--color-border)] p-8 mt-6 text-center">
-              <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-3">
+            <div className="border border-[var(--color-border)] p-8 mt-6">
+              <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-3">
                 Premsa i mitjans
               </p>
-              <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
+              <p className="text-base text-[var(--color-text-muted)] leading-[1.7]">
                 Per a acreditacions de premsa, entrevistes i material gràfic, contacteu-nos
                 a{' '}
                 <a href="mailto:festivalsantfruitos@gmail.com" className="text-[var(--color-secondary)] hover:text-[var(--color-text-main)] transition-colors"
