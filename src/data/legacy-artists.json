@@ -1,0 +1,149 @@
+{
+  "featured": [
+    { "name": "Ainhoa Arteta", "image": "/images/legacy-artists/ainhoa-arteta.jpg" },
+    { "name": "Alexander Kniasev", "image": "/images/legacy-artists/alexander-kniasev.jpg" },
+    { "name": "Àngel Òdena", "image": "/images/legacy-artists/angel-odena.jpg" },
+    { "name": "Annick Massis", "image": "/images/legacy-artists/annick-massis.jpg" },
+    { "name": "Cor de Cambra del Palau de la Música", "image": "/images/legacy-artists/cor-de-cambra-palau.jpg" },
+    { "name": "Isabel Rey", "image": "/images/legacy-artists/isabel-rey.jpg" },
+    { "name": "Jaume Aragall", "image": "/images/legacy-artists/jaume-aragall.jpg" },
+    { "name": "Joan Pons", "image": "/images/legacy-artists/joan-pons.jpg" },
+    { "name": "Jordi Savall", "image": "/images/legacy-artists/jordi-savall.jpg" },
+    { "name": "Josep Bros", "image": "/images/legacy-artists/josep-bros.jpg" },
+    { "name": "Kebyart Ensemble", "image": "/images/legacy-artists/kebyart-ensemble.jpg" },
+    { "name": "Lluís i Gerard Claret", "image": "/images/legacy-artists/lluis-gerard-claret.jpg" },
+    { "name": "María Bayo", "image": "/images/legacy-artists/maria-bayo.jpg" },
+    { "name": "Núria Rial", "image": "/images/legacy-artists/nuria-rial.jpg" },
+    { "name": "Orquestra i Cor del Gran Teatre del Liceu", "image": "/images/legacy-artists/orquestra-cor-liceu.jpg" },
+    { "name": "Serena Sáenz i Carles Pachón", "image": "/images/legacy-artists/serena-saenz-carles-pachon.jpg" },
+    { "name": "Teresa Berganza", "image": "/images/legacy-artists/teresa-berganza.jpg" },
+    { "name": "The Scholars", "image": "/images/legacy-artists/the-scholars.jpg" }
+  ],
+  "roster": [
+    {
+      "category": "Sopranos",
+      "artists": [
+        "Marta Almajano", "Kym Amps", "Ainhoa Arteta", "María Bayo", "Laura Brasó",
+        "Anna Crookes", "Montserrat Figueras", "Alexandra Gladysheva", "Tina Gorina",
+        "Maria Hinojosa", "Sooyeon Kim", "Cecilia Lavilla", "Raquel Lojendio",
+        "Annick Massis", "Marta Mathéu", "Maria Miró", "Mao Miyoshi", "Minerva Moliner",
+        "M. Lluïsa Muntada", "Clara Renom", "Isabel Rey", "Núria Rial", "Serena Sáenz",
+        "Arianna Savall"
+      ]
+    },
+    {
+      "category": "Mezzosopranos",
+      "artists": ["Anna Alàs", "Teresa Berganza", "Helen Parker", "Mireia Pintó"]
+    },
+    {
+      "category": "Contratenors",
+      "artists": ["Angus Davidson", "Jordi Domènech", "William Purefoy"]
+    },
+    {
+      "category": "Tenors",
+      "artists": [
+        "Jaume Aragall", "Josep Bros", "Carlos Cosías", "Francisco Cruz",
+        "Albert Deprius", "Robin Doveton", "Roger Padullés", "Marc Sala"
+      ]
+    },
+    {
+      "category": "Barítons",
+      "artists": [
+        "Carlos Daza", "Iñaki Fresán", "Joan Martín-Royo", "Àngel Òdena",
+        "Josep Ramon Olivé", "Carles Pachón", "Joan Pons", "Jordi Ricart",
+        "Lluís Sintes", "Giles Underwood"
+      ]
+    },
+    {
+      "category": "Baixos",
+      "artists": ["David Van Asch", "Pau Bordas"]
+    },
+    {
+      "category": "Veu",
+      "artists": ["Gemma Abrié"]
+    },
+    {
+      "category": "Piano",
+      "artists": [
+        "Irene Alfageme", "Juan Antonio Álvarez Parejo", "Stanislav Angelov",
+        "Jordi Armengol", "Alan Branch", "Vladislav Bronevetzky", "Eudald Buch",
+        "Carles & Sofia Piano Duo", "Manel Camp", "Carles Cases", "Jordi Castella",
+        "Frédéric Chauvel", "Anna Crexells", "Gennady Dzubenko", "Ricardo Estrada",
+        "Marco Evangelisti", "Ruben Fernández Aguirre", "Aldo Gentileschi",
+        "Mercè Hervada", "Karts de Jong", "Ben-San Lau", "Pilar López-Carrasco",
+        "Laia Masramon", "Maria Mauri", "Mac McClure", "Georgi Mundrov",
+        "Ot Ortega", "Joana Pons", "Francisco Poyato", "Pierre Réach", "Santi Riu",
+        "Roc Sala", "Viviana Salisi", "Mark Solé-Leris", "Emma Stratton",
+        "Anna Tyshayeva", "Jordi Vilaprinyó", "Aurelio Viribay", "Alejandro Zabala"
+      ]
+    },
+    {
+      "category": "Actrius",
+      "artists": ["Sílvia Bel", "Montserrat Carulla", "Clara Segura"]
+    },
+    {
+      "category": "Actors",
+      "artists": ["Jordi Boixaderas", "Ferran Frauca", "Bernat Quintana"]
+    },
+    {
+      "category": "Recitador",
+      "artists": ["Jaume Creus"]
+    },
+    {
+      "category": "Formacions Orquestrals",
+      "artists": [
+        "Orquestra del Gran Teatre del Liceu (P. Assante)",
+        "Virtuosi di Praga",
+        "Virtuosos de la Filharmònica de Berlín",
+        "Orquestra Nacional de Cambra d'Andorra (G. Claret)",
+        "Orquestra Simfònica del Vallès (V. Martínez)",
+        "Orquestra de Cambra de St. Cugat (J. Farré)",
+        "Orquestra de Cambra de l'Empordà (C. Coll)",
+        "Orquestra de Cambra de Lleida (J. Sauret)",
+        "Camerata Mediterrània (G. Voronkov)",
+        "Orquestra de Cambra Terrassa 48 (Q. Térmens)",
+        "I Musici di Vivaldi",
+        "Orquestra de Guitarres del Conservatori Superior del Liceu",
+        "Orquestra Simfònica de les Terres de Lleida (OJC) (A. Reverté)",
+        "Orquestra Simfònica Camera Musicae (T. Grau)",
+        "Orquestra Solistes de Catalunya (M. Moncusí)",
+        "The Scholars Baroque Ensemble"
+      ]
+    },
+    {
+      "category": "Altres Formacions",
+      "artists": [
+        "Kebyart — Quartets de saxòfons",
+        "Quartet de Clarinets de Barcelona",
+        "Quintet de Metall «2111 Gòtic Brass»",
+        "Trio Beethoven",
+        "Trio Mediterrani",
+        "Viol·loncelistes de Barcelona",
+        "Carles Cases Ensemble",
+        "ArteMandoline",
+        "Quartet Mèlt",
+        "Cuarteto Vocal Cavatina",
+        "Arcattia Ensemble",
+        "Ensemble Méridien"
+      ]
+    },
+    {
+      "category": "Formacions Corals",
+      "artists": [
+        "Cor del Gran Teatre del Liceu (P. Assante)",
+        "Ensemble «O Vos Omnes» (X. Pastrana)",
+        "Capella de Santa Maria del Mar (Ll. Vilamajó)",
+        "Cor Lieder Camera (J. Vila)",
+        "Cor de Cambra del Palau de la Música Catalana (J. Casas / X. Puig)",
+        "Coral Cantiga (J. Prats / J. Rathbone)",
+        "Coral Polifònica de Puig-reig (R. Noguera)",
+        "Cor Vivaldi (O. Boada)",
+        "The Scholars",
+        "Cor de Cambra Auditori Enric Granados (X. Puig)",
+        "Cor Infantil Amics de la Unió (J. Vila i Jover)",
+        "Orfeó Lleidatà (P. Pardo)",
+        "Cor Jove Nacional de Catalunya (Ll. Vilamajó)"
+      ]
+    }
+  ]
+}
