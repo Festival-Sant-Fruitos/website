@@ -40,7 +40,7 @@ export default function ProgramaPage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             {edition.edition} Edició &middot; Juliol {edition.year}
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
@@ -91,10 +91,10 @@ export default function ProgramaPage() {
                     {concert.day}
                   </span>
                   <div className="flex flex-col border-l border-[var(--color-border)] pl-5">
-                    <span className="text-base font-bold uppercase tracking-widest text-[var(--color-primary)]">
+                    <span className="text-sm font-medium uppercase tracking-[0.25em] text-[var(--color-primary)]">
                       {concert.month}
                     </span>
-                    <span className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider">
+                    <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-[0.25em] mt-1">
                       {concert.dayOfWeek} &middot; {concert.time}h
                     </span>
                   </div>
@@ -129,7 +129,7 @@ export default function ProgramaPage() {
 
                     {/* Interprets List */}
                     <div className="mb-10">
-                      <h3 className="text-sm font-bold uppercase tracking-wider text-[var(--color-text-light)] mb-5 flex items-center gap-4">
+                      <h3 className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--color-text-light)] mb-5 flex items-center gap-4">
                         Intèrprets
                         <span className="h-px bg-[var(--color-border)] flex-1"></span>
                       </h3>
@@ -151,7 +151,7 @@ export default function ProgramaPage() {
 
                     <div className="mt-auto pt-10 border-t border-[var(--color-border)] flex flex-wrap items-center gap-5 justify-between">
                        <div className="flex flex-col">
-                         <span className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider">Preu entrada</span>
+                         <span className="text-xs font-medium text-[var(--color-text-light)] uppercase tracking-[0.25em] mb-1">Preu entrada</span>
                          <span className="text-2xl font-serif font-medium text-[var(--color-primary)]">
                            {concert.price}
                          </span>
@@ -173,7 +173,7 @@ export default function ProgramaPage() {
       {/* Rain Plan Notice */}
       <section className="border-t border-[var(--color-border)] py-10 bg-[var(--color-surface)]">
         <Container>
-          <div className="flex items-start gap-5 max-w-[700px] mx-auto text-center md:text-left md:items-center">
+          <div className="flex items-start md:items-center gap-5 max-w-[800px] mx-auto">
             <div className="hidden md:flex w-[50px] h-[50px] bg-white border border-[var(--color-border)] rounded-full items-center justify-center flex-shrink-0 text-[var(--color-secondary)]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M20 17.58A5 5 0 0018 8h-1.26A8 8 0 104 16.25" />

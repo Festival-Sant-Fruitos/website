@@ -28,7 +28,7 @@ export default function VenueSection() {
               <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-4">
                 L&apos;escenari
               </p>
-              <h2 className="text-[2rem] md:text-[3.5rem] font-serif font-light text-[var(--color-primary)] leading-[1.05] mb-6">
+              <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light text-[var(--color-primary)] leading-[1.05] tracking-tight mb-6">
                 Món Sant Benet
               </h2>
               <p className="text-base md:text-lg text-[var(--color-text-muted)] leading-[1.7] font-light mb-5">

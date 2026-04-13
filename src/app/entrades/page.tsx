@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Container from '@/components/shared/Container';
 import Button from '@/components/shared/Button';
 import ComingSoon from '@/components/shared/ComingSoon';
+import SectionHeading from '@/components/shared/SectionHeading';
 import { getCurrentEdition } from '@/lib/festival';
 
 const edition = getCurrentEdition();
@@ -17,7 +18,7 @@ export default function EntradesPage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             Juliol {edition.year}
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
@@ -35,17 +36,13 @@ export default function EntradesPage() {
       {edition.revealed ? (
         <>
           {/* Concerts with per-concert buy buttons */}
-          <section className="py-20 md:py-[100px]">
+          <section className="py-20 md:py-[120px]">
             <Container>
               <div className="max-w-[900px] mx-auto">
-                <div className="mb-12 text-center">
-                  <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light leading-[1.05] tracking-tight text-[var(--color-primary)]">
-                    Concerts {edition.year}
-                  </h2>
-                  <p className="text-lg md:text-xl mt-4 max-w-[600px] mx-auto leading-[1.5] font-light text-[var(--color-text-muted)]">
-                    Tria el concert i compra les entrades directament
-                  </p>
-                </div>
+                <SectionHeading
+                  title={`Concerts ${edition.year}`}
+                  subtitle="Tria el concert i compra les entrades directament"
+                />
 
                 <div className="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
                   {edition.concerts.map((concert) => (
@@ -74,7 +71,7 @@ export default function EntradesPage() {
                       </div>
 
                       <div className="flex items-center gap-5 md:gap-6 md:ml-auto">
-                        <span className="text-2xl font-bold font-sans text-[var(--color-primary)]">
+                        <span className="text-2xl font-serif font-medium text-[var(--color-primary)]">
                           {concert.price}
                         </span>
                         <Button
@@ -96,43 +93,39 @@ export default function EntradesPage() {
           <hr className="border-[var(--color-border)]" />
 
           {/* Punts de Venda */}
-          <section className="py-20 md:py-[100px] bg-[var(--color-surface)]">
+          <section className="py-20 md:py-[120px] bg-[var(--color-surface)]">
             <Container>
-              <div className="max-w-[1000px] mx-auto">
-                <div className="text-center mb-14">
-                  <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light leading-[1.05] tracking-tight text-[var(--color-primary)]">
-                    Punts de venda presencials
-                  </h2>
-                  <p className="text-lg md:text-xl mt-4 max-w-[600px] mx-auto leading-[1.5] font-light text-[var(--color-text-muted)]">
-                    Com aconseguir les teves entrades
-                  </p>
-                </div>
+              <div className="max-w-[900px] mx-auto">
+                <SectionHeading
+                  title="Punts de venda presencials"
+                  subtitle="Com aconseguir les teves entrades"
+                />
 
                 {/* Presencial grid */}
                 <div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
-                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Sant Fruitós de Bages</h4>
+                      <h4 className="text-base font-serif font-medium text-[var(--color-primary)] mb-1">Sant Fruitós de Bages</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">Joanan33@ (antic Foto Isidre)</p>
                       <p className="text-sm text-[var(--color-text-muted)] mt-1">Carretera de Vic, 44</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">Botiga</p>
+                      <p className="text-xs font-medium text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-[0.25em]">Botiga</p>
                     </div>
                     <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
-                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Manresa</h4>
+                      <h4 className="text-base font-serif font-medium text-[var(--color-primary)] mb-1">Manresa</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">Taquilles Teatre Kursaal</p>
                       <p className="text-sm text-[var(--color-text-muted)] mt-1">Passeig de Pere III, 35</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">Taquilles</p>
+                      <p className="text-xs font-medium text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-[0.25em]">Taquilles</p>
                     </div>
                     <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
-                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">Club Regió7</h4>
+                      <h4 className="text-base font-serif font-medium text-[var(--color-primary)] mb-1">Club Regió7</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">2x1 per als socis</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">Promoció</p>
+                      <p className="text-xs font-medium text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-[0.25em]">Promoció</p>
                     </div>
                     <div className="border border-[var(--color-border)] bg-white p-6 flex flex-col">
-                      <h4 className="text-base font-bold text-[var(--color-primary)] mb-1">A l&apos;entrada del concert</h4>
+                      <h4 className="text-base font-serif font-medium text-[var(--color-primary)] mb-1">A l&apos;entrada del concert</h4>
                       <p className="text-[15px] font-bold text-[var(--color-text-main)]">Món Sant Benet</p>
                       <p className="text-sm text-[var(--color-text-muted)] mt-1">Segons disponibilitat, a partir de les 21:15h</p>
-                      <p className="text-xs text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-wide">El dia del concert</p>
+                      <p className="text-xs font-medium text-[var(--color-text-light)] mt-auto pt-4 uppercase tracking-[0.25em]">El dia del concert</p>
                     </div>
                   </div>
                 </div>
@@ -151,40 +144,38 @@ export default function EntradesPage() {
       )}
 
       {/* FAQ Section — always visible */}
-      <section className="py-20">
+      <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[800px] mx-auto">
-            <h2 className="text-[2rem] font-serif font-medium text-[var(--color-primary)] mb-10 text-center">
-              Dubtes freqüents
-            </h2>
+          <div className="max-w-[900px] mx-auto">
+            <SectionHeading title="Dubtes freqüents" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                <div>
-                 <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Venda el dia del concert</h4>
-                 <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
-                   Si queden entrades disponibles, es podran adquirir a l'entrada de Món Sant Benet a partir de les 21:15h.
+                 <h4 className="text-lg font-serif font-medium text-[var(--color-primary)] mb-2.5">Venda el dia del concert</h4>
+                 <p className="text-[15px] text-[var(--color-text-muted)] leading-[1.7]">
+                   Si queden entrades disponibles, es podran adquirir a l&apos;entrada de Món Sant Benet a partir de les 21:15h.
                  </p>
                </div>
                <div>
-                 <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Política de devolucions</h4>
-                 <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
+                 <h4 className="text-lg font-serif font-medium text-[var(--color-primary)] mb-2.5">Política de devolucions</h4>
+                 <p className="text-[15px] text-[var(--color-text-muted)] leading-[1.7]">
                    No s&apos;admeten canvis ni devolucions, excepte en cas de cancel·lació total de l&apos;esdeveniment.
                  </p>
                </div>
                <div>
-                 <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Pla de pluja</h4>
-                 <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
+                 <h4 className="text-lg font-serif font-medium text-[var(--color-primary)] mb-2.5">Pla de pluja</h4>
+                 <p className="text-[15px] text-[var(--color-text-muted)] leading-[1.7]">
                    En cas de pluja, si és possible, el concert es trasllada a un espai cobert dins de Món Sant Benet. L&apos;espai exacte s&apos;anunciarà a les xarxes socials. Les entrades mantenen la seva validesa.
                  </p>
                </div>
                <div>
-                 <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Obertura de portes</h4>
-                 <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
+                 <h4 className="text-lg font-serif font-medium text-[var(--color-primary)] mb-2.5">Obertura de portes</h4>
+                 <p className="text-[15px] text-[var(--color-text-muted)] leading-[1.7]">
                    L&apos;accés al recinte s&apos;obre a les 21:30h. Hi ha servei de bar al Jardí de l&apos;Absis.
                  </p>
                </div>
                <div>
-                 <h4 className="text-lg font-medium text-[var(--color-primary)] mb-2.5">Accessibilitat</h4>
-                 <p className="text-[15px] text-[var(--color-text-muted)] leading-relaxed">
+                 <h4 className="text-lg font-serif font-medium text-[var(--color-primary)] mb-2.5">Accessibilitat</h4>
+                 <p className="text-[15px] text-[var(--color-text-muted)] leading-[1.7]">
                    El recinte és accessible per a persones amb mobilitat reduïda. Preguem avisar amb antelació.
                  </p>
                </div>

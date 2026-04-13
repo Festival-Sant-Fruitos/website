@@ -16,7 +16,7 @@ export default function PatrocinadorsPage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             Amb el suport de
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
@@ -33,7 +33,7 @@ export default function PatrocinadorsPage() {
       <section className="py-20 md:py-[120px]">
         <Container>
           <div className="max-w-[720px] mx-auto">
-            <p className="text-lg text-[var(--color-text-muted)] leading-[1.7] text-center mb-14 md:mb-20">
+            <p className="text-lg text-[var(--color-text-muted)] leading-[1.7] mb-14 md:mb-20">
               A les institucions s&apos;hi han afegit un seguit de patrocinadors que
               fan possible mantenir un programa artístic de primer nivell, amb uns
               preus molt assequibles per al públic.

@@ -33,7 +33,7 @@ export default async function ArchiveYearPage({ params }: Props) {
     <>
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             {edition.edition} Edició
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
@@ -45,15 +45,15 @@ export default async function ArchiveYearPage({ params }: Props) {
         </Container>
       </section>
 
-      <section className="py-20 md:py-[100px]">
+      <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[800px] mx-auto space-y-12">
+          <div className="max-w-[720px] mx-auto space-y-12">
             {edition.concertDetails.map((concert, i) => (
               <div key={i} className="border-b border-[var(--color-border)] pb-10">
-                <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-2">
+                <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-2">
                   Concert {i + 1}
                 </p>
-                <h2 className="text-2xl md:text-[2rem] font-serif font-medium text-[var(--color-primary)] leading-[1.1] mb-3">
+                <h2 className="text-2xl md:text-[2rem] font-serif font-light text-[var(--color-primary)] leading-[1.1] mb-3">
                   {concert.title}
                 </h2>
                 <p className="text-sm text-[var(--color-text-muted)] mb-4">{concert.date}</p>
@@ -67,7 +67,7 @@ export default async function ArchiveYearPage({ params }: Props) {
                 </div>
                 {'repertoire' in concert && concert.repertoire && concert.repertoire.length > 0 && (
                   <div className="mt-5">
-                    <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-3">
+                    <h4 className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-text-light)] mb-3">
                       Programa
                     </h4>
                     <ul className="space-y-1.5">
@@ -83,7 +83,7 @@ export default async function ArchiveYearPage({ params }: Props) {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-12">
             <Button href="/historia" variant="outline">
               &larr; Totes les edicions
             </Button>

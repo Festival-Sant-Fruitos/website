@@ -12,7 +12,7 @@ export default function SectionHeading({
   title,
   subtitle,
   light = false,
-  align = 'center',
+  align = 'left',
   className,
 }: SectionHeadingProps) {
   const centered = align === 'center';
