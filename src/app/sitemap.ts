@@ -3,7 +3,7 @@ import archiveData from '@/data/archive.json';
 
 export const dynamic = 'force-static';
 
-const BASE_URL = 'https://festivalsantfruitos.com';
+const BASE_URL = 'https://www.festivalsantfruitos.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

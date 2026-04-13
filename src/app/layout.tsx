@@ -24,7 +24,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://festivalsantfruitos.com'),
+  metadataBase: new URL('https://www.festivalsantfruitos.com'),
   title: {
     default: `${edition.edition} Festival Internacional de Música Clàssica | Memorial Eduard Casajoana`,
     template: "%s | Festival Internacional de Música Clàssica",
