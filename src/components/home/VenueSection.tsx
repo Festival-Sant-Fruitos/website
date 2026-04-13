@@ -40,6 +40,30 @@ export default function VenueSection() {
                 Els concerts es celebren al Jardí dels Arcs, un espai que crea una
                 connexió única entre la música, la història i la natura.
               </p>
+              <a
+                href="https://monsantbenet.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-4 mb-8 -ml-1 p-1 hover:opacity-80 transition-opacity"
+                aria-label="Visita monsantbenet.com"
+              >
+                <Image
+                  src="/images/partners/mon-sant-benet-logo.png"
+                  alt="Logo Món Sant Benet"
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto"
+                />
+                <span className="flex flex-col">
+                  <span className="text-[11px] font-medium tracking-[0.2em] uppercase text-[var(--color-text-light)]">
+                    Seu oficial
+                  </span>
+                  <span className="text-sm text-[var(--color-primary)] group-hover:text-[var(--color-secondary)] transition-colors">
+                    monsantbenet.com ↗
+                  </span>
+                </span>
+              </a>
+
               <div className="flex flex-wrap gap-3">
                 <Button href="/ubicacio" variant="dark">
                   Com arribar-hi
