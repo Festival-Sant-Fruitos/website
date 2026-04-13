@@ -7,11 +7,14 @@ import { BlurFade } from '@/components/ui/blur-fade';
 
 export default function SponsorsGrid() {
   return (
-    <section id="patrocinadors" className="py-20 md:py-[120px] bg-[var(--color-surface)]">
+    <section id="patrocinadors" className="py-20 md:py-[140px] bg-[var(--color-surface)]">
       <Container>
         <BlurFade inView inViewMargin="-80px">
-          <div className="max-w-[500px] mx-auto">
-            <h2 className="text-2xl md:text-[2.25rem] font-serif font-light text-[var(--color-primary)] text-center mb-10">
+          <div className="max-w-[600px] mx-auto">
+            <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-4">
+              Patrocinadors
+            </p>
+            <h2 className="text-2xl md:text-[2.5rem] font-serif font-light text-[var(--color-primary)] leading-[1.1] mb-10">
               Amb el suport de
             </h2>
             <Image
@@ -21,7 +24,7 @@ export default function SponsorsGrid() {
               height={1800}
               className="w-full h-auto"
             />
-            <div className="mt-10 text-center">
+            <div className="mt-10">
               <Link
                 href="/patrocinadors"
                 className="inline-flex items-center gap-2 text-sm font-medium tracking-wide text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
