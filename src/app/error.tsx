@@ -8,7 +8,7 @@ export default function Error({ reset }: { error: Error & { digest?: string }; r
     <>
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             Error
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
