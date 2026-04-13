@@ -69,7 +69,23 @@ export default function HistoriaPage() {
             </p>
           </div>
 
-          <FeaturedArtistsCarousel artists={legacyArtists.featured} />
+          <div className="mb-16">
+            <FeaturedArtistsCarousel
+              artists={legacyArtists.featured.filter((a) => a.orientation !== 'landscape')}
+              variant="portrait"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-secondary)] text-center mb-8">
+              Formacions
+            </h3>
+            <FeaturedArtistsCarousel
+              artists={legacyArtists.featured.filter((a) => a.orientation === 'landscape')}
+              variant="landscape"
+              direction="backward"
+            />
+          </div>
         </Container>
       </section>
 
