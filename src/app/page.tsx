@@ -1,6 +1,6 @@
 import Hero from '@/components/home/Hero';
 import ProgramPreview from '@/components/home/ProgramPreview';
-import MemorialSection from '@/components/home/MemorialSection';
+import QuoteSection from '@/components/home/QuoteSection';
 import VenueSection from '@/components/home/VenueSection';
 import LegacyBanner from '@/components/home/LegacyBanner';
 import SponsorsGrid from '@/components/home/SponsorsGrid';
@@ -57,7 +57,7 @@ export default function Home() {
       <JsonLd data={eventJsonLd} />
       <Hero edition={edition.edition} year={edition.year} />
       <ProgramPreview concerts={edition.concerts} year={edition.year} revealed={edition.revealed} />
-      <MemorialSection />
+      <QuoteSection />
       <VenueSection />
       <LegacyBanner editionNumber={edition.editionNumber} />
       <SponsorsGrid />

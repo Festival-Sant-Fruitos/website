@@ -24,7 +24,7 @@ export default function AvisLegalPage() {
       {/* Content */}
       <section className="py-[60px] md:py-[100px]">
         <Container>
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] mx-auto">
             {/* Identity */}
             <div className="mb-[60px]">
               <h2 className="text-2xl font-serif font-medium text-[var(--color-primary)] mb-5">

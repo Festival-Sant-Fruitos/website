@@ -22,9 +22,9 @@ test.describe('Homepage', () => {
     await expect(concertLinks).toHaveCount(4);
   });
 
-  test('displays memorial section', async ({ page }) => {
-    await expect(page.getByText('In Memoriam')).toBeVisible();
-    await expect(page.getByRole('main').getByText('Memorial Eduard Casajoana', { exact: true })).toBeVisible();
+  test('displays quote section', async ({ page }) => {
+    await expect(page.getByText(/Considereu la Cultura sempre/)).toBeVisible();
+    await expect(page.getByText(/Riccardo Muti/)).toBeVisible();
   });
 
   test('shows venue section with Món Sant Benet', async ({ page }) => {

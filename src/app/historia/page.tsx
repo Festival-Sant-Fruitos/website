@@ -6,7 +6,7 @@ import legacyArtists from '@/data/legacy-artists.json';
 
 export const metadata: Metadata = {
   title: 'Història',
-  description: 'Més de 30 anys de música clàssica. Descobreix la història del Festival Internacional de Música Clàssica Memorial Eduard Casajoana.',
+  description: 'Des de 1995, el Festival Internacional de Música Clàssica porta la millor música a Sant Fruitós de Bages.',
 };
 
 export default function HistoriaPage() {
@@ -28,26 +28,25 @@ export default function HistoriaPage() {
         </Container>
       </section>
 
-      {/* Eduard Casajoana Tribute */}
+      {/* Història text */}
       <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[800px] mx-auto text-center md:text-left">
-            <p className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-text-light)] mb-5 relative inline-block md:block after:content-[''] after:block after:w-10 after:h-[1px] after:bg-[var(--color-secondary)] after:mx-auto md:after:mx-0 after:mt-2">
-              In Memoriam
-            </p>
-            <h2 className="text-[2.5rem] md:text-[3.5rem] font-serif font-medium text-[var(--color-primary)] leading-[1.05] mb-[30px]">
-              Eduard Casajoana
-            </h2>
-            <div className="prose prose-lg text-[var(--color-text-main)]">
-              <p className="text-xl font-light leading-relaxed text-[var(--color-text-muted)] mb-5">
-                El Festival Internacional de Música Clàssica porta el nom de Memorial Eduard Casajoana
-                en honor a qui va ser un dels grans impulsors de la cultura musical a la comarca del Bages.
+          <div className="max-w-[800px] mx-auto">
+            <div className="text-[var(--color-text-main)] space-y-6">
+              <p className="text-xl font-light leading-relaxed text-[var(--color-text-muted)]">
+                {'La Música, i més concretament la Música Clàssica, ha trobat a Sant Fruitós de Bages un destacat espai de difusió en el marc del \u201CFestival Internacional de Música Clàssica\u201D.'}
               </p>
               <p className="text-base leading-relaxed">
-                Eduard Casajoana va dedicar la seva vida a promoure la música clàssica, convençut que
-                l&apos;art és una eina fonamental per al desenvolupament cultural i social de les comunitats.
-                El seu llegat perviu en cada edició del festival, que continua la seva missió de fer
-                accessible la música clàssica d&apos;excel·lència a tothom.
+                {'El Festival es celebra des de l\u2019any 1995 com a iniciativa de dos músics afincats a St. Fruitós, la mezzosoprano Mireia Pintó i el pianista Vladislav Bronevetzky, amb l\u2019esperit d\u2019acostar la música clàssica al públic, omplir el buit de la comarca en el camp dels festivals musicals d\u2019estiu i amb un ferm compromís amb el territori i la Cultura.'}
+              </p>
+              <p className="text-base leading-relaxed">
+                {'En una línia de creixement permanent, la consolidació del Festival es deu al reconeixement del públic, de la crítica, així com de la col.laboració de les institucions i també de les empreses i patrocinadors privats. L\u2019Ajuntament de St. Fruitós de Bages recolza fermament el projecte des dels inicis i la Fundació Catalunya-La Pedrera hi suma complicitats des del 2016, any en que el Festival va traslladar la seu dels concerts a Món Sant Benet. D\u2019aquesta manera es sumen la bona música amb la natura i la història del conjunt monumental del Monestir de St. Benet, dins del complex conegut com a Món Sant Benet, pol d\u2019atracció turística de la Catalunya Central. A aquesta conjunció es suma el suport de la Diputació de Barcelona i la Generalitat de Catalunya així com la complicitat teixida amb empreses i patrocinadors privats, i la fidelitat del públic.'}
+              </p>
+              <p className="text-base leading-relaxed">
+                {'Els dijous de juliol es vesteixen doncs de Música i Cultura a St. Fruitós de Bages, amb formacions contrastades i d\u2019alta qualitat, on es troben el talent jove dels Artistes Emergents i el dels artistes de llarga i brillant trajectòria, procurant nits de gaudi, de coneixement, de descoberta i d\u2019exquisidesa musical.'}
+              </p>
+              <p className="text-base leading-relaxed">
+                {'Commoure, inspirar, conèixer nova música, nous intèrprets i així, passar d\u2019observadors i oients a celebrants, amb l\u2019ànim de crear una relació entre l\u2019escenari, la Música, i el públic. Així, el Festival Internacional de Música de St. Fruitós de Bages ha esdevingut un projecte amb personalitat pròpia, motiu de trobades, emocions, de sensibilitat i reflexions, de complicitats, de Cultura i de Música.'}
               </p>
             </div>
           </div>
