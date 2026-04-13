@@ -142,16 +142,6 @@ export default function SobrePage() {
                 </p>
               </div>
 
-              <div className="border border-[var(--color-border)] p-8">
-                <h3 className="text-xl font-bold text-[var(--color-text-main)] mb-3">
-                  Ajuntament de Sant Fruitós de Bages
-                </h3>
-                <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
-                  El festival compta amb el suport institucional de l&apos;Ajuntament de
-                  Sant Fruitós de Bages, que col·labora activament en la seva organització
-                  i promoció com a part del programa cultural del municipi.
-                </p>
-              </div>
             </div>
           </div>
         </Container>
