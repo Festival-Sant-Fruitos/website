@@ -93,7 +93,7 @@ export default function Footer() {
 
           {footerColumns.map((col) => (
             <div key={col.title}>
-              <h3 className="text-xs font-bold tracking-[0.1em] uppercase text-white/40 mb-5">
+              <h3 className="text-xs font-medium tracking-[0.25em] uppercase text-white/40 mb-5">
                 {col.title}
               </h3>
               <ul className="space-y-3">
