@@ -21,7 +21,7 @@ test.describe('Sobre page', () => {
   });
 
   test('shows organization info', async ({ page }) => {
-    await expect(page.getByText('Associació Música Clàssica Memorial Eduard Casajoana')).toBeVisible();
+    await expect(page.getByText('Associació Memorial Eduard Casajoana')).toBeVisible();
   });
 
   test('shows contact section', async ({ page }) => {

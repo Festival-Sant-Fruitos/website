@@ -59,10 +59,6 @@ export default function SobrePage() {
                 nacionals i internacionals de primer nivell, oferint una programació variada que
                 abasta des de la música de cambra fins a recitals solistes i grans formacions orquestrals.
               </p>
-              <p>
-                El festival porta el nom de Memorial Eduard Casajoana en homenatge a qui va ser
-                un dels grans impulsors de la vida cultural i musical de la comarca.
-              </p>
             </div>
           </div>
         </Container>
@@ -116,7 +112,7 @@ export default function SobrePage() {
         <Container>
           <div className="max-w-[720px]">
             <SectionHeading
-              title="L'organització"
+              title="Qui som"
             />
             <div className="relative aspect-[16/10] overflow-hidden mb-10">
               <Image
@@ -129,17 +125,29 @@ export default function SobrePage() {
             </div>
             <div className="space-y-6">
               <div className="border border-[var(--color-border)] p-8">
-                <h3 className="text-xl font-bold text-[var(--color-text-main)] mb-3">
-                  Associació Música Clàssica Memorial Eduard Casajoana
+                <h3 className="text-xl font-bold text-[var(--color-text-main)] mb-5">
+                  Associació Memorial Eduard Casajoana
                 </h3>
-                <p className="text-base text-[var(--color-text-muted)] leading-[1.6]">
-                  L&apos;associació sense ànim de lucre que organitza el festival des dels seus inicis.
-                  Formada per un equip de voluntaris apassionats per la música clàssica que
-                  dediquen el seu temps i esforç a fer possible cada edició del festival.
-                </p>
-                <p className="text-sm text-[var(--color-text-light)] mt-4">
-                  CIF: G-62580303
-                </p>
+                <div className="space-y-5 text-base text-[var(--color-text-muted)] leading-[1.6]">
+                  <p>
+                    És l&apos;Associació sense ànim de lucre que organitza el Festival.
+                  </p>
+                  <p>
+                    Amb més de 30 anys de concerts com a bagatge d&apos;experiència, de projectes,
+                    d&apos;il·lusions, d&apos;entusiasme, molta implicació i esforç, l&apos;Associació
+                    treballa per l&apos;excel·lència a través de la Cultura i la Música. Ja són més
+                    de 30 juliols de grans artistes, de complicitats, de col·laboracions i empaties
+                    que ens han fet prescriptors de formats i d&apos;idees, sempre amb l&apos;afany
+                    de compartir l&apos;estima i el gaudi de la música clàssica d&apos;una manera
+                    sincera i propera. Havent esdevingut un Festival de referència i trajectòria,
+                    reconeguts pels mitjans professionals i la premsa especialitzada, seguim
+                    treballant per renovar-nos, any rere any.
+                  </p>
+                  <p>
+                    Amb la participació de tots, artistes, públic, institucions i empreses, escrivim
+                    la història del patrimoni cultural de la nostra comarca i del nostre territori.
+                  </p>
+                </div>
               </div>
 
             </div>
