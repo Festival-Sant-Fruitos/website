@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     "música clàssica Catalunya",
   ],
   authors: [{ name: "Associació Música Clàssica Memorial Eduard Casajoana" }],
+  alternates: {
+    canonical: '/',
+  },
   twitter: {
     card: 'summary_large_image',
     title: `${edition.edition} Festival Internacional de Música Clàssica`,
@@ -56,6 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ca_ES",
+    url: "/",
     siteName: "Festival Internacional de Música Clàssica",
     title: `${edition.edition} Festival Internacional de Música Clàssica`,
     description:

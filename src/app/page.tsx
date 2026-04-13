@@ -14,7 +14,7 @@ const eventJsonLd = {
   '@type': 'MusicFestival',
   name: `${edition.edition} Festival Internacional de Música Clàssica`,
   alternateName: 'Memorial Eduard Casajoana',
-  url: 'https://festivalmusicaclassica.cat',
+  url: 'https://festivalsantfruitos.com',
   startDate: edition.concerts[0]?.date,
   endDate: edition.concerts[edition.concerts.length - 1]?.date,
   location: {

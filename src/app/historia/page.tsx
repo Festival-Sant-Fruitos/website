@@ -7,6 +7,8 @@ import legacyArtists from '@/data/legacy-artists.json';
 export const metadata: Metadata = {
   title: 'Història',
   description: 'Des de 1995, el Festival Internacional de Música Clàssica porta la millor música a Sant Fruitós de Bages.',
+  alternates: { canonical: '/historia/' },
+  openGraph: { url: '/historia/' },
 };
 
 export default function HistoriaPage() {

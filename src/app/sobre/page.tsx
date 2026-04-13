@@ -6,6 +6,8 @@ import SectionHeading from '@/components/shared/SectionHeading';
 export const metadata: Metadata = {
   title: 'Nosaltres | Festival Internacional de Música Clàssica',
   description: "Coneix l'Associació Música Clàssica Memorial Eduard Casajoana i la missió del Festival Internacional de Música Clàssica.",
+  alternates: { canonical: '/sobre/' },
+  openGraph: { url: '/sobre/' },
 };
 
 export default function SobrePage() {

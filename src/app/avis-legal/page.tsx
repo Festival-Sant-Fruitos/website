@@ -4,6 +4,8 @@ import Container from '@/components/shared/Container';
 export const metadata: Metadata = {
   title: 'Avís Legal',
   description: 'Avís legal, política de privacitat i cookies del Festival Internacional de Música Clàssica.',
+  alternates: { canonical: '/avis-legal/' },
+  openGraph: { url: '/avis-legal/' },
 };
 
 export default function AvisLegalPage() {

@@ -10,6 +10,8 @@ const edition = getCurrentEdition();
 export const metadata: Metadata = {
   title: `Programa ${edition.year}`,
   description: `Programa del ${edition.edition} Festival Internacional de Música Clàssica. ${edition.concerts.length} concerts al juliol de ${edition.year} a Món Sant Benet.`,
+  alternates: { canonical: '/programa/' },
+  openGraph: { url: '/programa/' },
 };
 
 export default function ProgramaPage() {

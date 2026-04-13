@@ -9,6 +9,8 @@ import venueData from '@/data/venue.json';
 export const metadata: Metadata = {
   title: 'Ubicació',
   description: 'Com arribar a Món Sant Benet, Sant Fruitós de Bages. Transport, aparcament i pla de pluja pel Festival de Música Clàssica.',
+  alternates: { canonical: '/ubicacio/' },
+  openGraph: { url: '/ubicacio/' },
 };
 
 export default function UbicacioPage() {

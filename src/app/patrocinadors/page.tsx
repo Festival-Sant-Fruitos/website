@@ -8,6 +8,8 @@ const edition = getCurrentEdition();
 export const metadata: Metadata = {
   title: 'Patrocinadors',
   description: `Institucions, empreses i col·laboradors que fan possible el Festival Internacional de Música Clàssica ${edition.year}.`,
+  alternates: { canonical: '/patrocinadors/' },
+  openGraph: { url: '/patrocinadors/' },
 };
 
 export default function PatrocinadorsPage() {

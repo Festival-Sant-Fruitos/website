@@ -21,6 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${edition.edition} Edició (${edition.year})`,
     description: `Programa del ${edition.edition} Festival Internacional de Música Clàssica, any ${edition.year}.`,
+    alternates: { canonical: `/historia/${edition.year}/` },
+    openGraph: { url: `/historia/${edition.year}/` },
   };
 }
 

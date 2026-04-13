@@ -10,6 +10,8 @@ const edition = getCurrentEdition();
 export const metadata: Metadata = {
   title: 'Entrades',
   description: `Compra les entrades pel Festival Internacional de Música Clàssica ${edition.year}. Preus, punts de venda i informació.`,
+  alternates: { canonical: '/entrades/' },
+  openGraph: { url: '/entrades/' },
 };
 
 export default function EntradesPage() {
