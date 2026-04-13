@@ -17,7 +17,7 @@ export default function UbicacioPage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-5">
+          <p className="text-sm font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-5">
             L&apos;escenari
           </p>
           <h1 className="text-[3.5rem] md:text-[5rem] font-serif font-medium text-white leading-[0.95] mb-[30px]">
@@ -71,7 +71,7 @@ export default function UbicacioPage() {
 
               <div className="grid gap-5">
                 <div className="bg-[var(--color-surface)] p-6">
-                  <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-2.5">
+                  <h4 className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-text-light)] mb-2.5">
                     Aparcament
                   </h4>
                   <p className="text-[15px] text-[var(--color-text-main)]">
@@ -80,7 +80,7 @@ export default function UbicacioPage() {
                 </div>
 
                 <div id="pluja" className="bg-[var(--color-surface)] p-6 scroll-mt-[100px]">
-                   <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)] mb-2.5">
+                   <h4 className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-text-light)] mb-2.5">
                     Pla de Pluja
                   </h4>
                   <p className="text-[15px] text-[var(--color-text-main)]">
@@ -99,22 +99,18 @@ export default function UbicacioPage() {
       <section className="py-20 md:py-[120px] bg-[var(--color-surface)]">
         <Container>
           <div className="max-w-[900px] mx-auto">
-            <div className="mb-14 text-center">
-              <h2 className="text-2xl md:text-[3rem] lg:text-[4rem] font-serif font-light leading-[1.05] tracking-tight text-[var(--color-primary)]">
-                Experiències per als assistents
-              </h2>
-              <p className="text-lg md:text-xl mt-4 max-w-[600px] mx-auto leading-[1.5] font-light text-[var(--color-text-muted)]">
-                Món Sant Benet ofereix avantatges especials per a qui ve al festival
-              </p>
-            </div>
+            <SectionHeading
+              title="Experiències per als assistents"
+              subtitle="Món Sant Benet ofereix avantatges especials per a qui ve al festival"
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {/* Sopars i Allotjament */}
               <div className="bg-white border border-[var(--color-border)] p-8 lg:p-10 flex flex-col">
-                <p className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-3">
+                <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-3">
                   Sopars i allotjament
                 </p>
-                <h3 className="text-2xl font-serif font-medium text-[var(--color-primary)] leading-tight mb-5">
+                <h3 className="text-2xl font-serif font-light text-[var(--color-primary)] leading-tight mb-5">
                   Restaurant Món i Hotel Món
                 </h3>
                 <p className="text-[15px] text-[var(--color-text-main)] leading-relaxed mb-4">
@@ -148,10 +144,10 @@ export default function UbicacioPage() {
 
               {/* Visita Especial Monestir */}
               <div className="bg-white border border-[var(--color-border)] p-8 lg:p-10 flex flex-col">
-                <p className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-secondary)] mb-3">
+                <p className="text-xs font-medium tracking-[0.25em] uppercase text-[var(--color-secondary)] mb-3">
                   Visita especial
                 </p>
-                <h3 className="text-2xl font-serif font-medium text-[var(--color-primary)] leading-tight mb-5">
+                <h3 className="text-2xl font-serif font-light text-[var(--color-primary)] leading-tight mb-5">
                   Les dues cares del monestir
                 </h3>
                 <p className="text-[15px] text-[var(--color-text-main)] leading-relaxed mb-4">
@@ -190,10 +186,8 @@ export default function UbicacioPage() {
       {/* Transport Grid */}
       <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[800px] mx-auto">
-            <h2 className="text-[2rem] md:text-[2.5rem] font-serif font-medium text-[var(--color-primary)] mb-10 text-center">
-              Com arribar
-            </h2>
+          <div className="max-w-[720px] mx-auto">
+            <SectionHeading title="Com arribar" />
             <Accordion
               items={[
                 {
