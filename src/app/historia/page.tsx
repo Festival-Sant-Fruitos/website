@@ -2,9 +2,7 @@ import type { Metadata } from 'next';
 import Container from '@/components/shared/Container';
 import SectionHeading from '@/components/shared/SectionHeading';
 import FeaturedArtistsCarousel from '@/components/historia/FeaturedArtistsCarousel';
-import archiveData from '@/data/archive.json';
 import legacyArtists from '@/data/legacy-artists.json';
-import type { ArchiveEdition } from '@/types/festival';
 
 export const metadata: Metadata = {
   title: 'Història',
@@ -12,10 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function HistoriaPage() {
-  const editions = (archiveData.editions as ArchiveEdition[])
-    .slice()
-    .sort((a, b) => b.year - a.year);
-
   return (
     <>
       {/* Hero Banner */}
@@ -108,40 +102,6 @@ export default function HistoriaPage() {
         </Container>
       </section>
 
-      <hr className="border-[var(--color-border)]" />
-
-      {/* Totes les edicions — plain years list, no links */}
-      <section className="py-[60px] md:py-[100px]">
-        <Container>
-          <SectionHeading
-            title="Totes les edicions"
-            subtitle="Més de 30 anys de programació musical"
-          />
-
-          <div className="max-w-[800px] mx-auto">
-            {editions.map((edition) => (
-              <div
-                key={edition.year}
-                className="flex items-center justify-between py-4 border-b border-[var(--color-border)]"
-              >
-                <div className="flex items-center gap-5">
-                  <span className="text-2xl font-serif font-medium text-[var(--color-primary)] w-[60px]">
-                    {edition.year}
-                  </span>
-                  <div>
-                    <span className="text-xs font-bold tracking-[0.1em] uppercase text-[var(--color-secondary)]">
-                      {edition.edition} Edició
-                    </span>
-                    <span className="text-sm text-[var(--color-text-muted)] ml-3">
-                      {edition.concerts} concerts
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
     </>
   );
 }
