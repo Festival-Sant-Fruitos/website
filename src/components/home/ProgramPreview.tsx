@@ -34,6 +34,7 @@ export default function ProgramPreview({ concerts, year, revealed }: ProgramPrev
             <SectionHeading
               title={`Programa ${year}`}
               subtitle="Quatre vetllades d'excepció als jardins de Món Sant Benet"
+              align="left"
               className="mb-0"
             />
             <Button href="/programa" variant="outline" size="sm">

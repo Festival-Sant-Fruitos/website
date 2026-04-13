@@ -14,15 +14,17 @@ export default function SobrePage() {
       {/* Hero Banner */}
       <section className="pt-[100px] pb-[60px] bg-[var(--color-primary)]">
         <Container>
-          <p className="text-sm font-medium tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-4">
-            Qui som
-          </p>
-          <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-serif font-medium text-[var(--color-text-inverted)] leading-[1.05]">
-            Nosaltres
-          </h1>
-          <p className="text-xl text-[var(--color-text-inverted)]/60 mt-4 max-w-[600px] leading-[1.4]">
-            Una passió compartida per la música clàssica d&apos;excel·lència
-          </p>
+          <div className="text-center">
+            <p className="text-sm font-medium tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-4">
+              Qui som
+            </p>
+            <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-serif font-medium text-[var(--color-text-inverted)] leading-[1.05]">
+              Nosaltres
+            </h1>
+            <p className="text-xl text-[var(--color-text-inverted)]/60 mt-4 max-w-[600px] mx-auto leading-[1.4]">
+              Una passió compartida per la música clàssica d&apos;excel·lència
+            </p>
+          </div>
         </Container>
       </section>
 
@@ -41,12 +43,12 @@ export default function SobrePage() {
       {/* Mission */}
       <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] mx-auto">
             <SectionHeading
               title="La nostra missió"
               subtitle="Fer accessible la música clàssica de primer nivell a la comarca del Bages"
             />
-            <div className="space-y-5 text-lg text-[var(--color-text-muted)] leading-[1.6]">
+            <div className="space-y-5 text-lg text-[var(--color-text-muted)] leading-[1.6] text-center">
               <p>
                 El Festival Internacional de Música Clàssica de Sant Fruitós de Bages neix l&apos;any
                 1995 amb la voluntat de portar la millor música clàssica al cor de Catalunya.
@@ -70,7 +72,7 @@ export default function SobrePage() {
       <section className="py-20 md:py-[120px]">
         <Container>
           <SectionHeading title="Els nostres valors" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[960px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[960px] mx-auto text-center">
             <div>
               <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-3">
                 01
@@ -110,7 +112,7 @@ export default function SobrePage() {
       {/* Organization */}
       <section className="py-20 md:py-[120px]">
         <Container>
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] mx-auto">
             <SectionHeading
               title="Qui som"
             />
@@ -124,7 +126,7 @@ export default function SobrePage() {
               />
             </div>
             <div className="space-y-6">
-              <div className="border border-[var(--color-border)] p-8">
+              <div className="border border-[var(--color-border)] p-8 text-center">
                 <h3 className="text-xl font-bold text-[var(--color-text-main)] mb-5">
                   Associació Memorial Eduard Casajoana
                 </h3>
@@ -160,13 +162,13 @@ export default function SobrePage() {
       {/* Contact */}
       <section id="contacte" className="py-20 md:py-[120px] scroll-mt-20">
         <Container>
-          <div className="max-w-[720px]">
+          <div className="max-w-[720px] mx-auto">
             <SectionHeading title="Contacte" />
 
             <div className="divide-y divide-[var(--color-border)] border-y border-[var(--color-border)]">
               <a
                 href="mailto:festivalsantfruitos@gmail.com"
-                className="flex items-center justify-between py-5 group"
+                className="flex flex-col items-center gap-1.5 py-5 group"
               >
                 <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Email</span>
                 <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
@@ -177,7 +179,7 @@ export default function SobrePage() {
                 href="https://www.facebook.com/festivalsantfruitos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between py-5 group"
+                className="flex flex-col items-center gap-1.5 py-5 group"
               >
                 <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Facebook</span>
                 <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
@@ -188,7 +190,7 @@ export default function SobrePage() {
                 href="https://www.instagram.com/festivalsantfruitos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between py-5 group"
+                className="flex flex-col items-center gap-1.5 py-5 group"
               >
                 <span className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-text-light)]">Instagram</span>
                 <span className="text-sm text-[var(--color-text-main)] group-hover:text-[var(--color-secondary)] transition-colors">
@@ -198,7 +200,7 @@ export default function SobrePage() {
             </div>
 
             {/* Press */}
-            <div className="border border-[var(--color-border)] p-8 mt-6">
+            <div className="border border-[var(--color-border)] p-8 mt-6 text-center">
               <p className="text-xs font-bold tracking-[0.15em] uppercase text-[var(--color-secondary)] mb-3">
                 Premsa i mitjans
               </p>
