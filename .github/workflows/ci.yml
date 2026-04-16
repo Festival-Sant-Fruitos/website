@@ -64,7 +64,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ steps.pw-version.outputs.version }}
+          key: playwright-${{ runner.os }}-${{ matrix.project }}-${{ steps.pw-version.outputs.version }}
       - name: Install Playwright browsers (cache miss)
         if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps ${{ matrix.project }}
