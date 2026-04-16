@@ -47,6 +47,7 @@ export function useCookieConsent() {
   const [consent, setConsent] = useState<ConsentStatus | null>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- loadConsent reads localStorage; can't run during SSR
     setConsent(loadConsent());
   }, []);
 
@@ -72,6 +73,7 @@ export default function CookieConsentBanner({ className }: CookieConsentBannerPr
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- loadConsent reads localStorage; can't run during SSR
     if (loadConsent() === null) setVisible(true);
 
     const onReopen = () => setVisible(true);
