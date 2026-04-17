@@ -45,8 +45,9 @@ yarn-error.log*
 next-env.d.ts
 .claude/settings.local.json
 
-# docs
-/docs
+# docs (local notes), but keep README screenshots
+/docs/*
+!/docs/screenshots
 
 # local data (subscriber lists, etc. — never commit)
 /data
